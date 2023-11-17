@@ -57,7 +57,6 @@ def sync(extract_from_code=False, dry_run=False):
         for extractor in extractors:
             extractor: _Extractor
             from_code_i18n = extractor.extract()
-            import pdb;pdb.set_trace()
             I18N = _merge(from_code_i18n, I18N)
             print(f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
     
@@ -228,9 +227,7 @@ def _find_and_place(place_in, search_in):
         if search_in.get(key):
             if isinstance(new_value, dict):
                 # get node or create one
-                search_in = search_in[key]
-                place_in = new_value
-                _find_and_place(place_in, search_in)
+                _find_and_place(place_in=new_value, search_in=search_in[key])
             else:
-                place_in[key] = new_value
+                place_in[key] = search_in[key]
     return place_in
