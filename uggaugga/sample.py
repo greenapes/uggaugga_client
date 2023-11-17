@@ -1,7 +1,7 @@
 import client
 
 SUPPORTED_LANGS = ['it', 'en']
-I18N_PATH = "./locales/i18n.json"
+I18N_PATH = "./i18n.json"
 DRY_RUN = False
 
 url = 'http://127.0.0.1:5005'
@@ -24,4 +24,4 @@ client.config(namespace='roots',
               code_extractors=extractors)
 
 I18N = client.sync(extract_from_code=True,
-                   dry_run=True)
+                   dry_run=False)

@@ -50,13 +50,6 @@ def sync(extract_from_code=False, dry_run=False):
     assert SUPPORTED_LANGS
     assert extractors
     assert NAMESPACE
-    local_i18n = {}
-    try:
-        with open(I18N_LOCAL_PATH, 'r') as fp:
-            local_i18n = json.load(fp)
-            print("[LOADED] local i18n file")
-    except:
-        print('local i18n not found')
 
     I18N = {}
 
@@ -64,14 +57,15 @@ def sync(extract_from_code=False, dry_run=False):
         for extractor in extractors:
             extractor: _Extractor
             from_code_i18n = extractor.extract()
-
+            import pdb;pdb.set_trace()
             I18N = _merge(from_code_i18n, I18N)
             print(f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
     
     remote_i18n = _download()
     
-    for lang in SUPPORTED_LANGS:
-        I18N[lang] = _find_and_place(place_in=I18N[lang], search_in=remote_i18n[lang])
+    if remote_i18n:
+        for lang in SUPPORTED_LANGS:
+            I18N[lang] = _find_and_place(place_in=I18N[lang], search_in=remote_i18n[lang])
 
     if dry_run:
         print("DRY RUN MODE")
@@ -181,20 +175,23 @@ def _save_to_file(i18n_data):
 
 
 def _download():
-    resp = requests.get(f'{base}/api/i18n/download', headers={
-        'Authorization': f'Basic {token.decode()}'
-    })
-    data = resp.json()
-    if resp.status_code == 200:
-        print("[LOADED] remote i18n")
-    else:
-        print("Error occurrend", resp.status_code, resp.text)
-    return data
-
+    try:
+        resp = requests.get(f'{base}/api/{NAMESPACE}/download', headers={
+            'Authorization': f'Basic {token.decode()}'
+        })
+        data = resp.json()
+        if resp.status_code == 200:
+            print("[LOADED] remote i18n")
+        else:
+            print("Error occurrend", resp.status_code, resp.text)
+        return data
+    except:
+        print(f"[REMOTE NOT FOUND] not found I18N file for namespace={NAMESPACE}")
+        return {}
 
 def _upload(data):
     print(f"* Uploading roots strings to uggaugga namespace={NAMESPACE}")
-    resp = requests.post(f'{base}/api/i18n/upload',
+    resp = requests.post(f'{base}/api/{NAMESPACE}/upload',
                          headers={
                              'Authorization': f'Basic {token.decode()}',
                              'Content-type': 'Application/json'},
