@@ -10,12 +10,14 @@ ORIGINAL_LANGUAGE = 'ORIGINAL'
 SUPPORTED_LANGS = None  # example ['en', 'it']
 I18N_LOCAL_PATH = None
 extractors = None
+NAMESPACE = None
 
 base = None
 token = None
 
 
-def config(connection_url: str,
+def config(namespace: str,
+           connection_url: str,
            public_key: str,
            secret_key: str,
            supported_langs: list,
@@ -23,13 +25,17 @@ def config(connection_url: str,
            code_extractors=None) -> None:
     """
     ### params
+    - namespace: is the i18n namaspace for this project
     - connection_url: is your uggaugga server instance base_url
     - public_key: is your uggaugga server instance public_key
     - secret_key: is your uggaugga server instance secret_key (keep it secret!)
     - supported_langs: is the list of supported lang, each lang is 2 letter locale 
                        format, example: 'en', 'it','de','jp'...
+    - code_extractors: the list of code extractor used to extract strings from code.
+                       must be on of available extractors: TExtractor or XgettexExtractor
     """
-    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors
+    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors, NAMESPACE
+    NAMESPACE = namespace
     base = connection_url
     token = base64.b64encode(f"{public_key}:{secret_key}".encode())
     SUPPORTED_LANGS = supported_langs
@@ -43,13 +49,14 @@ def sync(extract_from_code=False, dry_run=False):
     assert token
     assert SUPPORTED_LANGS
     assert extractors
+    assert NAMESPACE
     local_i18n = {}
     try:
         with open(I18N_LOCAL_PATH, 'r') as fp:
             local_i18n = json.load(fp)
             print("[LOADED] local i18n file")
     except:
-        raise Exception('local i18n not found')
+        print('local i18n not found')
 
     I18N = {}
 
@@ -68,6 +75,7 @@ def sync(extract_from_code=False, dry_run=False):
 
     if dry_run:
         print("DRY RUN MODE")
+        print(f"namespace = {NAMESPACE}")
         pprint(I18N, indent=2)
     else:
         _upload(I18N)
@@ -118,20 +126,21 @@ class XgettexExtractor(_Extractor):
     
     ext = None
     language = None
-    I18n_namespace = 'strings'
+    root = '.'
+    I18n_parent_key = 'strings'
     
-    def __init__(self, ext, language, I18n_namespace):
-        ext = ext
-        language = language
-        I18n_namespace = I18n_namespace
+    def __init__(self, root, ext, language, I18n_parent_key):
+        self.root = root
+        self.ext = ext
+        self.language = language
+        self.I18n_parent_key = I18n_parent_key
     
     def extract(self):
         print("Using XgettexExtractor...")
         import hashlib
         po_path = "./tmp.po"
-        
         os.system(
-            f'find . -name \*.{self.ext} | xgettext -o {po_path} --from-code=UTF-8 -L {self.language} -f -')
+            f'find {self.root} -name \*.{self.ext} | xgettext -o {po_path} --from-code=UTF-8 -L {self.language} -f -')
 
         matches = []
         with open(po_path, 'r') as fp:
@@ -154,12 +163,11 @@ class XgettexExtractor(_Extractor):
         os.remove(po_path)
         out = {}
         for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            out[lang] = {self.I18n_namespace: {}}
+            out[lang] = {self.I18n_parent_key: {}}
         for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
             for x in matches:
                 k = hashlib.md5(x.encode()).hexdigest()
-                out[lang][self.I18n_namespace][k] = x if lang == ORIGINAL_LANGUAGE else ''
-
+                out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
         return out
 
 
@@ -185,12 +193,12 @@ def _download():
 
 
 def _upload(data):
-    print("* Uploading roots strings to uggaugga")
+    print(f"* Uploading roots strings to uggaugga namespace={NAMESPACE}")
     resp = requests.post(f'{base}/api/i18n/upload',
                          headers={
                              'Authorization': f'Basic {token.decode()}',
                              'Content-type': 'Application/json'},
-                         json={'i18n': data})
+                         json={'i18n': data, 'namespace': NAMESPACE})
     print(resp)
     return resp
 
@@ -212,7 +220,7 @@ def _merge(source, destination):
             node = destination.setdefault(key, {})
             _merge(new_value, node)
         else:
-            if new_value:
+            if new_value or not destination.get(key):
                 # replace only if new_value is not empty string
                 destination[key] = new_value
 
