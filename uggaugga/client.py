@@ -64,7 +64,7 @@ def sync(extract_from_code=False, dry_run=False):
     remote_i18n = _download()
     
     for lang in SUPPORTED_LANGS:
-        I18N[lang] = _find_and_place(place_ind=I18N[lang], search_in=remote_i18n[lang])
+        I18N[lang] = _find_and_place(place_in=I18N[lang], search_in=remote_i18n[lang])
 
     I18N = _merge(local_i18n, remote_i18n)
     # will keep new local strings, add new remote translations if is set (replacing local), ignore remote new
