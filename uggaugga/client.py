@@ -66,10 +66,6 @@ def sync(extract_from_code=False, dry_run=False):
     for lang in SUPPORTED_LANGS:
         I18N[lang] = _find_and_place(place_in=I18N[lang], search_in=remote_i18n[lang])
 
-    I18N = _merge(local_i18n, remote_i18n)
-    # will keep new local strings, add new remote translations if is set (replacing local), ignore remote new
-    print("[MERGED] remote_i18n -> local_i18n = I18N")
-
     if dry_run:
         print("DRY RUN MODE")
         pprint(I18N, indent=2)
