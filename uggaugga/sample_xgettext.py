@@ -9,7 +9,7 @@ public_key = 'uggaugga'
 secret_key = 'd4ffa04d5a4f742e90525959301e43aa6bc2cd1e565a7400f0367bbb2b14a893'
 
 extractors = [
-    client.XgettexExtractor(root='./example_app/',
+    client.XgettexExtractor(root='./example_app_xgettext/',
                             ext='py',
                             language='python', 
                             I18n_parent_key='strings')
@@ -24,4 +24,4 @@ client.config(namespace='roots',
               code_extractors=extractors)
 
 I18N = client.sync(extract_from_code=True,
-                   dry_run=False)
+                   dry_run=True)

@@ -85,35 +85,82 @@ class _Extractor():
         
 class TExtractor(_Extractor):
     
-    def __init__(ext) -> None:
-        ext = ext
+    def __init__(self, root, exts, custom_regex=None) -> None:
+        self.root = root
+        self.exts = exts
+        self.custom_regex = custom_regex
     
     def _rewrite_code(self, path):
-        if self.ext in ('.html'):
-            mode = 'template'
-        elif self.ext in ('.js', '.ts', '.jsx', '.tsx'):
-            mode = 'js'
+        ext = os.path.splitext(path)[1]
+        if ext not in self.exts:
+            return []
 
-        if mode == 'template':
-            match = r"""{{\s*T\s+['"](.*)['"]\s*}}"""
+        print(f"DEBUG: rewrite_code for {path}")
+        
+        if self.custom_regex:
+            return re.findall(self.custom_regex, text)
         else:
-            match = r"""[{\s]\s*T\(['"](.*)['"]\)\s*}?"""
-        replace = r""" "\1", """
-
-        with open(path) as f:
-            return re.sub(match, replace, f.read())
+            match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\).+?"""
+            with open(path) as f:
+                text = f.read()
+                return re.findall(match, text)
         
     def extract(self):
         print("Using TExtractor...")
 
-        os.system("""
-            find ./login -name '*.%s' -exec sh -c 'SRC=$1; DST=mirror_templates/$1;
-            mkdir -p 'dirname ${DST}' && ./locales/rewrite_templates.py ${SRC} > ${DST}' _ {} \ """
-            % self.ext)
+        out_text = [] 
+        """
+            [
+                ('main.key_sample.sub', 'default value'), 
+                (...)
+            ]
+        """
+        for root, dirs, files in os.walk(self.root):
+            for path in files:
+                out_text.extend(self._rewrite_code(os.path.join(root, path)))
 
-        os.system("""
-	        find mirror_templates/ -name "*.%s" | xgettext --files-from=- --output=tmp_locales/login.po --language=C
-                  """ % self.ext)
+        out = {} 
+        """ 
+        {
+            'ORIGINAL': {
+                'main': {
+                    'key_sample': {
+                        'sub': 'default value'
+                    } 
+                }
+            }, 
+            'it': {
+                'main': {
+                    'key_sample': {
+                        'sub': '',
+                    }
+                }
+            },
+            ...
+        }
+        """
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            out[lang] = {}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            for x in out_text:
+                key_flatten, default = x
+                tmp = None
+                subs = key_flatten.split('.')
+                out_lang = out[lang]
+                for index, sub in enumerate(subs):
+                    if tmp is None:
+                        if not out_lang.get(sub):
+                            out_lang[sub] = {}
+                        tmp = out_lang[sub]
+                    else:
+                        if not tmp.get(sub):
+                            tmp[sub] = {}
+                        if len(subs) - 1 == index:
+                            tmp[sub] = default if lang == ORIGINAL_LANGUAGE else ''
+                        else:
+                            tmp = tmp[sub]
+        return out
+
 
 class XgettexExtractor(_Extractor):
     

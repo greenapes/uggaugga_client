@@ -1,0 +1,26 @@
+{
+  "it": {
+    "strings": {
+      "8b1a9953c4611296a827abf8c47804d7": "Ciao",
+      "eb547ed02211cd0a4ac0972385a1f4b4": "Benvenuto {name}!!",
+      "afeab37770aca7e48babb3358bb2998d": "titolo app",
+      "41fb5b5ae4d57c5ee528adb00e5e8e74": "Questa \u00e8 una stringa"
+    }
+  },
+  "en": {
+    "strings": {
+      "8b1a9953c4611296a827abf8c47804d7": "",
+      "eb547ed02211cd0a4ac0972385a1f4b4": "",
+      "afeab37770aca7e48babb3358bb2998d": "",
+      "41fb5b5ae4d57c5ee528adb00e5e8e74": ""
+    }
+  },
+  "ORIGINAL": {
+    "strings": {
+      "8b1a9953c4611296a827abf8c47804d7": "Hello",
+      "eb547ed02211cd0a4ac0972385a1f4b4": "Welcome here {name}!",
+      "afeab37770aca7e48babb3358bb2998d": "This is the app title",
+      "41fb5b5ae4d57c5ee528adb00e5e8e74": "This is a string"
+    }
+  }
+}
