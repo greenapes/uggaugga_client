@@ -10,7 +10,7 @@ setup(
     license='BSD 2-clause',
     packages=['uggaugga'],
     install_requires=['requests'],
-    scripts=['bin/sync'],
+    scripts=['bin/uggaugga_sync'],
 
     classifiers=[
         'Development Status :: 1 - Planning',
