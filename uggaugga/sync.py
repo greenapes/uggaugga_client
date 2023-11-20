@@ -20,7 +20,8 @@ for extr in conf['extractors']:
     if extr['type'] == 'TExtractor':
         extractors.append(client.TExtractor(
             root=extr['root'], 
-            exts=extr['extention_list']))
+            exts=extr['extention_list']),
+            custom_regex=extr.get("custom_regex"))
         
     elif extr['type'] == 'XgettexExtractor':
         extractors.append(client.XgettexExtractor(
