@@ -11,7 +11,7 @@ setup(
     packages=['uggaugga'],
     install_requires=['requests',
                       ],
-    scripts=['uggaugga/sync'],
+    scripts=['bin/sync'],
 
     classifiers=[
         'Development Status :: 1 - Planning',
