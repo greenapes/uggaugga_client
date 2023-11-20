@@ -100,7 +100,7 @@ class TExtractor(_Extractor):
         if self.custom_regex:
             return re.findall(self.custom_regex, text)
         else:
-            match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\).+?"""
+            match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\)(?s:.)"""
             with open(path) as f:
                 text = f.read()
                 return re.findall(match, text)
