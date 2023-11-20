@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import client
+from uggaugga import client
 import json
 import sys
 
