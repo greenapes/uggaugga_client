@@ -1,23 +1,23 @@
 {
-    "namespace": "roots",
+    "namespace": "sample_app",
     "langs": ["it", "en"],
-    "i18n_path": "./locales/i18n.json",
+    "i18n_path": ".i18n.json",
     "server": {
         "url": "http://127.0.0.1:5005",
         "public_key": "uggaugga",
-        "secret_key": "d4ffa04d5a4f742e90525959301e43aa6bc2cd1e565a7400f0367bbb2b14a893",
+        "secret_key": "d4ffa04d5a4f742e90525959301e43aa6bc2cd1e565a7400f0367bbb2b14a893"
     },
     "extractors": [
         {
             "type": "XgettexExtractor",
-            "root": ".",
+            "root": "./example_app_xgettext",
             "extension": "py",
             "language": "python",
-            "I18n_parent_key": "strings"
+            "I18n_parent_key": "server_strings"
         },
         {
             "type": "TExtractor",
-            "root": ".",
+            "root": "./example_app_t",
             "extention_list": ["js", "ts", "jsx", "tsx"]
         }
     ],

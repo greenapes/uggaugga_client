@@ -87,7 +87,7 @@ class TExtractor(_Extractor):
     
     def __init__(self, root, exts, custom_regex=None) -> None:
         self.root = root
-        self.exts = [x.trim() if x[1] == '.' else f".{x.trim()}" for x in exts]
+        self.exts = [x.strip() if x[1] == '.' else f".{x.strip()}" for x in exts]
         self.custom_regex = custom_regex
     
     def _rewrite_code(self, path):
