@@ -6,11 +6,10 @@ setup(
     description='Client for uggaugga service',
     url='https://github.com/greenapes/uggaugga_client',
     author='Marco Pretelli',
-    author_email='lordscapoladestra@gmail.com   ',
+    author_email='lordscapoladestra@gmail.com',
     license='BSD 2-clause',
     packages=['uggaugga'],
-    install_requires=['requests',
-                      ],
+    install_requires=['requests'],
     scripts=['bin/sync'],
 
     classifiers=[
