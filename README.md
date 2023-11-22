@@ -1,25 +1,77 @@
 # api per i client
 
-run shell `python3 ./uggaugga_sync.py --name=android`
+## installation
 
-**doc**
-Estrae dal codice le chiavi marcate con `T('key','default')` ad esempio `T('app.title', 'greenApes')` e genera il file `I18N/android.json` che carica sul server UggaUgga.
+To get latest version run `pip install git+https://github.com/greenapes/uggaugga_client.git@master#egg=uggaugga --upgrade`
 
-Verranno rimosse le chiavi che sono state rimosse, verranno aggiunte le nuove e mantenute le vecchie traduzioni.
+## project config
+Under your project folder root create the file `uggaugga_config.json`
+
+**Sample:**
+```json
+{
+    "namespace": "sample_app",
+    "langs": ["it", "en"],
+    "i18n_path": "./locales/i18n.json",
+    "server": {
+        "url": <my uggaugga server url>,
+        "public_key": <my uggaugga server public key>,
+        "secret_key": <my uggaugga server secret key>
+    },
+    "extractors": [
+        {
+            "type": "XgettexExtractor",
+            "note": "App with only strings, not key. Extract from `_('my text')`",
+            "root": "./example_app_xgettext",
+            "extension": "py",
+            "language": "python",
+            "I18n_parent_key": "server_strings"
+        },
+        {
+            "type": "TExtractor",
+            "note": "App with i18n key nested structure, extract from `T('key.nested', 'default text')` ",
+            "root": "./example_app_t",
+            "extention_list": ["js", "ts", "jsx", "tsx"]
+        },
+        {
+            "type": "TExtractor",
+            "note": "Custom extractor with i18n key nested. Extract from `{{ T 'key.nested' 'default text' }}`",
+            "root": "./custom_app",
+            "extension_list": ["html"]
+        }
+    ],
+    "debug": true // boolean debug mode wins over `--n`
+}
+```
+
+## do the sync
+
+run shell `uggaugga_sync`
+
+debug mode (only print)
+run shell `uggaugga_sync --n`
+
+
+## Come funziona la sync
+
+Estrae dal codice le chiavi marcate con marcatori speciali usando gli `extractors` definiti nel file `uggaugga_config.json`. 
+Per esempio se si usa un **TExtractor** estrarrà dal codice tutte le diciture `T('key','default')` ad esempio `T('app.title', 'greenApes')` e genera il file  i18n sotto la path `i18n_path` esempio: `./locales/i18n.json` che carica sul server UggaUgga.
+
+Verranno rimosse dal server le chiavi che non sono presenti nell'ultima estrazione, verranno aggiunte le nuove chiavi e mantenute le chiavi uguali con le vecchie traduzioni.
 
 **NB**
-NON si deve tradurre mai sul file json ma sempre su UggaUgga server, il client deve solo scrivere il codice con `T('mia_chiave', 'valore default')` e quando è pronto per il rilascio lancia il comando di sync (vedi sopra) e poi va su ugga ugga a tradurre i nuovi testi. Una volta fatto rilancia il comando di syn per avere le traduzioni in locale e poterle committare/rilasciare.
+NON si deve tradurre mai sul file json ma sempre su UggaUgga server, il client deve solo scrivere il codice con `T('mia_chiave', 'valore default')` e quando è pronto per il rilascio lancia il comando `uggaugga_sync` (vedi sopra) e poi va su ugga ugga a tradurre i nuovi testi. Una volta fatto rilancia il comando di `uggaugga_sync` per avere le traduzioni aggiornate in locale e poterle committare/rilasciare.
 
+-------------------------------
 
-# Come UggaUgga funziona NB
-- OGNI CLIENT USA IL SUO FILE (android.json, ios.jso, bigfoot.json, roots.json)
+# Configurazione su greenApes
+- OGNI CLIENT USA IL SUO FILE (i18n_android.json, i18n_ios.jso, i18n_bigfoot.json, i18n_roots.json etc)
 
-- I CLIENT (ios, webs, android, server) usando gli estrattori caricano tutte le lingue + `ORIGINAL` nel loro file, quest'ultima riporta il valore di default delle chiavi.
+- I CLIENT (ios, webs, android, server) usando gli estrattori caricano tutte le lingue + `ORIGINAL` nel loro file, quest'ultima lingua riporta il valore di default delle chiavi.
 
 - LE TRADUZIONI SI FANNO SUL SERVER NON SUL FILE
 
-- IL Database usa admin plugin per aggiungere le chiavi
-
+- IL Database usa un admin plugin per aggiungere le chiavi
 
 - La lingua di default del sistema può essere una a scelta, ad esempio "en" che se non trova la lingua scelta si mostra en, se non trova en si mostra ORIGINAL
 
