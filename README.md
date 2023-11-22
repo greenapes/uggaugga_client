@@ -45,6 +45,7 @@ Under your project folder root create the file `uggaugga_config.json`
 ```
 
 ## do the sync
+will extract and upload the news on the server and download new translations from the server and save it in local file i18n json.
 
 run shell `uggaugga_sync`
 
