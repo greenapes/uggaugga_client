@@ -97,13 +97,13 @@ class TExtractor(_Extractor):
 
         print(f"DEBUG: rewrite_code for {path}")
         
+        match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\)(?s:.)"""
+        
         if self.custom_regex:
-            return re.findall(self.custom_regex, text)
-        else:
-            match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\)(?s:.)"""
-            with open(path) as f:
-                text = f.read()
-                return re.findall(match, text)
+            match = self.custom_regex
+        with open(path) as f:
+            text = f.read()
+            return re.findall(match, text)
         
     def extract(self):
         print("Using TExtractor...")
