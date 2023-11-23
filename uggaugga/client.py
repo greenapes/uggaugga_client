@@ -4,6 +4,7 @@ import os
 import json
 from pprint import pprint
 import re
+import hashlib
 
 
 ORIGINAL_LANGUAGE = 'ORIGINAL'
@@ -161,6 +162,61 @@ class TExtractor(_Extractor):
                             tmp = tmp[sub]
         return out
 
+class TExtractorFlat(_Extractor):
+    
+    def __init__(self, root, exts, I18n_parent_key, custom_regex=None) -> None:
+        self.root = root
+        self.exts = [x.strip() if x[1] == '.' else f".{x.strip()}" for x in exts]
+        self.I18n_parent_key = I18n_parent_key
+        self.custom_regex = custom_regex
+    
+    def _rewrite_code(self, path):
+        ext = os.path.splitext(path)[1]
+        if ext not in self.exts:
+            return []
+
+        print(f"DEBUG: rewrite_code for {path}")
+        
+        match = r"""[{\s]*T\(['"](.*?)['"]\)(?s:.)"""
+        
+        if self.custom_regex:
+            match = self.custom_regex
+        with open(path) as f:
+            text = f.read()
+            return re.findall(match, text)
+        
+    def extract(self):
+        print("Using TExtractorFlat...")
+
+        out_text = [] 
+        """
+            ["default value"]
+        """
+        for root, dirs, files in os.walk(self.root):
+            for path in files:
+                out_text.extend(self._rewrite_code(os.path.join(root, path)))
+
+        out = {} 
+        """ 
+        {
+            'ORIGINAL': {
+                'asdasdasdasd': "default value"
+            }, 
+            'it': {
+                'asdasdasdasd': ""
+            },
+            ...
+        }
+        """
+        out = {}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            out[lang] = {self.I18n_parent_key: {}}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            for x in out_text:
+                k = hashlib.md5(x.encode()).hexdigest()
+                out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
+        return out
+
 
 class XgettexExtractor(_Extractor):
     
@@ -177,7 +233,6 @@ class XgettexExtractor(_Extractor):
     
     def extract(self):
         print("Using XgettexExtractor...")
-        import hashlib
         po_path = "./tmp.po"
         os.system(
             f'find {self.root} -name \*.{self.ext} | xgettext -o {po_path} --from-code=UTF-8 -L {self.language} -f -')

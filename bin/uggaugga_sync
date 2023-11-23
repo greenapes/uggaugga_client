@@ -30,6 +30,14 @@ for extr in conf['extractors']:
             ext=extr['extension'],
             language=extr['language'],
             I18n_parent_key=extr['I18n_parent_key']))
+        
+    elif extr['type'] == 'TExtractorFlat':
+        extractors.append(client.TExtractorFlat(
+            root=extr['root'],
+            exts=extr['extention_list'],
+            I18n_parent_key=extr['I18n_parent_key'],
+            custom_regex=extr.get("custom_regex")
+        ))
 
 
 client.config(namespace=conf['namespace'],
