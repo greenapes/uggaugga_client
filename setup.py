@@ -8,7 +8,7 @@ setup(
     author='Marco Pretelli',
     author_email='lordscapoladestra@gmail.com',
     license='MIT',
-    packages=['uggaugga-client'],
+    packages=['uggaugga_client'],
     install_requires=['requests'],
     scripts=['bin/uggaugga_sync'],
 

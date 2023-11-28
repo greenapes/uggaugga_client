@@ -2,10 +2,12 @@
 
 ## installation
 
-To get latest version run `pip3 install git+https://github.com/greenapes/uggaugga_client.git@master#egg=uggaugga-client --upgrade`
+To get latest version run `pip3 install git+https://github.com/greenapes/uggaugga_client.git@master#egg=uggaugga_client --upgrade`
 
 ## project config
 Under your project folder root create the file `uggaugga_config.json`
+
+run `uggaugga init`
 
 **Sample:**
 ```json
@@ -63,10 +65,10 @@ Under your project folder root create the file `uggaugga_config.json`
 ## do the sync
 will extract and upload the news on the server and download new translations from the server and save it in local file i18n json.
 
-run shell `uggaugga_sync`
+run shell `uggaugga sync`
 
 debug mode (only print)
-run shell `uggaugga_sync --n`
+run shell `uggaugga sync --n`
 
 
 ## Come funziona la sync
