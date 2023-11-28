@@ -2,7 +2,7 @@
 
 ## installation
 
-To get latest version run `pip install git+https://github.com/greenapes/uggaugga_client.git@master#egg=uggaugga --upgrade`
+To get latest version run `pip3 install git+https://github.com/greenapes/uggaugga_client.git@master#egg=uggaugga-client --upgrade`
 
 ## project config
 Under your project folder root create the file `uggaugga_config.json`
