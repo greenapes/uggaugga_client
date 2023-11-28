@@ -37,8 +37,24 @@ Under your project folder root create the file `uggaugga_config.json`
             "type": "TExtractor",
             "note": "Custom extractor with i18n key nested. Extract from `{{ T 'key.nested' 'default text' }}`",
             "root": "./custom_app",
+            "custom_regex": "{{\\s*T\\s+['\"](.*)['\"]\\s*['\"](.*?)['\"]\\s*}}",
             "extension_list": ["html"]
-        }
+        },
+        {
+            "type": "TExtractorFlat",
+            "note": "App with i18n key not nested, the messsage is the key. 
+            Extract from `T('default message')`",
+            "text_key": true,
+            "root": "./example_app_t_flat",
+            "extension_list": ["html"]
+        },
+        {
+            "type": "TExtractorFlat",
+            "note": "App with i18n key not nested, the messsage is the key encoded in md5. 
+            Extract from `T('default message')`",
+            "root": "./example_app_t_flat_md5",
+            "extension_list": ["html"]
+        },
     ],
     "debug": true // boolean debug mode wins over `--n`
 }

@@ -35,6 +35,7 @@ for extr in conf['extractors']:
         extractors.append(client.TExtractorFlat(
             root=extr['root'],
             exts=extr['extention_list'],
+            text_key=extr.get('text_key'),
             I18n_parent_key=extr['I18n_parent_key'],
             custom_regex=extr.get("custom_regex")
         ))

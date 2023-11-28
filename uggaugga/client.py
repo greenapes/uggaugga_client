@@ -164,9 +164,12 @@ class TExtractor(_Extractor):
 
 class TExtractorFlat(_Extractor):
     
-    def __init__(self, root, exts, I18n_parent_key, custom_regex=None) -> None:
+    def __init__(self, root, exts, text_key=False, I18n_parent_key=None, custom_regex=None) -> None:
         self.root = root
+        self.text_key = text_key
         self.exts = [x.strip() if x[1] == '.' else f".{x.strip()}" for x in exts]
+        if self.I18n_parent_key and self.text_key:
+            raise Exception("if text_as_key is disabled you cant set I18n_parent_key")
         self.I18n_parent_key = I18n_parent_key
         self.custom_regex = custom_regex
     
@@ -210,11 +213,17 @@ class TExtractorFlat(_Extractor):
         """
         out = {}
         for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            out[lang] = {self.I18n_parent_key: {}}
+            if self.text_key:
+                out[lang] = {}
+            else:
+                out[lang] = {self.I18n_parent_key: {}}
         for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
             for x in out_text:
-                k = hashlib.md5(x.encode()).hexdigest()
-                out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
+                if self.text_key:
+                    out[lang][x] = x if lang == ORIGINAL_LANGUAGE else ''
+                else:
+                    k = hashlib.md5(x.encode()).hexdigest()
+                    out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
         return out
 
 
