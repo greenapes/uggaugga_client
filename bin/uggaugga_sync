@@ -2,14 +2,15 @@
 from uggaugga import client
 import json
 import sys
+import os
 
-conf = None
-with open('./uggaugga_config.json', 'r') as fp:
-    conf = json.load(fp)
-
-if not conf:
+config_path = './uggaugga_config.json'
+if not os.path.exists(config_path):
     raise Exception("file ./uggaugga_config.json not found")
 
+conf = None
+with open(config_path, 'r') as fp:
+    conf = json.load(fp)
 
 DRY_RUN = False
 if '--n' in sys.argv:
