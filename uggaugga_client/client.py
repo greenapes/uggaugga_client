@@ -151,7 +151,9 @@ class TExtractor(_Extractor):
                 for index, sub in enumerate(subs):
                     if tmp is None:
                         if not out_lang.get(sub):
-                            out_lang[sub] = {}
+                            last_iter = len(subs) - 1 == index
+                            value = default if lang == ORIGINAL_LANGUAGE else ''
+                            out_lang[sub] = value if last_iter else {}
                         tmp = out_lang[sub]
                     else:
                         if not tmp.get(sub):
