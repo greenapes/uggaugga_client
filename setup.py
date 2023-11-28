@@ -7,7 +7,7 @@ setup(
     url='https://github.com/greenapes/uggaugga_client',
     author='Marco Pretelli',
     author_email='lordscapoladestra@gmail.com',
-    license='BSD 2-clause',
+    license='MIT',
     packages=['uggaugga'],
     install_requires=['requests'],
     scripts=['bin/uggaugga_sync'],
