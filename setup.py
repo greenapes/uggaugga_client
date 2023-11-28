@@ -13,13 +13,9 @@ setup(
     scripts=['bin/uggaugga_sync'],
 
     classifiers=[
-        'Development Status :: 1 - Planning',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: BSD License',  
-        'Operating System :: MacOS',
-        'Operating System :: MacOS :: MacOS X',
-        'Operating System :: MacOS :: MacOS 9',
-        'Operating System :: POSIX :: Linux',              
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',  
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
