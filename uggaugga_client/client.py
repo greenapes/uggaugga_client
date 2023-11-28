@@ -116,9 +116,12 @@ class TExtractor(_Extractor):
                 (...)
             ]
         """
-        for root, dirs, files in os.walk(self.root):
-            for path in files:
-                out_text.extend(self._rewrite_code(os.path.join(root, path)))
+        if os.path(self.root).isfile():
+            out_text.extend(self._rewrite_code(self.root))
+        else:
+            for root, dirs, files in os.walk(self.root):
+                for path in files:
+                    out_text.extend(self._rewrite_code(os.path.join(root, path)))
 
         out = {} 
         """ 
@@ -197,9 +200,12 @@ class TExtractorFlat(_Extractor):
         """
             ["default value"]
         """
-        for root, dirs, files in os.walk(self.root):
-            for path in files:
-                out_text.extend(self._rewrite_code(os.path.join(root, path)))
+        if os.path(self.root).isfile():
+            out_text.extend(self._rewrite_code(self.root))
+        else:
+            for root, dirs, files in os.walk(self.root):
+                for path in files:
+                    out_text.extend(self._rewrite_code(os.path.join(root, path)))
 
         out = {} 
         """ 
