@@ -116,7 +116,7 @@ class TExtractor(_Extractor):
                 (...)
             ]
         """
-        if os.path(self.root).isfile():
+        if os.path.isfile(self.root):
             out_text.extend(self._rewrite_code(self.root))
         else:
             for root, dirs, files in os.walk(self.root):
@@ -200,7 +200,7 @@ class TExtractorFlat(_Extractor):
         """
             ["default value"]
         """
-        if os.path(self.root).isfile():
+        if os.path.isfile(self.root):
             out_text.extend(self._rewrite_code(self.root))
         else:
             for root, dirs, files in os.walk(self.root):
