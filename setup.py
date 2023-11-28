@@ -18,6 +18,7 @@ setup(
         'License :: OSI Approved :: BSD License',  
         'Operating System :: MacOS',
         'Operating System :: MacOS :: MacOS X',
+        'Operating System :: MacOS :: MacOS 9',
         'Operating System :: POSIX :: Linux',              
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
