@@ -84,6 +84,7 @@ class _Extractor():
     def extract():
         raise NotImplementedError()
         
+        
 class TExtractor(_Extractor):
     
     def __init__(self, root, exts, custom_regex=None) -> None:
@@ -166,6 +167,7 @@ class TExtractor(_Extractor):
                         else:
                             tmp = tmp[sub]
         return out
+
 
 class TExtractorFlat(_Extractor):
     
