@@ -90,6 +90,7 @@ COMMANDS:
 
     {Back.GREEN}sync{Style.RESET_ALL} - Do the uggaugga sync 
             (extract string from code using extracors in the config file and upload to remote and save file to local)
+        {Back.GREEN}sync --n{Style.RESET_ALL} - DRY RUN mode, only print what will do but dont do it
     """
     
     print(doc)
