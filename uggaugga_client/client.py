@@ -75,7 +75,6 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
                 f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
 
     if import_data:
-        import pdb;pdb.set_trace()
         I18N = _merge(import_data, I18N)
 
     remote_i18n = _download()
@@ -307,6 +306,8 @@ def import_po(po_path, lang, dry_run=False):
     i18n = matches_to_flat_i18n(matches, None, None)
     if not lang in i18n:
         raise Exception(f"{lang} not found, add in supported_langs in uggaugga_config.json")
+    import pdb;pdb.set_trace()
+
     data = {lang: i18n[lang]}
     sync(extract_from_code=True, dry_run=dry_run, import_data=data)
 
