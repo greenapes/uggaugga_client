@@ -319,13 +319,8 @@ def matches_to_nested_i18n(matches):
 
 
 def import_po(po_path, lang, dry_run=False):
-    matches = _extract_from_po(po_path)
-    import pdb;pdb.set_trace()
-    i18n = matches_to_flat_i18n(matches, None, None)
-    if not lang in i18n:
-        raise Exception(f"{lang} not found, add in supported_langs in uggaugga_config.json")
-
-    data = {lang: i18n[ORIGINAL_LANGUAGE]}
+    i18n_imported = _extract_from_po(po_path)
+    data = {lang: i18n_imported}
     sync(extract_from_code=True, dry_run=dry_run, import_data=data)
 
        
