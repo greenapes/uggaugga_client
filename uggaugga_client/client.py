@@ -331,8 +331,8 @@ def _save_ios(i18n_data):
         if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
             continue
         
-        path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
-        with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
+        path = f'Localizable.strings'
+        with open(os.path.join(I18N_LOCAL_PATH, f"{lang}.lproj", path), 'a+') as fp:
             if DEFAULT_LANG and lang == DEFAULT_LANG:
                 data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep=".")
             else:
