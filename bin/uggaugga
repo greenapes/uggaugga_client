@@ -89,7 +89,10 @@ elif 'import_po' in sys.argv:
     conf = init()
     lang = " ".join(sys.argv).split('--lang=')[1].split(" ")[0]
     path = " ".join(sys.argv).split('--path=')[1].split(" ")[0]
-    client.import_po(path, lang=lang)
+    DRY_RUN = False
+    if '--n' in sys.argv:
+        DRY_RUN = True
+    client.import_po(path, lang=lang, dry_run=DRY_RUN)
 elif 'specs' in sys.argv:
     print(Back.BLACK + Fore.CYAN + """
 
