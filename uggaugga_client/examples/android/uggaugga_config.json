@@ -3,7 +3,9 @@
     "langs": ["it", "en"],
     "i18n_path": ".",
     "export_format": "xml_android",
+    "default_lang": "en",
     "disable_upload": true,
+    "debug": false,
     "server": {
         "url": "https://uggaugga.greenapes.com",
         "public_key": "uggaugga",
@@ -21,6 +23,5 @@
             "root":".",
             "extention_list": ["js"]
         }
-    ],
-    "debug": true
+    ]
 }

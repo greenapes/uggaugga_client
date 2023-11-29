@@ -51,6 +51,7 @@ if 'sync' in sys.argv:
                   supported_langs=conf['langs'],
                   i18n_local_path=conf["i18n_path"],
                   disable_upload=conf.get('disable_upload', False),
+                  default_lang=conf.get('default_lang'),
                   code_extractors=extractors,
                   export_format=conf.get('export_format', 'json'))
 

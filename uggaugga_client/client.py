@@ -17,6 +17,7 @@ EXPORT_FORMAT_ANDROID = 'xml_android'
 EXPORT_FORMAT_IOS = 'strings_ios'
 EXPORT_FORMAT = EXPORT_FORMAT_JSON
 DISABLE_UPLOAD = False
+DEFAULT_LANG = None
 
 base = None
 token = None
@@ -29,6 +30,7 @@ def config(namespace: str,
            supported_langs: list,
            i18n_local_path: str,
            disable_upload=False,
+           default_lang=None,
            code_extractors=None,
            export_format=EXPORT_FORMAT_JSON) -> None:
     """
@@ -42,7 +44,7 @@ def config(namespace: str,
     - code_extractors: the list of code extractor used to extract strings from code.
                        must be on of available extractors: TExtractor or XgettexExtractor
     """
-    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors, NAMESPACE, EXPORT_FORMAT, DISABLE_UPLOAD
+    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors, NAMESPACE, EXPORT_FORMAT, DISABLE_UPLOAD, DEFAULT_LANG
     NAMESPACE = namespace
     base = connection_url
     token = base64.b64encode(f"{public_key}:{secret_key}".encode())
@@ -51,6 +53,7 @@ def config(namespace: str,
     DISABLE_UPLOAD = disable_upload
     extractors = code_extractors
     EXPORT_FORMAT = export_format
+    DEFAULT_LANG = default_lang
 
 
 def sync(extract_from_code=False, dry_run=False):
@@ -68,13 +71,15 @@ def sync(extract_from_code=False, dry_run=False):
             extractor: _Extractor
             from_code_i18n = extractor.extract()
             I18N = _merge(from_code_i18n, I18N)
-            print(f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
-    
+            print(
+                f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
+
     remote_i18n = _download()
-    
+
     if remote_i18n:
         for lang in SUPPORTED_LANGS:
-            I18N[lang] = _find_and_place(place_in=I18N[lang], search_in=remote_i18n[lang])
+            I18N[lang] = _find_and_place(
+                place_in=I18N[lang], search_in=remote_i18n[lang])
 
     if dry_run:
         print("DRY RUN MODE")
@@ -88,39 +93,39 @@ def sync(extract_from_code=False, dry_run=False):
     return I18N
 
 
-
 class _Extractor():
-    
+
     def extract():
         raise NotImplementedError()
-        
-        
+
+
 class TExtractor(_Extractor):
-    
+
     def __init__(self, root, exts, custom_regex=None) -> None:
         self.root = root
-        self.exts = [x.strip() if x[1] == '.' else f".{x.strip()}" for x in exts]
+        self.exts = [x.strip() if x[1] ==
+                     '.' else f".{x.strip()}" for x in exts]
         self.custom_regex = custom_regex
-    
+
     def _rewrite_code(self, path):
         ext = os.path.splitext(path)[1]
         if ext not in self.exts:
             return []
 
         print(f"DEBUG: rewrite_code for {path}")
-        
+
         match = r"""[{\s]*T\(['"](.*?)['"]\s*,\s*['"](.*?)['"]\)(?s:.)"""
-        
+
         if self.custom_regex:
             match = self.custom_regex
         with open(path) as f:
             text = f.read()
             return re.findall(match, text)
-        
+
     def extract(self):
         print("Using TExtractor...")
 
-        out_text = [] 
+        out_text = []
         """
             [
                 ('main.key_sample.sub', 'default value'), 
@@ -132,9 +137,10 @@ class TExtractor(_Extractor):
         else:
             for root, dirs, files in os.walk(self.root):
                 for path in files:
-                    out_text.extend(self._rewrite_code(os.path.join(root, path)))
+                    out_text.extend(self._rewrite_code(
+                        os.path.join(root, path)))
 
-        out = {} 
+        out = {}
         """ 
         {
             'ORIGINAL': {
@@ -180,35 +186,37 @@ class TExtractor(_Extractor):
 
 
 class TExtractorFlat(_Extractor):
-    
+
     def __init__(self, root, exts, text_key=False, I18n_parent_key=None, custom_regex=None) -> None:
         self.root = root
         self.text_key = text_key
-        self.exts = [x.strip() if x[1] == '.' else f".{x.strip()}" for x in exts]
+        self.exts = [x.strip() if x[1] ==
+                     '.' else f".{x.strip()}" for x in exts]
         if self.I18n_parent_key and self.text_key:
-            raise Exception("if text_as_key is disabled you cant set I18n_parent_key")
+            raise Exception(
+                "if text_as_key is disabled you cant set I18n_parent_key")
         self.I18n_parent_key = I18n_parent_key
         self.custom_regex = custom_regex
-    
+
     def _rewrite_code(self, path):
         ext = os.path.splitext(path)[1]
         if ext not in self.exts:
             return []
 
         print(f"DEBUG: rewrite_code for {path}")
-        
+
         match = r"""[{\s]*T\(['"](.*?)['"]\)(?s:.)"""
-        
+
         if self.custom_regex:
             match = self.custom_regex
         with open(path) as f:
             text = f.read()
             return re.findall(match, text)
-        
+
     def extract(self):
         print("Using TExtractorFlat...")
 
-        out_text = [] 
+        out_text = []
         """
             ["default value"]
         """
@@ -217,9 +225,10 @@ class TExtractorFlat(_Extractor):
         else:
             for root, dirs, files in os.walk(self.root):
                 for path in files:
-                    out_text.extend(self._rewrite_code(os.path.join(root, path)))
+                    out_text.extend(self._rewrite_code(
+                        os.path.join(root, path)))
 
-        out = {} 
+        out = {}
         """ 
         {
             'ORIGINAL': {
@@ -248,18 +257,18 @@ class TExtractorFlat(_Extractor):
 
 
 class XgettexExtractor(_Extractor):
-    
+
     ext = None
     language = None
     root = '.'
     I18n_parent_key = 'strings'
-    
+
     def __init__(self, root, ext, language, I18n_parent_key):
         self.root = root
         self.ext = ext
         self.language = language
         self.I18n_parent_key = I18n_parent_key
-    
+
     def extract(self):
         print("Using XgettexExtractor...")
         po_path = "./tmp.po"
@@ -299,24 +308,36 @@ class XgettexExtractor(_Extractor):
 
 def _save_json(i18n_data):
     with open(I18N_LOCAL_PATH, 'w+') as fp:
-            json.dump(i18n_data, fp, indent=2)
-            
+        json.dump(i18n_data, fp, indent=2)
+
+
 def _save_android(i18n_data):
     for lang in i18n_data.keys():
-        path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
+        path = f'values{"" if lang == (DEFAULT_LANG or "en") else f"-{lang}"}.xml'
         with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
-            data = _flatten_data(i18n_data[lang])
+            if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
+                continue
+            if DEFAULT_LANG and lang == DEFAULT_LANG:
+                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE])
+            else:
+                data = _flatten_data(i18n_data[lang])
             for k in data.keys():
-               fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
-    
+                fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
+
+
 def _save_ios(i18n_data):
     for lang in i18n_data.keys():
         path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
         with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
-            data = _flatten_data(i18n_data[lang])
+            if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
+                continue
+            if DEFAULT_LANG and lang == DEFAULT_LANG:
+                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE])
+            else:
+                data = _flatten_data(i18n_data[lang])
             for k in data.keys():
-               fp.write(f'"{k}" = "{data[k]}"' + '\n')
-    
+                fp.write(f'"{k}" = "{data[k]}"' + '\n')
+
 
 def _save_to_file(i18n_data):
     if EXPORT_FORMAT == EXPORT_FORMAT_JSON:
@@ -325,7 +346,7 @@ def _save_to_file(i18n_data):
         _save_android(i18n_data)
     elif EXPORT_FORMAT == EXPORT_FORMAT_IOS:
         _save_ios(i18n_data)
-            
+
     print(f"File {I18N_LOCAL_PATH} saved")
 
 
@@ -341,8 +362,10 @@ def _download():
             print("Error occurrend", resp.status_code, resp.text)
         return data
     except:
-        print(f"[REMOTE NOT FOUND] not found I18N file for namespace={NAMESPACE}")
+        print(
+            f"[REMOTE NOT FOUND] not found I18N file for namespace={NAMESPACE}")
         return {}
+
 
 def _upload(data):
     print(f"* Uploading roots strings to uggaugga namespace={NAMESPACE}")
@@ -378,6 +401,7 @@ def _merge(source, destination):
 
     return destination
 
+
 def _find_and_place(place_in, search_in):
     for key, new_value in place_in.items():
         if search_in.get(key):
@@ -387,6 +411,7 @@ def _find_and_place(place_in, search_in):
             else:
                 place_in[key] = search_in[key]
     return place_in
+
 
 def _flatten_data(y):
     out = {}
