@@ -112,6 +112,7 @@ class _Extractor():
             ...
         }
         """
+        print("parent ", I18n_parent_key)
         out = {}
         for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
             if I18n_parent_key:
@@ -230,11 +231,11 @@ class TExtractorFlat(_Extractor):
         self.text_key = text_key
         self.exts = [x.strip() if x[1] ==
                      '.' else f".{x.strip()}" for x in exts]
+        self.I18n_parent_key = I18n_parent_key
+        self.custom_regex = custom_regex
         if self.I18n_parent_key and self.text_key:
             raise Exception(
                 "if text_as_key is disabled you cant set I18n_parent_key")
-        self.I18n_parent_key = I18n_parent_key
-        self.custom_regex = custom_regex
 
     def _rewrite_code(self, path):
         ext = os.path.splitext(path)[1]
@@ -270,12 +271,6 @@ class TExtractorFlat(_Extractor):
 
 
 class XgettexExtractor(_Extractor):
-
-    ext = None
-    language = None
-    root = '.'
-    text_key = None
-    I18n_parent_key = None
 
     def __init__(self, root, ext, language, text_key=False, I18n_parent_key=None):
         self.root = root
