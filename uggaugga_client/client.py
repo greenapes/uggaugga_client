@@ -75,7 +75,7 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
                 f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
 
     if import_data:
-        I18N = import_data
+        I18N = _merge(import_data, I18N)
 
     remote_i18n = _download()
 
