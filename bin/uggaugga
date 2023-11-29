@@ -4,6 +4,7 @@ from pprint import pprint
 import json
 import sys
 import os
+from colorama import Fore, Back, Style
 
 config_path = './uggaugga_config.json'
 
@@ -80,8 +81,21 @@ elif 'init' in sys.argv:
     print("created default uggaugga_config.json")
 
 else:
+    
+    doc = """
+    
+    COMMANDS:
+
+        init - Create the config file `./uggaugga_config.json`
+    
+        sync - Do the uggaugga sync 
+               (extract string from code using extracors in the config file and upload to remote and save file to local)
+    """
+    
+    print(doc)
+    
     if not os.path.exists(config_path):
-        print("Launch `uggaugga init` to initialize the project")
+        print(Fore.BLACK + Back.GREEN + 'Launch `uggaugga init` to initialize the project' + Style.RESET_ALL)
     else:
         conf = None
         with open(config_path, 'r') as fp:
