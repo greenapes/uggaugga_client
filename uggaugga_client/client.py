@@ -342,11 +342,11 @@ def _save_ios(i18n_data):
             for k in data.keys():
                 value = data[k].replace('"', '\"')
                 lines =[
-                    "/* No comment provided by engineer. */",
-                    f'"{k}" = "{value}";'
-                    ""
+                    "/* No comment provided by engineer. */\n",
+                    f'"{k}" = "{value}";' + '\n'
+                    "\n"
                 ]
-                fp.write("\n".join(lines))
+                fp.write("".join(lines))
 
 
 def _save_to_file(i18n_data):
