@@ -340,7 +340,13 @@ def _save_ios(i18n_data):
             else:
                 data = _flatten_data(i18n_data[lang], sep=".")
             for k in data.keys():
-                fp.write(f'"{k}" = "{data[k]}"' + '\n')
+                value = data[k].replace('"', '\"')
+                lines =[
+                    "/* No comment provided by engineer. */",
+                    f'"{k}" = "{value}";'
+                    ""
+                ]
+                fp.write("\n".join(lines))
 
 
 def _save_to_file(i18n_data):
