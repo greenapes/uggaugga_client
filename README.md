@@ -45,6 +45,7 @@ run `uggaugga init`
         {
             "type": "TExtractorFlat",
             "note": "App with i18n key not nested, the messsage is the key encoded in md5. 
+            no i18n_parent_key used
             Extract from `T('default message')`",
             "root": "./example_app_t_flat_md5",
             "extension_list": ["html"]
