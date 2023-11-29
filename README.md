@@ -57,6 +57,20 @@ run `uggaugga init`
             "root": "./example_app_t_flat_md5",
             "extension_list": ["html"]
         },
+        {
+            "type": "TExtractorFlat",
+            "note": "App with i18n key not nested, the messsage is the key encoded in md5. 
+            Extract from `T('default message')`",
+            "root": "./examples/android",
+            "extension_list": ["xml"]
+        },
+        {
+            "type": "TExtractorFlat",
+            "note": "App ios. 
+            Extract from `T('default message')`",
+            "root": "./examples/ios",
+            "extension_list": ["strings"]
+        },
     ],
     "debug": true // boolean debug mode wins over `--n`
 }
