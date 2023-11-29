@@ -333,7 +333,7 @@ def _save_ios(i18n_data):
         
         path = f'Localizable.strings'
         folder = f"{lang}.lproj"
-        os.makedirs(os.path.join(I18N_LOCAL_PATH, folder))
+        os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'a+') as fp:
             if DEFAULT_LANG and lang == DEFAULT_LANG:
                 data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep=".")
