@@ -307,7 +307,7 @@ def import_po(po_path, lang, dry_run=False):
     if not lang in i18n:
         raise Exception(f"{lang} not found, add in supported_langs in uggaugga_config.json")
     data = {lang: i18n[lang]}
-    sync(extract_from_code=False, dry_run=dry_run, import_data=data)
+    sync(extract_from_code=True, dry_run=dry_run, import_data=data)
 
        
 # === PRIVATE METHODS ===
