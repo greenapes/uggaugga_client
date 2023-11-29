@@ -1,0 +1,1934 @@
+/* No comment provided by engineer. */
+"%@ left" = "%@ left";
+
+/* No comment provided by engineer. */
+"%@ more to reach level %d" = "%1$@ more to reach level %2$d";
+
+/* No comment provided by engineer. */
+"%@ TWIN" = "%@ TWIN";
+
+/* No comment provided by engineer. */
+"%@ TWIN achieved on %@" = "%1$@ TWIN achieved on %2$@";
+
+/* No comment provided by engineer. */
+"%@ TWIN donated" = "%@ TWIN donated";
+
+/* No comment provided by engineer. */
+"%@ TWIN received" = "%@ TWIN received";
+
+/* No comment provided by engineer. */
+"%@ TWIN received out of %@" = "%1$@ TWIN received out of %2$@";
+
+/* No comment provided by engineer. */
+"%@ TWIN received: %@ %@" = "%1$@ TWIN received: %2$@ %3$@";
+
+/* No comment provided by engineer. */
+"%@ TWIN: %@ %@ achieved on %@" = "%1$@ TWIN: %2$@ %3$@ achieved on %4$@";
+
+/* No comment provided by engineer. */
+"%@'s passport" = "%@'s passport";
+
+/* No comment provided by engineer. */
+"%@\nYou can now redeem 1 reward" = "%@\nYou can now redeem 1 reward";
+
+/* No comment provided by engineer. */
+"%@\nYou can now redeem these %d rewards" = "%1$@\nYou can now redeem these %2$d rewards";
+
+/* No comment provided by engineer. */
+"%d claps" = "%d claps";
+
+/* No comment provided by engineer. */
+"%d days left" = "%d days left";
+
+/* No comment provided by engineer. */
+"%d rewards" = "%d rewards";
+
+/* No comment provided by engineer. */
+"%d Shares" = "%d Shares";
+
+/* No comment provided by engineer. */
+"%i certified TWIN" = "%i certified TWIN";
+
+/* No comment provided by engineer. */
+"%i inspirational TWIN" = "%i inspirational TWIN";
+
+/* No comment provided by engineer. */
+"**%@** followers" = "**%@** followers";
+
+/* No comment provided by engineer. */
+"**%@** following" = "**%@** following";
+
+/* No comment provided by engineer. */
+"**Start earning Badges!**\nThis is where you'll pick the ones you want to highlight" = "**Start earning Badges!**\nThis is where you'll pick the ones you want to highlight";
+
+/* No comment provided by engineer. */
+"+%@ TWIN" = "+%@ TWIN";
+
+/* No comment provided by engineer. */
+"... Read more" = "... Read more";
+
+/* No comment provided by engineer. */
+"1 clap" = "1 clap";
+
+/* No comment provided by engineer. */
+"1 day left" = "1 day left";
+
+/* No comment provided by engineer. */
+"1 reward" = "1 reward";
+
+/* No comment provided by engineer. */
+"1 Share" = "1 Share";
+
+/* SHARINGMI: subtitle */
+"a quick introduction" = "a quick introduction";
+
+/* popup.missingdata.title */
+"A special welcome gift for you!" = "A special welcome gift for you!";
+
+/* No comment provided by engineer. */
+"About us" = "About us";
+
+/* No comment provided by engineer. */
+"About you" = "About you";
+
+/* No comment provided by engineer. */
+"Accept the challenge" = "Accept the challenge";
+
+/* No comment provided by engineer. */
+"Account already existing" = "Account already existing";
+
+/* No comment provided by engineer. */
+"Account Login" = "Account Login";
+
+/* No comment provided by engineer. */
+"Account settings" = "Account settings";
+
+/* No comment provided by engineer. */
+"Achievements" = "Achievements";
+
+/* No comment provided by engineer. */
+"Add" = "Add";
+
+/* No comment provided by engineer. */
+"Add an image" = "Add an image";
+
+/* No comment provided by engineer. */
+"Add Media" = "Add Media";
+
+/* No comment provided by engineer. */
+"All" = "All";
+
+/* No comment provided by engineer. */
+"All posts in this impact area" = "All posts in this impact area";
+
+/* No comment provided by engineer. */
+"All posts with this tag" = "All posts with this tag";
+
+/* No comment provided by engineer. */
+"All posts with this topic" = "All posts with this topic";
+
+/* No comment provided by engineer. */
+"All rewards" = "All rewards";
+
+/* No comment provided by engineer. */
+"Already have an account?" = "Already have an account?";
+
+/* No comment provided by engineer. */
+"An error has occurred" = "An error has occurred";
+
+/* No comment provided by engineer. */
+"An unexpected error has occurred. Please try again." = "An unexpected error has occurred. Please try again.";
+
+/* No comment provided by engineer. */
+"An unexpected error occurred while deleting your account." = "An unexpected error occurred while deleting your account.";
+
+/* No comment provided by engineer. */
+"An unexpected error occurred while saving your data." = "An unexpected error occurred while saving your data.";
+
+/* No comment provided by engineer. */
+"An unexpected error occurred while trying to purchase the reward" = "An unexpected error occurred while trying to purchase the reward";
+
+/* No comment provided by engineer. */
+"An unknown error has occurred." = "An unknown error has occurred.";
+
+/* No comment provided by engineer. */
+"And confirm that you are" = "And confirm that you are";
+
+/* No comment provided by engineer. */
+"Apes you follow" = "Apes you follow";
+
+/* No comment provided by engineer. */
+"App and Support" = "App and Support";
+
+/* No comment provided by engineer. */
+"App and support" = "App and support";
+
+/* No comment provided by engineer. */
+"App version — v%@ (%@)" = "App version — v%1$@ (%2$@)";
+
+/* No comment provided by engineer. */
+"Apple" = "Apple";
+
+/* No comment provided by engineer. */
+"Apps and partners that turn your real-life actions into TWIN coins" = "Apps and partners that turn your real-life actions into TWIN coins";
+
+/* No comment provided by engineer. */
+"Are you sure you need a copy of your data?" = "Are you sure you need a copy of your data?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to delete your account \"%@\"?" = "Are you sure you want to delete your account \"%@\"?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to exit? Your changes will be discarded" = "Are you sure you want to exit? Your changes will be discarded";
+
+/* No comment provided by engineer. */
+"Are you sure you want to exit? Your post will be discarded" = "Are you sure you want to exit? Your post will be discarded";
+
+/* No comment provided by engineer. */
+"Are you sure you want to logout from \"%@\"?" = "Are you sure you want to logout from \"%@\"?";
+
+/* No comment provided by engineer. */
+"As a welcome present here are %d TWIN coins. You can use them to try out the app." = "As a welcome present here are %d TWIN coins. You can use them to try out the app.";
+
+/* No comment provided by engineer. */
+"Autumn" = "Autumn";
+
+/* No comment provided by engineer. */
+"Awesome!" = "Awesome!";
+
+/* No comment provided by engineer. */
+"Badges" = "Badges";
+
+/* No comment provided by engineer. */
+"Block" = "Block";
+
+/* No comment provided by engineer. */
+"Block user" = "Block user";
+
+/* No comment provided by engineer. */
+"Blocked users" = "Blocked users";
+
+/* No comment provided by engineer. */
+"Browse by Impact Area" = "Browse by Impact Area";
+
+/* Email bug subject: bug */
+"Bug!" = "Bug!";
+
+/* No comment provided by engineer. */
+"But wait there's more..." = "But wait there's more...";
+
+/* No comment provided by engineer. */
+"by" = "by";
+
+/* No comment provided by engineer. */
+"By completing these challenges you will support the initiative" = "By completing these challenges you will support the initiative";
+
+/* No comment provided by engineer. */
+"By completing this challenge you will support the initiative" = "By completing this challenge you will support the initiative";
+
+/* No comment provided by engineer. */
+"By signing up you" = "By signing up you";
+
+/* No comment provided by engineer. */
+"Camera" = "Camera";
+
+/* No comment provided by engineer. */
+"Camera permission is required to scan QR codes. Open Settings and enable \"Camera\"" = "Camera permission is required to scan QR codes. Open Settings and enable \"Camera\"";
+
+/* No comment provided by engineer. */
+"Campaign is completed" = "Campaign is completed";
+
+/* No comment provided by engineer. */
+"Campaign is expired" = "Campaign is expired";
+
+/* No comment provided by engineer. */
+"Campaign is not yet available" = "Campaign is not yet available";
+
+/* No comment provided by engineer. */
+"Campaigns" = "Campaigns";
+
+/* Popup standard: cancel */
+"Cancel" = "Cancel";
+
+/* No comment provided by engineer. */
+"Challenge" = "Challenge";
+
+/* No comment provided by engineer. */
+"Challenge rewards" = "Challenge rewards";
+
+/* No comment provided by engineer. */
+"Challenge to support the initiative" = "Challenge to support the initiative";
+
+/* No comment provided by engineer. */
+"Challenges" = "Challenges";
+
+/* No comment provided by engineer. */
+"Challenges to support the initiative" = "Challenges to support the initiative";
+
+/* No comment provided by engineer. */
+"Check updates" = "Check updates";
+
+/* No comment provided by engineer. */
+"Check-In" = "Check-In";
+
+/* No comment provided by engineer. */
+"Check-in" = "Check-in";
+
+/* No comment provided by engineer. */
+"Checkout the Jungle: save the Posts you'd like to keep in this collection for future inspiration." = "Checkout the Jungle: save the Posts you'd like to keep in this collection for future inspiration.";
+
+/* No comment provided by engineer. */
+"Choose a profile picture" = "Choose a profile picture";
+
+/* No comment provided by engineer. */
+"Choose from library" = "Choose from library";
+
+/* No comment provided by engineer. */
+"Choose Photo" = "Choose Photo";
+
+/* No comment provided by engineer. */
+"Choose the amount of TWIN coins and confirm." = "Choose the amount of TWIN coins and confirm.";
+
+/* No comment provided by engineer. */
+"Choose Video" = "Choose Video";
+
+/* No comment provided by engineer. */
+"Claim reward" = "Claim reward";
+
+/* No comment provided by engineer. */
+"Claimed rewards" = "Claimed rewards";
+
+/* No comment provided by engineer. */
+"Clap" = "Clap";
+
+/* No comment provided by engineer. */
+"Clapping..." = "Clapping...";
+
+/* No comment provided by engineer. */
+"Click on \"Donate now\" to continue" = "Click on \"Donate now\" to continue";
+
+/* No comment provided by engineer. */
+"Click on \"Donate\" to continue" = "Click on \"Donate\" to continue";
+
+/* No comment provided by engineer. */
+"Click on \"Next\" to continue" = "Click on \"Next\" to continue";
+
+/* No comment provided by engineer. */
+"Close" = "Close";
+
+/* No comment provided by engineer. */
+"Closed" = "Closed";
+
+/* No comment provided by engineer. */
+"Closed: opens %@" = "Closed: opens %@";
+
+/* No comment provided by engineer. */
+"Closes at %@" = "Closes at %@";
+
+/* No comment provided by engineer. */
+"Code" = "Code";
+
+/* ob_walkthrough_collect_title */
+"Collect" = "Collect";
+
+/* No comment provided by engineer. */
+"Collect TWIN" = "Collect TWIN";
+
+/* No comment provided by engineer. */
+"Collections" = "Collections";
+
+/* No comment provided by engineer. */
+"Coming soon" = "Coming soon";
+
+/* No comment provided by engineer. */
+"Comment edit history" = "Comment edit history";
+
+/* No comment provided by engineer. */
+"Comments" = "Comments";
+
+/* generic.button.completenow */
+"Complete now" = "Complete now";
+
+/* No comment provided by engineer. */
+"Complete the challenge before donating" = "Complete the challenge before donating";
+
+/* No comment provided by engineer. */
+"Complete the challenge to donate" = "Complete the challenge to donate";
+
+/* No comment provided by engineer. */
+"Complete the challenge to unlock this reward" = "Complete the challenge to unlock this reward";
+
+/* No comment provided by engineer. */
+"Completed" = "Completed";
+
+/* No comment provided by engineer. */
+"Confirm" = "Confirm";
+
+/* No comment provided by engineer. */
+"Confirm code" = "Confirm code";
+
+/* No comment provided by engineer. */
+"Confirm your email?" = "Confirm your email?";
+
+/* Popup standard: connect */
+"Connect" = "Connect";
+
+/* No comment provided by engineer. */
+"Connected" = "Connected";
+
+/* No comment provided by engineer. */
+"Connected accounts" = "Connected accounts";
+
+/* No comment provided by engineer. */
+"Contacts" = "Contacts";
+
+/* No comment provided by engineer. */
+"Cool, we'll be in touch" = "Cool, we'll be in touch";
+
+/* No comment provided by engineer. */
+"Copied!" = "Copied!";
+
+/* No comment provided by engineer. */
+"Copy image" = "Copy image";
+
+/* No comment provided by engineer. */
+"Copy link" = "Copy link";
+
+/* No comment provided by engineer. */
+"Copy of data" = "Copy of data";
+
+/* No comment provided by engineer. */
+"Country" = "Country";
+
+/* No comment provided by engineer. */
+"Create a new account" = "Create a new account";
+
+/* No comment provided by engineer. */
+"Create a Post" = "Create a Post";
+
+/* ob_welcome_createaccount_title */
+"Create new account" = "Create new account";
+
+/* No comment provided by engineer. */
+"Current season" = "Current season";
+
+/* No comment provided by engineer. */
+"Date of birth" = "Date of birth";
+
+/* No comment provided by engineer. */
+"Delete" = "Delete";
+
+/* No comment provided by engineer. */
+"Delete account" = "Delete account";
+
+/* No comment provided by engineer. */
+"Delete comment" = "Delete comment";
+
+/* No comment provided by engineer. */
+"Delete conversation" = "Delete conversation";
+
+/* No comment provided by engineer. */
+"Delete conversation?" = "Delete conversation?";
+
+/* No comment provided by engineer. */
+"Delete post" = "Delete post";
+
+/* No comment provided by engineer. */
+"Delete post?" = "Delete post?";
+
+/* No comment provided by engineer. */
+"Delete this comment?" = "Delete this comment?";
+
+/* No comment provided by engineer. */
+"Delete your account" = "Delete your account";
+
+/* No comment provided by engineer. */
+"Deleting account..." = "Deleting account...";
+
+/* No comment provided by engineer. */
+"Discard" = "Discard";
+
+/* No comment provided by engineer. */
+"Discard changes" = "Discard changes";
+
+/* No comment provided by engineer. */
+"Discard post" = "Discard post";
+
+/* No comment provided by engineer. */
+"Disconnect" = "Disconnect";
+
+/* No comment provided by engineer. */
+"Discover" = "Discover";
+
+/* No comment provided by engineer. */
+"Discoveries" = "Discoveries";
+
+/* No comment provided by engineer. */
+"Dismiss" = "Dismiss";
+
+/* No comment provided by engineer. */
+"Dive into the jungle" = "Dive into the jungle";
+
+/* No comment provided by engineer. */
+"Do you have a code?" = "Do you have a code?";
+
+/* No comment provided by engineer. */
+"Do you know someone who cares about the Planet?" = "Do you know someone who cares about the Planet?";
+
+/* No comment provided by engineer. */
+"Do you want to block this ape?" = "Do you want to block this ape?";
+
+/* No comment provided by engineer. */
+"Do you want to block this user?" = "Do you want to block this user?";
+
+/* No comment provided by engineer. */
+"Do you want to unblock this ape?" = "Do you want to unblock this ape?";
+
+/* No comment provided by engineer. */
+"Don't have an account?" = "Don't have an account?";
+
+/* No comment provided by engineer. */
+"Don't miss a clap!" = "Don't miss a clap!";
+
+/* No comment provided by engineer. */
+"Don't miss out!" = "Don't miss out!";
+
+/* No comment provided by engineer. */
+"Don't miss out! Download greenApes latest release!" = "Don't miss out! Download greenApes latest release!";
+
+/* ob_walkthrough_donate_title */
+"Donate" = "Donate";
+
+/* No comment provided by engineer. */
+"Donate %d more TWIN" = "Donate %d more TWIN";
+
+/* No comment provided by engineer. */
+"Donate %d TWIN more to unlock this box and access %d rewards" = "Donate %1$d TWIN more to unlock this box and access %2$d rewards";
+
+/* No comment provided by engineer. */
+"Donate %d TWIN more to unlock this box and access 1 reward" = "Donate %d TWIN more to unlock this box and access 1 reward";
+
+/* No comment provided by engineer. */
+"Donate and Make a Difference" = "Donate and Make a Difference";
+
+/* No comment provided by engineer. */
+"Donate now" = "Donate now";
+
+/* No comment provided by engineer. */
+"Donate your TWIN coins and make a difference! Here you'll find the list of Initiatives you'll support over time" = "Donate your TWIN coins and make a difference! Here you'll find the list of Initiatives you'll support over time";
+
+/* No comment provided by engineer. */
+"donated all-time" = "donated all-time";
+
+/* No comment provided by engineer. */
+"Donating..." = "Donating...";
+
+/* No comment provided by engineer. */
+"Donation" = "Donation";
+
+/* No comment provided by engineer. */
+"Donations" = "Donations";
+
+/* No comment provided by engineer. */
+"Donations will start on %@" = "Donations will start on %@";
+
+/* No comment provided by engineer. */
+"Done" = "Done";
+
+/* No comment provided by engineer. */
+"Done!" = "Done!";
+
+/* No comment provided by engineer. */
+"Download the app, use my Code and make a difference." = "Download the app, use my Code and make a difference.";
+
+/* No comment provided by engineer. */
+"E.g. 100" = "E.g. 100";
+
+/* No comment provided by engineer. */
+"E.g. GREENAPES20" = "E.g. GREENAPES20";
+
+/* No comment provided by engineer. */
+"Earn Badges with your activities.\nTip: complete a donation and earn your first Badge." = "Earn Badges with your activities.\nTip: complete a donation and earn your first Badge.";
+
+/* ob_walkthrough_collect_title_description */
+"Earn coins (called TWIN) with your daily actions and for completing fun sustainability challenges" = "Earn coins (called TWIN) with your daily actions and for completing fun sustainability challenges";
+
+/* No comment provided by engineer. */
+"Edit comment" = "Edit comment";
+
+/* No comment provided by engineer. */
+"Edit post" = "Edit post";
+
+/* No comment provided by engineer. */
+"Edit profile" = "Edit profile";
+
+/* No comment provided by engineer. */
+"Edit Profile" = "Edit Profile";
+
+/* No comment provided by engineer. */
+"Edited" = "Edited";
+
+/* No comment provided by engineer. */
+"Email" = "Email";
+
+/* No comment provided by engineer. */
+"email@example.com" = "email@example.com";
+
+/* No comment provided by engineer. */
+"Enable push notifications" = "Enable push notifications";
+
+/* No comment provided by engineer. */
+"Ended on %@" = "Ended on %@";
+
+/* No comment provided by engineer. */
+"Ends on %@" = "Ends on %@";
+
+/* No comment provided by engineer. */
+"Enter a bio..." = "Enter a bio...";
+
+/* No comment provided by engineer. */
+"Enter a nickname..." = "Enter a nickname...";
+
+/* No comment provided by engineer. */
+"Enter with this account" = "Enter with this account";
+
+/* No comment provided by engineer. */
+"Enter your code" = "Enter your code";
+
+/* No comment provided by engineer. */
+"Error" = "Error";
+
+/* No comment provided by engineer. */
+"Error: initiative not found" = "Error: initiative not found";
+
+/* No comment provided by engineer. */
+"Error: insufficient funds" = "Error: insufficient funds";
+
+/* No comment provided by engineer. */
+"Error: reward not found" = "Error: reward not found";
+
+/* No comment provided by engineer. */
+"Expired on %@" = "Expired on %@";
+
+/* No comment provided by engineer. */
+"Expires in %d days" = "Expires in %d days";
+
+/* No comment provided by engineer. */
+"Expires on %@" = "Expires on %@";
+
+/* No comment provided by engineer. */
+"Expiring soon" = "Expiring soon";
+
+/* No comment provided by engineer. */
+"Explore" = "Explore";
+
+/* No comment provided by engineer. */
+"Explore challenges" = "Explore challenges";
+
+/* No comment provided by engineer. */
+"Explore locations in your area, find additional information and check in if you like." = "Explore locations in your area, find additional information and check in if you like.";
+
+/* No comment provided by engineer. */
+"Explore rewards" = "Explore rewards";
+
+/* No comment provided by engineer. */
+"Explored Regions" = "Explored Regions";
+
+/* No comment provided by engineer. */
+"Facebook" = "Facebook";
+
+/* No comment provided by engineer. */
+"Failed to unlock box" = "Failed to unlock box";
+
+/* No comment provided by engineer. */
+"FAQ" = "FAQ";
+
+/* No comment provided by engineer. */
+"Featured achievements" = "Featured achievements";
+
+/* No comment provided by engineer. */
+"Female" = "Female";
+
+/* No comment provided by engineer. */
+"Financed by" = "Financed by";
+
+/* No comment provided by engineer. */
+"Find out more" = "Find out more";
+
+/* No comment provided by engineer. */
+"Find us" = "Find us";
+
+/* No comment provided by engineer. */
+"Follow" = "Follow";
+
+/* No comment provided by engineer. */
+"Follow %@" = "Follow %@";
+
+/* No comment provided by engineer. */
+"Followers" = "Followers";
+
+/* No comment provided by engineer. */
+"Following" = "Following";
+
+/* No comment provided by engineer. */
+"For the community" = "For the community";
+
+/* No comment provided by engineer. */
+"For this initiative you can donate your TWIN 1 time every %d days" = "For this initiative you can donate your TWIN 1 time every %d days";
+
+/* No comment provided by engineer. */
+"For you" = "For you";
+
+/* No comment provided by engineer. */
+"Friends" = "Friends";
+
+/* No comment provided by engineer. */
+"Friends I invited in the Jungle" = "Friends I invited in the Jungle";
+
+/* No comment provided by engineer. */
+"From previous Seasons" = "From previous Seasons";
+
+/* No comment provided by engineer. */
+"Gender" = "Gender";
+
+/* No comment provided by engineer. */
+"Get here to complete the challenge!" = "Get here to complete the challenge!";
+
+/* No comment provided by engineer. */
+"Get ready, we're preparing your experience in the Jungle..." = "Get ready, we're preparing your experience in the Jungle...";
+
+/* No comment provided by engineer. */
+"Get ready, we're unlocking a special experience for you with %@!" = "Get ready, we're unlocking a special experience for you with %@!";
+
+/* ob_walkthrough_rewards_title */
+"Get Rewarded" = "Get Rewarded";
+
+/* No comment provided by engineer. */
+"Go Back" = "Go Back";
+
+/* No comment provided by engineer. */
+"Go back to try to access your profile choosing another way to login / different credentials." = "Go back to try to access your profile choosing another way to login / different credentials.";
+
+/* No comment provided by engineer. */
+"Go to donation" = "Go to donation";
+
+/* No comment provided by engineer. */
+"Go to reward" = "Go to reward";
+
+/* No comment provided by engineer. */
+"Go to the \"Donate\" section!" = "Go to the \"Donate\" section!";
+
+/* No comment provided by engineer. */
+"Go to the \"Rewards\" section!" = "Go to the \"Rewards\" section!";
+
+/* No comment provided by engineer. */
+"Goal" = "Goal";
+
+/* No comment provided by engineer. */
+"Goal achieved" = "Goal achieved";
+
+/* No comment provided by engineer. */
+"Goal achieved on %@" = "Goal achieved on %@";
+
+/* No comment provided by engineer. */
+"Google" = "Google";
+
+/* No comment provided by engineer. */
+"Got it!" = "Got it!";
+
+/* No comment provided by engineer. */
+"Have you heard about greenApes?" = "Have you heard about greenApes?";
+
+/* No comment provided by engineer. */
+"Having multiple accounts connected will make it easy to access your profile on multiple devices or in case you log out." = "Having multiple accounts connected will make it easy to access your profile on multiple devices or in case you log out.";
+
+/* No comment provided by engineer. */
+"Here you will find the Discoveries you will unlock with your donations, season by season." = "Here you will find the Discoveries you will unlock with your donations, season by season.";
+
+/* No comment provided by engineer. */
+"Here's a post I found on greenApes" = "Here's a post I found on greenApes";
+
+/* No comment provided by engineer. */
+"Here's an initiative you can support with your actions" = "Here's an initiative you can support with your actions";
+
+/* No comment provided by engineer. */
+"Here's an initiative you can support with your actions on greenApes" = "Here's an initiative you can support with your actions on greenApes";
+
+/* No comment provided by engineer. */
+"Here's an interesting post" = "Here's an interesting post";
+
+/* No comment provided by engineer. */
+"Here's the list of friends who used your Code during registration (and helped you collecting TWIN coins)" = "Here's the list of friends who used your Code during registration (and helped you collecting TWIN coins)";
+
+/* popup.missingdata.title */
+"Hey you! Time to fill in your profile!" = "Hey you! Time to fill in your profile!";
+
+/* Bug: fill bug email body */
+"Hi greenApes Team!,\n this is %@ (%@)\n, I would like to report a bug.\n\n [Platform: iOS \(UIDevice.current.systemVersion),  Version: %@]. \n\n oOk oOk!" = "Hi greenApes Team!,\n this is %1$@ (%2$@)\n, I would like to report a bug.\n\n [Platform: iOS \(UIDevice.current.systemVersion),  Version: %3$@]. \n\n oOk oOk!";
+
+/* No comment provided by engineer. */
+"Hold and drag into the desidered slot" = "Hold and drag into the desidered slot";
+
+/* No comment provided by engineer. */
+"How can you use them?" = "How can you use them?";
+
+/* No comment provided by engineer. */
+"How much would you like to donate?" = "How much would you like to donate?";
+
+/* No comment provided by engineer. */
+"How to get your reward" = "How to get your reward";
+
+/* No comment provided by engineer. */
+"How? Walk, bike, check-in at events & venues, complete challenges, find secret codes..." = "How? Walk, bike, check-in at events & venues, complete challenges, find secret codes...";
+
+/* No comment provided by engineer. */
+"Hurray!" = "Hurray!";
+
+/* No comment provided by engineer. */
+"Hurray!\nI have just obtained **%@ TWIN** with a secret code" = "Hurray!\nI have just obtained **%@ TWIN** with a secret code";
+
+/* No comment provided by engineer. */
+"Hurray!\nI have just obtained **more TWIN** with a secret code" = "Hurray!\nI have just obtained **more TWIN** with a secret code";
+
+/* No comment provided by engineer. */
+"I donated my actions to this initiative on greenApes!" = "I donated my actions to this initiative on greenApes!";
+
+/* No comment provided by engineer. */
+"I donated my actions to this initiative!" = "I donated my actions to this initiative!";
+
+/* No comment provided by engineer. */
+"I have just obtained %@ TWIN with a secret code on greenApes!" = "I have just obtained %@ TWIN with a secret code on greenApes!";
+
+/* No comment provided by engineer. */
+"I have just obtained %@ TWIN with a secret code!" = "I have just obtained %@ TWIN with a secret code!";
+
+/* No comment provided by engineer. */
+"I have just obtained more TWIN with a secret code on greenApes!" = "I have just obtained more TWIN with a secret code on greenApes!";
+
+/* No comment provided by engineer. */
+"I have just obtained more TWIN with a secret code!" = "I have just obtained more TWIN with a secret code!";
+
+/* No comment provided by engineer. */
+"I have received my parents' consent to enter greenApes and I got a special code." = "I have received my parents' consent to enter greenApes and I got a special code.";
+
+/* No comment provided by engineer. */
+"I have received my parents' consent to enter greenApes and I got a special code:" = "I have received my parents' consent to enter greenApes and I got a special code:";
+
+/* No comment provided by engineer. */
+"I redeemed a secret code on greenApes!" = "I redeemed a secret code on greenApes!";
+
+/* No comment provided by engineer. */
+"I redeemed a secret code!" = "I redeemed a secret code!";
+
+/* No comment provided by engineer. */
+"I redeemed this reward on greenApes!" = "I redeemed this reward on greenApes!";
+
+/* No comment provided by engineer. */
+"I redeemed this reward!" = "I redeemed this reward!";
+
+/* No comment provided by engineer. */
+"If you change your mind you can always replace it in your profile settings (or tap here again now)" = "If you change your mind you can always replace it in your profile settings (or tap here again now)";
+
+/* No comment provided by engineer. */
+"If you proceed, your account will be deleted from the greenApes system. All information, texts and photos will be permanently deleted with no way to be recovered.\nAre you sure you want to delete your account \"%@\"?" = "If you proceed, your account will be deleted from the greenApes system. All information, texts and photos will be permanently deleted with no way to be recovered.\nAre you sure you want to delete your account \"%@\"?";
+
+/* No comment provided by engineer. */
+"Impact Area" = "Impact Area";
+
+/* No comment provided by engineer. */
+"Impact Areas" = "Impact Areas";
+
+/* No comment provided by engineer. */
+"In progress" = "In progress";
+
+/* No comment provided by engineer. */
+"In the group %@" = "In the group %@";
+
+/* No comment provided by engineer. */
+"In the Jungle since %@" = "In the Jungle since %@";
+
+/* No comment provided by engineer. */
+"In this Season" = "In this Season";
+
+/* No comment provided by engineer. */
+"Increase your Ape Rank to unlock this reward" = "Increase your Ape Rank to unlock this reward";
+
+/* No comment provided by engineer. */
+"Initiative" = "Initiative";
+
+/* No comment provided by engineer. */
+"Initiative completed on %@" = "Initiative completed on %@";
+
+/* No comment provided by engineer. */
+"Insert a valid phone number" = "Insert a valid phone number";
+
+/* No comment provided by engineer. */
+"Insert code" = "Insert code";
+
+/* No comment provided by engineer. */
+"Insert Code" = "Insert Code";
+
+/* No comment provided by engineer. */
+"Insert the 5 digit code" = "Insert the 5 digit code";
+
+/* No comment provided by engineer. */
+"Insert the Code you received or skip and continue!" = "Insert the Code you received or skip and continue!";
+
+/* No comment provided by engineer. */
+"Instagram" = "Instagram";
+
+/* No comment provided by engineer. */
+"Invalid special code" = "Invalid special code";
+
+/* No comment provided by engineer. */
+"Invite" = "Invite";
+
+/* No comment provided by engineer. */
+"Invite friends" = "Invite friends";
+
+/* No comment provided by engineer. */
+"Invite friends on greenApes" = "Invite friends on greenApes";
+
+/* No comment provided by engineer. */
+"It must be at least 5 characters long" = "It must be at least 5 characters long";
+
+/* No comment provided by engineer. */
+"It'll help you finding rewards, special projects and apes in your area" = "It'll help you finding rewards, special projects and apes in your area";
+
+/* No comment provided by engineer. */
+"It's inappropriate and/or offensive" = "It's inappropriate and/or offensive";
+
+/* No comment provided by engineer. */
+"It's the app for people who care about the Planet." = "It's the app for people who care about the Planet.";
+
+/* No comment provided by engineer. */
+"Join me on greenApes!\n\nMake a difference with your sustainable actions and get rewarded. Sign-up using my Code and start earning coins to support social and environmental projects.\n\nInvite Code: %@\nhttps://jungle.greenapes.com/open_app" = "Join me on greenApes!\n\nMake a difference with your sustainable actions and get rewarded. Sign-up using my Code and start earning coins to support social and environmental projects.\n\nInvite Code: %@\nhttps://jungle.greenapes.com/open_app";
+
+/* No comment provided by engineer. */
+"Jungle" = "Jungle";
+
+/* No comment provided by engineer. */
+"Jungle passport" = "Jungle passport";
+
+/* No comment provided by engineer. */
+"Keep browsing" = "Keep browsing";
+
+/* No comment provided by engineer. */
+"Keep donating and Make a Difference!" = "Keep donating and Make a Difference!";
+
+/* No comment provided by engineer. */
+"Keep reading" = "Keep reading";
+
+/* No comment provided by engineer. */
+"Latest stories" = "Latest stories";
+
+/* No comment provided by engineer. */
+"Leave a review" = "Leave a review";
+
+/* No comment provided by engineer. */
+"Let's begin!" = "Let's begin!";
+
+/* No comment provided by engineer. */
+"Let's go!" = "Let's go!";
+
+/* No comment provided by engineer. */
+"Level %d" = "Level %d";
+
+/* No comment provided by engineer. */
+"Local" = "Local";
+
+/* No comment provided by engineer. */
+"Location" = "Location";
+
+/* No comment provided by engineer. */
+"Location services turned off" = "Location services turned off";
+
+/* No comment provided by engineer. */
+"Locations" = "Locations";
+
+/* No comment provided by engineer. */
+"Locked" = "Locked";
+
+/* ob_welcome_login_title */
+"Login" = "Login";
+
+/* No comment provided by engineer. */
+"Logout" = "Logout";
+
+/* No comment provided by engineer. */
+"Logout of the app" = "Logout of the app";
+
+/* No comment provided by engineer. */
+"Looks good?" = "Looks good?";
+
+/* No comment provided by engineer. */
+"Make a difference!" = "Make a difference!";
+
+/* ob_walkthrough_donate_description */
+"Make a difference! Use your TWIN coins to support social and environmental projects" = "Make a difference! Use your TWIN coins to support social and environmental projects";
+
+/* No comment provided by engineer. */
+"Male" = "Male";
+
+/* No comment provided by engineer. */
+"Mandatory" = "Mandatory";
+
+/* No comment provided by engineer. */
+"Max level reached" = "Max level reached";
+
+/* No comment provided by engineer. */
+"Max TWIN reached" = "Max TWIN reached";
+
+/* No comment provided by engineer. */
+"Medals" = "Medals";
+
+/* No comment provided by engineer. */
+"Meet the rewards map.\n\nThe more TWIN coins you donate the further you progress on the map to earn rewards.\nWith your donation you're on your way to your first reward box!" = "Meet the rewards map.\n\nThe more TWIN coins you donate the further you progress on the map to earn rewards.\nWith your donation you're on your way to your first reward box!";
+
+/* No comment provided by engineer. */
+"Members" = "Members";
+
+/* No comment provided by engineer. */
+"Messages" = "Messages";
+
+/* No comment provided by engineer. */
+"My latest stories" = "My latest stories";
+
+/* No comment provided by engineer. */
+"My passports" = "My passports";
+
+/* No comment provided by engineer. */
+"My posts" = "My posts";
+
+/* No comment provided by engineer. */
+"New reward boxes will come each season.\n\nBe sure you donate your TWIN coins before the season ends.\n\nTWIN coins will reset in preparation for a new season with new rewards." = "New reward boxes will come each season.\n\nBe sure you donate your TWIN coins before the season ends.\n\nTWIN coins will reset in preparation for a new season with new rewards.";
+
+/* No comment provided by engineer. */
+"Next" = "Next";
+
+/* No comment provided by engineer. */
+"Nickname" = "Nickname";
+
+/* No comment provided by engineer. */
+"No badges selected!" = "No badges selected!";
+
+/* No comment provided by engineer. */
+"No blocked users" = "No blocked users";
+
+/* No comment provided by engineer. */
+"No challenges" = "No challenges";
+
+/* No comment provided by engineer. */
+"No Clappers" = "No Clappers";
+
+/* No comment provided by engineer. */
+"No Code? Skip and Complete" = "No Code? Skip and Complete";
+
+/* No comment provided by engineer. */
+"No Comments" = "No Comments";
+
+/* No comment provided by engineer. */
+"No Donations" = "No Donations";
+
+/* No comment provided by engineer. */
+"No initiative found" = "No initiative found";
+
+/* No comment provided by engineer. */
+"No Internet Connection available" = "No Internet Connection available";
+
+/* No comment provided by engineer. */
+"No partners" = "No partners";
+
+/* No comment provided by engineer. */
+"No Passports" = "No Passports";
+
+/* No comment provided by engineer. */
+"No Results" = "No Results";
+
+/* No comment provided by engineer. */
+"No Rewards" = "No Rewards";
+
+/* No comment provided by engineer. */
+"No Supporters" = "No Supporters";
+
+/* No comment provided by engineer. */
+"No TWIN available, go to the Collect section to earn some!" = "No TWIN available, go to the Collect section to earn some!";
+
+/* No comment provided by engineer. */
+"No user found" = "No user found";
+
+/* No comment provided by engineer. */
+"Not a good fit for greenApes community" = "Not a good fit for greenApes community";
+
+/* No comment provided by engineer. */
+"Not available" = "Not available";
+
+/* No comment provided by engineer. */
+"Not now" = "Not now";
+
+/* No comment provided by engineer. */
+"NOTE: You might be asked to reauthenticate with Apple" = "NOTE: You might be asked to reauthenticate with Apple";
+
+/* No comment provided by engineer. */
+"Notifications" = "Notifications";
+
+/* No comment provided by engineer. */
+"Numbers and stats" = "Numbers and stats";
+
+/* No comment provided by engineer. */
+"Offered by" = "Offered by";
+
+/* No comment provided by engineer. */
+"Oh no! This initiative did not reach its target" = "Oh no! This initiative did not reach its target";
+
+/* No comment provided by engineer. */
+"Oh, no! This reward is no longer available!" = "Oh, no! This reward is no longer available!";
+
+/* No comment provided by engineer. */
+"Ok" = "Ok";
+
+/* No comment provided by engineer. */
+"Online" = "Online";
+
+/* No comment provided by engineer. */
+"Only %d left" = "Only %d left";
+
+/* No comment provided by engineer. */
+"Ooops! There are currently no real life rewards available in your country/area.\n\nGet in touch with our team to add special rewards for your organization or town." = "Ooops! There are currently no real life rewards available in your country/area.\n\nGet in touch with our team to add special rewards for your organization or town.";
+
+/* No comment provided by engineer. */
+"Oops!" = "Oops!";
+
+/* No comment provided by engineer. */
+"Oops! No matches found" = "Oops! No matches found";
+
+/* No comment provided by engineer. */
+"Oops! Seems like you're too far away to check-in at this venue" = "Oops! Seems like you're too far away to check-in at this venue";
+
+/* No comment provided by engineer. */
+"Oops! To take the rewards you must complete the mandatory tasks" = "Oops! To take the rewards you must complete the mandatory tasks";
+
+/* No comment provided by engineer. */
+"Oops, it seems that you already published a post with the exact same content!\n\nIf you can’t see it in the jungle please wait a few minutes. If you want publish something new, change the content." = "Oops, it seems that you already published a post with the exact same content!\n\nIf you can’t see it in the jungle please wait a few minutes. If you want publish something new, change the content.";
+
+/* No comment provided by engineer. */
+"Oops, no user found" = "Oops, no user found";
+
+/* No comment provided by engineer. */
+"Oops, this reward is no longer available" = "Oops, this reward is no longer available";
+
+/* No comment provided by engineer. */
+"Oops, you need at least 1 TWIN coin to support an initiatitive. Earn some TWIN coins in the Collect section and come back!" = "Oops, you need at least 1 TWIN coin to support an initiatitive. Earn some TWIN coins in the Collect section and come back!";
+
+/* No comment provided by engineer. */
+"Open" = "Open";
+
+/* No comment provided by engineer. */
+"Open now!" = "Open now!";
+
+/* No comment provided by engineer. */
+"Open Settings" = "Open Settings";
+
+/* No comment provided by engineer. */
+"Open Settings, tap Location and select \"While Using the App\"" = "Open Settings, tap Location and select \"While Using the App\"";
+
+/* No comment provided by engineer. */
+"Open the box containing this reward" = "Open the box containing this reward";
+
+/* No comment provided by engineer. */
+"Open with" = "Open with";
+
+/* No comment provided by engineer. */
+"Open: closes at %@" = "Open: closes at %@";
+
+/* No comment provided by engineer. */
+"Opening hours" = "Opening hours";
+
+/* No comment provided by engineer. */
+"Opening..." = "Opening...";
+
+/* No comment provided by engineer. */
+"Opens" = "Opens";
+
+/* No comment provided by engineer. */
+"Opens %@" = "Opens %@";
+
+/* No comment provided by engineer. */
+"or" = "or";
+
+/* No comment provided by engineer. */
+"Or insert code manually" = "Or insert code manually";
+
+/* No comment provided by engineer. */
+"Other" = "Other";
+
+/* No comment provided by engineer. */
+"Other apes" = "Other apes";
+
+/* No comment provided by engineer. */
+"Over 16 yo" = "Over 16 yo";
+
+/* No comment provided by engineer. */
+"Partner" = "Partner";
+
+/* No comment provided by engineer. */
+"Partner not found" = "Partner not found";
+
+/* No comment provided by engineer. */
+"Partners" = "Partners";
+
+/* No comment provided by engineer. */
+"Past initiatives" = "Past initiatives";
+
+/* No comment provided by engineer. */
+"Past season" = "Past season";
+
+/* No comment provided by engineer. */
+"Past seasons" = "Past seasons";
+
+/* No comment provided by engineer. */
+"People" = "People";
+
+/* No comment provided by engineer. */
+"Permission denied" = "Permission denied";
+
+/* No comment provided by engineer. */
+"Person" = "Person";
+
+/* No comment provided by engineer. */
+"Phone number" = "Phone number";
+
+/* No comment provided by engineer. */
+"Photos" = "Photos";
+
+/* No comment provided by engineer. */
+"Pick a Story and share it in the Jungle. You'll earn TWIN coins for every \"Clap\" received" = "Pick a Story and share it in the Jungle. You'll earn TWIN coins for every \"Clap\" received";
+
+/* No comment provided by engineer. */
+"Pick your area" = "Pick your area";
+
+/* No comment provided by engineer. */
+"Pick your country" = "Pick your country";
+
+/* No comment provided by engineer. */
+"Pick your nickname" = "Pick your nickname";
+
+/* No comment provided by engineer. */
+"Post edit history" = "Post edit history";
+
+/* No comment provided by engineer. */
+"Post Topic" = "Post Topic";
+
+/* No comment provided by engineer. */
+"Posts" = "Posts";
+
+/* No comment provided by engineer. */
+"Previous" = "Previous";
+
+/* No comment provided by engineer. */
+"Privacy and data management" = "Privacy and data management";
+
+/* No comment provided by engineer. */
+"Privacy Policy" = "Privacy Policy";
+
+/* No comment provided by engineer. */
+"Privacy policy" = "Privacy policy";
+
+/* No comment provided by engineer. */
+"Profile" = "Profile";
+
+/* No comment provided by engineer. */
+"Projects you're a part of" = "Projects you're a part of";
+
+/* No comment provided by engineer. */
+"Promoted by" = "Promoted by";
+
+/* No comment provided by engineer. */
+"Publish" = "Publish";
+
+/* No comment provided by engineer. */
+"Publishing..." = "Publishing...";
+
+/* No comment provided by engineer. */
+"Read more about the project" = "Read more about the project";
+
+/* No comment provided by engineer. */
+"Ready for a donation?" = "Ready for a donation?";
+
+/* common_payoff */
+"Ready to make a difference and get rewarded?" = "Ready to make a difference and get rewarded?";
+
+/* No comment provided by engineer. */
+"Receive it via phone call" = "Receive it via phone call";
+
+/* No comment provided by engineer. */
+"Region/Province" = "Region/Province";
+
+/* generic.button.remindmelater */
+"Remind me later" = "Remind me later";
+
+/* No comment provided by engineer. */
+"Reply" = "Reply";
+
+/* No comment provided by engineer. */
+"Reply to %@..." = "Reply to %@...";
+
+/* No comment provided by engineer. */
+"Report Bugs" = "Report Bugs";
+
+/* No comment provided by engineer. */
+"Report content" = "Report content";
+
+/* No comment provided by engineer. */
+"Report post" = "Report post";
+
+/* No comment provided by engineer. */
+"Reward not found" = "Reward not found";
+
+/* No comment provided by engineer. */
+"Reward unlocked by this challenge" = "Reward unlocked by this challenge";
+
+/* No comment provided by engineer. */
+"Rewards" = "Rewards";
+
+/* No comment provided by engineer. */
+"Rewards for you and your friends" = "Rewards for you and your friends";
+
+/* No comment provided by engineer. */
+"Rewards linked to challenges" = "Rewards linked to challenges";
+
+/* No comment provided by engineer. */
+"Save" = "Save";
+
+/* No comment provided by engineer. */
+"Save post" = "Save post";
+
+/* No comment provided by engineer. */
+"Saved posts" = "Saved posts";
+
+/* No comment provided by engineer. */
+"Saving..." = "Saving...";
+
+/* No comment provided by engineer. */
+"Scan QR code" = "Scan QR code";
+
+/* No comment provided by engineer. */
+"Search" = "Search";
+
+/* No comment provided by engineer. */
+"Search completed" = "Search completed";
+
+/* No comment provided by engineer. */
+"Search for posts, people..." = "Search for posts, people...";
+
+/* No comment provided by engineer. */
+"Seasons" = "Seasons";
+
+/* No comment provided by engineer. */
+"Secret Code" = "Secret Code";
+
+/* No comment provided by engineer. */
+"See all" = "See all";
+
+/* No comment provided by engineer. */
+"See all %d comments" = "See all %d comments";
+
+/* No comment provided by engineer. */
+"See reward" = "See reward";
+
+/* No comment provided by engineer. */
+"Select a date" = "Select a date";
+
+/* No comment provided by engineer. */
+"Select an avatar" = "Select an avatar";
+
+/* No comment provided by engineer. */
+"Select background" = "Select background";
+
+/* No comment provided by engineer. */
+"Select..." = "Select...";
+
+/* No comment provided by engineer. */
+"Selected" = "Selected";
+
+/* No comment provided by engineer. */
+"Send code" = "Send code";
+
+/* No comment provided by engineer. */
+"Send Message" = "Send Message";
+
+/* No comment provided by engineer. */
+"Send request" = "Send request";
+
+/* No comment provided by engineer. */
+"Share" = "Share";
+
+/* No comment provided by engineer. */
+"Share & promote the initiative" = "Share & promote the initiative";
+
+/* No comment provided by engineer. */
+"Share a post..." = "Share a post...";
+
+/* No comment provided by engineer. */
+"Share a Story" = "Share a Story";
+
+/* No comment provided by engineer. */
+"Share a Story in the Jungle" = "Share a Story in the Jungle";
+
+/* No comment provided by engineer. */
+"Share on" = "Share on";
+
+/* No comment provided by engineer. */
+"Share on greenApes" = "Share on greenApes";
+
+/* No comment provided by engineer. */
+"Share on the jungle" = "Share on the jungle";
+
+/* No comment provided by engineer. */
+"Share this initiative" = "Share this initiative";
+
+/* No comment provided by engineer. */
+"Share with the community" = "Share with the community";
+
+/* No comment provided by engineer. */
+"Share your Code" = "Share your Code";
+
+/* No comment provided by engineer. */
+"Share your first Post: you will find it here (and in the Jungle)" = "Share your first Post: you will find it here (and in the Jungle)";
+
+/* No comment provided by engineer. */
+"Share your phone's location to access rewards available in your area!" = "Share your phone's location to access rewards available in your area!";
+
+/* SHARINGMI: description */
+"SharingMi is a new iniziative promoting solution for greener living. Created by the city of MiIan and powered by greenApes - the app that cares about the planet - it will reward you and your community for doing your bit to make our city better." = "SharingMi is a new iniziative promoting solution for greener living. Created by the city of MiIan and powered by greenApes - the app that cares about the planet - it will reward you and your community for doing your bit to make our city better.";
+
+/* No comment provided by engineer. */
+"Show" = "Show";
+
+/* No comment provided by engineer. */
+"Show all" = "Show all";
+
+/* No comment provided by engineer. */
+"Show all challenges" = "Show all challenges";
+
+/* No comment provided by engineer. */
+"Show all partners" = "Show all partners";
+
+/* No comment provided by engineer. */
+"Show all results - People" = "Show all results - People";
+
+/* No comment provided by engineer. */
+"Show all results - Posts" = "Show all results - Posts";
+
+/* No comment provided by engineer. */
+"Show all results for \"%@\"" = "Show all results for \"%@\"";
+
+/* No comment provided by engineer. */
+"Show first" = "Show first";
+
+/* No comment provided by engineer. */
+"Show original" = "Show original";
+
+/* No comment provided by engineer. */
+"Sign In here" = "Sign In here";
+
+/* No comment provided by engineer. */
+"Sign in with Facebook" = "Sign in with Facebook";
+
+/* No comment provided by engineer. */
+"Sign in with Google" = "Sign in with Google";
+
+/* No comment provided by engineer. */
+"Sign in with SMS" = "Sign in with SMS";
+
+/* No comment provided by engineer. */
+"Sign Up here" = "Sign Up here";
+
+/* No comment provided by engineer. */
+"Sign up with Facebook" = "Sign up with Facebook";
+
+/* No comment provided by engineer. */
+"Sign up with Google" = "Sign up with Google";
+
+/* No comment provided by engineer. */
+"Sign up with SMS" = "Sign up with SMS";
+
+/* No comment provided by engineer. */
+"Skip" = "Skip";
+
+/* No comment provided by engineer. */
+"Some apes might not be visible to you" = "Some apes might not be visible to you";
+
+/* popup.missingdata.description */
+"Some essential information are missing to take part in %@" = "Some essential information are missing to take part in %@";
+
+/* No comment provided by engineer. */
+"Something went wrong." = "Something went wrong.";
+
+/* No comment provided by engineer. */
+"Sorry, this code is not valid" = "Sorry, this code is not valid";
+
+/* No comment provided by engineer. */
+"Sorry, this invite code does not exist" = "Sorry, this invite code does not exist";
+
+/* No comment provided by engineer. */
+"Sorry, this invite code is expired" = "Sorry, this invite code is expired";
+
+/* No comment provided by engineer. */
+"Sorry, you can't invite yourself" = "Sorry, you can't invite yourself";
+
+/* No comment provided by engineer. */
+"Sorry, you have already used an invite code" = "Sorry, you have already used an invite code";
+
+/* SHARINGMI: button */
+"Sounds good" = "Sounds good";
+
+/* No comment provided by engineer. */
+"Special Ape" = "Special Ape";
+
+/* No comment provided by engineer. */
+"Special post" = "Special post";
+
+/* No comment provided by engineer. */
+"Specials" = "Specials";
+
+/* No comment provided by engineer. */
+"Spring" = "Spring";
+
+/* No comment provided by engineer. */
+"Start" = "Start";
+
+/* No comment provided by engineer. */
+"Start earning TWIN coins in the Collect section and mingle with the community exploring the Jungle.\n\nEnjoy!" = "Start earning TWIN coins in the Collect section and mingle with the community exploring the Jungle.\n\nEnjoy!";
+
+/* No comment provided by engineer. */
+"Start inviting friends!" = "Start inviting friends!";
+
+/* No comment provided by engineer. */
+"Step back a little for focus" = "Step back a little for focus";
+
+/* No comment provided by engineer. */
+"Stories" = "Stories";
+
+/* No comment provided by engineer. */
+"Story" = "Story";
+
+/* No comment provided by engineer. */
+"Suggestions" = "Suggestions";
+
+/* No comment provided by engineer. */
+"Summer" = "Summer";
+
+/* No comment provided by engineer. */
+"Supporter" = "Supporter";
+
+/* No comment provided by engineer. */
+"Supporters" = "Supporters";
+
+/* No comment provided by engineer. */
+"Supporting an initiative and unlocking rewards is easy. Let’s start!" = "Supporting an initiative and unlocking rewards is easy. Let’s start!";
+
+/* No comment provided by engineer. */
+"Swipe to open the box" = "Swipe to open the box";
+
+/* No comment provided by engineer. */
+"Tag" = "Tag";
+
+/* No comment provided by engineer. */
+"Tags" = "Tags";
+
+/* No comment provided by engineer. */
+"Take a final look and proceed!" = "Take a final look and proceed!";
+
+/* No comment provided by engineer. */
+"Take me to the Jungle" = "Take me to the Jungle";
+
+/* No comment provided by engineer. */
+"Take photo" = "Take photo";
+
+/* No comment provided by engineer. */
+"Terms and conditions" = "Terms and conditions";
+
+/* No comment provided by engineer. */
+"Terms of Use" = "Terms of Use";
+
+/* No comment provided by engineer. */
+"Thanks for letting us know." = "Thanks for letting us know.";
+
+/* No comment provided by engineer. */
+"Thanks to your friend's Code, a special gift is waiting for you!" = "Thanks to your friend's Code, a special gift is waiting for you!";
+
+/* No comment provided by engineer. */
+"That's it!" = "That's it!";
+
+/* No comment provided by engineer. */
+"The confirmation code is invalid. Please try again." = "The confirmation code is invalid. Please try again.";
+
+/* No comment provided by engineer. */
+"The initiative" = "The initiative";
+
+/* coupon_venuecheckin_closed_400_body */
+"The venue seems to be closed now. If something is wrong let us know at support@greenapes.com" = "The venue seems to be closed now. If something is wrong let us know at support@greenapes.com";
+
+/* coupon_ecommerceredeemed_429_body */
+"The weekly limit for this e-commerce has been reached." = "The weekly limit for this e-commerce has been reached.";
+
+/* No comment provided by engineer. */
+"There are no greenApes partnering venues or initiatives in your surroundings." = "There are no greenApes partnering venues or initiatives in your surroundings.";
+
+/* No comment provided by engineer. */
+"There are no messages" = "There are no messages";
+
+/* No comment provided by engineer. */
+"There are no notifications" = "There are no notifications";
+
+/* No comment provided by engineer. */
+"This account is already connected to another user." = "This account is already connected to another user.";
+
+/* coupon_couponredeemed_403_body */
+"This code has already been used." = "This code has already been used.";
+
+/* coupon_couponredeemed_400_body */
+"This code is not valid." = "This code is not valid.";
+
+/* coupon_ecommerceredeemed_400_body */
+"This e-commerce is no longer available." = "This e-commerce is no longer available.";
+
+/* No comment provided by engineer. */
+"This reward expired!" = "This reward expired!";
+
+/* No comment provided by engineer. */
+"This reward has special rules! Check the description" = "This reward has special rules! Check the description";
+
+/* No comment provided by engineer. */
+"This reward is available only to special groups" = "This reward is available only to special groups";
+
+/* No comment provided by engineer. */
+"This reward is not available at the moment" = "This reward is not available at the moment";
+
+/* No comment provided by engineer. */
+"To begin" = "To begin";
+
+/* No comment provided by engineer. */
+"To Do" = "To Do";
+
+/* No comment provided by engineer. */
+"Today - %@" = "Today - %@";
+
+/* No comment provided by engineer. */
+"Too many donations!" = "Too many donations!";
+
+/* No comment provided by engineer. */
+"Topic" = "Topic";
+
+/* No comment provided by engineer. */
+"Topics" = "Topics";
+
+/* No comment provided by engineer. */
+"Topics for my groups" = "Topics for my groups";
+
+/* No comment provided by engineer. */
+"Topics for the whole community" = "Topics for the whole community";
+
+/* No comment provided by engineer. */
+"Total" = "Total";
+
+/* No comment provided by engineer. */
+"Try a guided donation" = "Try a guided donation";
+
+/* No comment provided by engineer. */
+"Try donating your TWIN coins to help out this initiative.\nLater you'll be able to find out more about this and other initiatives." = "Try donating your TWIN coins to help out this initiative.\nLater you'll be able to find out more about this and other initiatives.";
+
+/* No comment provided by engineer. */
+"Turn on Location Services" = "Turn on Location Services";
+
+/* No comment provided by engineer. */
+"Turn on Location Services to find green venues in your surrounding" = "Turn on Location Services to find green venues in your surrounding";
+
+/* No comment provided by engineer. */
+"TWIN" = "TWIN";
+
+/* No comment provided by engineer. */
+"TWIN are your valuable coins.\n\nYou'll earn TWIN coins with everyday actions and by completing fun challenges." = "TWIN are your valuable coins.\n\nYou'll earn TWIN coins with everyday actions and by completing fun challenges.";
+
+/* No comment provided by engineer. */
+"TWIN coins" = "TWIN coins";
+
+/* No comment provided by engineer. */
+"TWIN Donated" = "TWIN Donated";
+
+/* No comment provided by engineer. */
+"TWIN Log" = "TWIN Log";
+
+/* No comment provided by engineer. */
+"TWIN received" = "TWIN received";
+
+/* No comment provided by engineer. */
+"TWIN?" = "TWIN?";
+
+/* No comment provided by engineer. */
+"TWINS from claps and comments you have received in previous seasons" = "TWINS from claps and comments you have received in previous seasons";
+
+/* No comment provided by engineer. */
+"Twitter" = "Twitter";
+
+/* No comment provided by engineer. */
+"Unblock" = "Unblock";
+
+/* No comment provided by engineer. */
+"Unclapping..." = "Unclapping...";
+
+/* No comment provided by engineer. */
+"Under 16 yo" = "Under 16 yo";
+
+/* No comment provided by engineer. */
+"Unfollow" = "Unfollow";
+
+/* No comment provided by engineer. */
+"Unfollow %@" = "Unfollow %@";
+
+/* No comment provided by engineer. */
+"Unlock the boxes!" = "Unlock the boxes!";
+
+/* No comment provided by engineer. */
+"Unlock this box to claim the reward" = "Unlock this box to claim the reward";
+
+/* No comment provided by engineer. */
+"Unlocked on %@" = "Unlocked on %@";
+
+/* No comment provided by engineer. */
+"Unlocked rewards" = "Unlocked rewards";
+
+/* No comment provided by engineer. */
+"Unsave post" = "Unsave post";
+
+/* No comment provided by engineer. */
+"Update greenApes" = "Update greenApes";
+
+/* No comment provided by engineer. */
+"Update iOS and greenApes" = "Update iOS and greenApes";
+
+/* No comment provided by engineer. */
+"Upload" = "Upload";
+
+/* No comment provided by engineer. */
+"Use TWIN coins to support environmental and social initiatives." = "Use TWIN coins to support environmental and social initiatives.";
+
+/* No comment provided by engineer. */
+"User already existing" = "User already existing";
+
+/* No comment provided by engineer. */
+"Very popular" = "Very popular";
+
+/* No comment provided by engineer. */
+"Video presentation" = "Video presentation";
+
+/* No comment provided by engineer. */
+"Videos" = "Videos";
+
+/* No comment provided by engineer. */
+"View comment edit history" = "View comment edit history";
+
+/* No comment provided by engineer. */
+"View on Maps" = "View on Maps";
+
+/* No comment provided by engineer. */
+"View post edit history" = "View post edit history";
+
+/* No comment provided by engineer. */
+"View translation" = "View translation";
+
+/* No comment provided by engineer. */
+"We found an existing profile associated to these credentials. Proceed to access this account or go back to create a new profile." = "We found an existing profile associated to these credentials. Proceed to access this account or go back to create a new profile.";
+
+/* No comment provided by engineer. */
+"We just sent the coupon \"%@\" to your email" = "We just sent the coupon \"%@\" to your email";
+
+/* No comment provided by engineer. */
+"We will call you in 30 seconds" = "We will call you in 30 seconds";
+
+/* No comment provided by engineer. */
+"We'll email a copy of all your data on greenApes to the following address" = "We'll email a copy of all your data on greenApes to the following address";
+
+/* No comment provided by engineer. */
+"We'll send you a confirmation code" = "We'll send you a confirmation code";
+
+/* No comment provided by engineer. */
+"We'll send your coupon to:" = "We'll send your coupon to:";
+
+/* No comment provided by engineer. */
+"Welcome back!" = "Welcome back!";
+
+/* No comment provided by engineer. */
+"Welcome on" = "Welcome on";
+
+/* SHARINGMI: title */
+"Welcome to SharingMi" = "Welcome to SharingMi";
+
+/* No comment provided by engineer. */
+"Who cares?" = "Who cares?";
+
+/* No comment provided by engineer. */
+"Who clapped" = "Who clapped";
+
+/* No comment provided by engineer. */
+"Winter" = "Winter";
+
+/* No comment provided by engineer. */
+"Would you like to activate push notifications? Be notified when other apes clap you!" = "Would you like to activate push notifications? Be notified when other apes clap you!";
+
+/* No comment provided by engineer. */
+"Write a comment..." = "Write a comment...";
+
+/* No comment provided by engineer. */
+"Write here..." = "Write here...";
+
+/* No comment provided by engineer. */
+"www.greenapes.com" = "www.greenapes.com";
+
+/* No comment provided by engineer. */
+"Yay!" = "Yay!";
+
+/* No comment provided by engineer. */
+"Yay! You completed the challenge!" = "Yay! You completed the challenge!";
+
+/* No comment provided by engineer. */
+"Yay! You have successfully unlocked %@" = "Yay! You have successfully unlocked %@";
+
+/* No comment provided by engineer. */
+"Yes" = "Yes";
+
+/* No comment provided by engineer. */
+"Yes, send me my data" = "Yes, send me my data";
+
+/* No comment provided by engineer. */
+"You already claimed a reward unlocked by this challenge" = "You already claimed a reward unlocked by this challenge";
+
+/* coupon_ecocertifier_429_body */
+"You already earned your TWIN today. oOk oOk" = "You already earned your TWIN today. oOk oOk";
+
+/* No comment provided by engineer. */
+"You can donate up to %d TWIN" = "You can donate up to %d TWIN";
+
+/* No comment provided by engineer. */
+"You can earn %d TWIN every %d days" = "You can earn %1$d TWIN every %2$d days";
+
+/* No comment provided by engineer. */
+"You can earn %d TWIN every time you check-in" = "You can earn %d TWIN every time you check-in";
+
+/* No comment provided by engineer. */
+"You can earn %d TWIN only the first time you check-in" = "You can earn %d TWIN only the first time you check-in";
+
+/* No comment provided by engineer. */
+"You can now claim one of these rewards" = "You can now claim one of these rewards";
+
+/* No comment provided by engineer. */
+"You claimed this reward" = "You claimed this reward";
+
+/* No comment provided by engineer. */
+"You collected:" = "You collected:";
+
+/* No comment provided by engineer. */
+"You didn't get the code?" = "You didn't get the code?";
+
+/* No comment provided by engineer. */
+"You donated %@ TWIN" = "You donated %@ TWIN";
+
+/* No comment provided by engineer. */
+"You earned %@ TWIN" = "You earned %@ TWIN";
+
+/* coupon_venuecheckin_once_400_body */
+"You have already been here! This venue allows you to checkin only once. Check the rules on the venue page!" = "You have already been here! This venue allows you to checkin only once. Check the rules on the venue page!";
+
+/* coupon_venuecheckin_429_body */
+"You have been here recently! This time your check-in doesn't bring you any TWIN. Check the rules on the venue page!" = "You have been here recently! This time your check-in doesn't bring you any TWIN. Check the rules on the venue page!";
+
+/* No comment provided by engineer. */
+"You have just obtained %@ TWIN" = "You have just obtained %@ TWIN";
+
+/* coupon_venuecheckin_200_body */
+"You just earned %@ TWIN by checking-in." = "You just earned %@ TWIN by checking-in.";
+
+/* coupon_ecommerceredeemed_200_body */
+"You just earned %@ TWIN with your sustainable choice!" = "You just earned %@ TWIN with your sustainable choice!";
+
+/* No comment provided by engineer. */
+"You just helped the planet!" = "You just helped the planet!";
+
+/* No comment provided by engineer. */
+"You need to unlock the box containing this reward" = "You need to unlock the box containing this reward";
+
+/* No comment provided by engineer. */
+"You need to update iOS to download the latest greenApes release" = "You need to update iOS to download the latest greenApes release";
+
+/* No comment provided by engineer. */
+"You receive TWIN when other apes \"clap\" your stories" = "You receive TWIN when other apes \"clap\" your stories";
+
+/* No comment provided by engineer. */
+"You recently claimed this reward, check the description to see how often you can get it" = "You recently claimed this reward, check the description to see how often you can get it";
+
+/* No comment provided by engineer. */
+"You supported the \"%@\" initiative" = "You supported the \"%@\" initiative";
+
+/* No comment provided by engineer. */
+"You unlocked the \"%@\" reward" = "You unlocked the \"%@\" reward";
+
+/* No comment provided by engineer. */
+"You will earn %@ TWIN" = "You will earn %@ TWIN";
+
+/* No comment provided by engineer. */
+"You will lose all the messages exchanged so far with %@. Are you sure ?" = "You will lose all the messages exchanged so far with %@. Are you sure ?";
+
+/* No comment provided by engineer. */
+"You will receive 50 TWIN for each new ape registered using your code.\nBonus! You'll both receive 100 TWIN if they donate 200 TWIN within their first month on greenApes." = "You will receive 50 TWIN for each new ape registered using your code.\nBonus! You'll both receive 100 TWIN if they donate 200 TWIN within their first month on greenApes.";
+
+/* No comment provided by engineer. */
+"You will unlock the \"%@\" donation" = "You will unlock the \"%@\" donation";
+
+/* No comment provided by engineer. */
+"You will unlock the \"%@\" reward" = "You will unlock the \"%@\" reward";
+
+/* No comment provided by engineer. */
+"You'll collect a bonus of 100 TWIN coins as soon as you reach 200 TWIN in donations. You have 30 days to go!" = "You'll collect a bonus of 100 TWIN coins as soon as you reach 200 TWIN in donations. You have 30 days to go!";
+
+/* No comment provided by engineer. */
+"You're accessing a special group on greenApes! Some additional information are needed." = "You're accessing a special group on greenApes! Some additional information are needed.";
+
+/* No comment provided by engineer. */
+"You're almost done!" = "You're almost done!";
+
+/* No comment provided by engineer. */
+"Your donation is helping this initiative to get closer to their goal." = "Your donation is helping this initiative to get closer to their goal.";
+
+/* No comment provided by engineer. */
+"Your donations" = "Your donations";
+
+/* ob_walkthrough_rewards_description */
+"Your donations make you progress towards real-life rewards: unlock all the boxes!" = "Your donations make you progress towards real-life rewards: unlock all the boxes!";
+
+/* No comment provided by engineer. */
+"Your email" = "Your email";
+
+/* No comment provided by engineer. */
+"Your feedback helps us keeping greenApes safe and friendly" = "Your feedback helps us keeping greenApes safe and friendly";
+
+/* No comment provided by engineer. */
+"Your First %@ TWIN!" = "Your First %@ TWIN!";
+
+/* No comment provided by engineer. */
+"Your friends can insert the Code during registration or using the \"+\" button, within 72 hours from their sign-up." = "Your friends can insert the Code during registration or using the \"+\" button, within 72 hours from their sign-up.";
+
+/* No comment provided by engineer. */
+"Your profile will highlight the latest ones you earned." = "Your profile will highlight the latest ones you earned.";
+
+/* No comment provided by engineer. */
+"Your registration details" = "Your registration details";
+
+/* coupon_barilla_200_body */
+"Your sustainable action has been registered!" = "Your sustainable action has been registered!";
+
+/* No comment provided by engineer. */
+"Your TWIN coins are valid until %@" = "Your TWIN coins are valid until %@";
+
+/* No comment provided by engineer. */
+"You’ll get to choose one of these rewards" = "You’ll get to choose one of these rewards";
