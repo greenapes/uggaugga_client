@@ -343,13 +343,12 @@ def _extract_from_po(po_path):
                     buffer.append(t[:-2])
             elif buffer:
                 if line.startswith('msgstr "'):
-                    import pdb;pdb.set_trace()
                     buffer = [x for x in buffer if x]
                     t = "\n".join(buffer)
                     if t:
                         k = hashlib.md5(t.encode()).hexdigest()
                         current_key = k
-                        buffer_msg.append(line.split("msgstr \"", 1)[1])
+                        buffer_msg.append(line.split("msgstr \"", 1)[1][:-2])
                     buffer = []
                 else:
                     t = line[1:-2]
