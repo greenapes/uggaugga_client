@@ -34,14 +34,14 @@ if 'sync' in sys.argv:
                 root=extr['root'],
                 ext=extr['extension'],
                 language=extr['language'],
-                I18n_parent_key=extr['I18n_parent_key']))
+                I18n_parent_key=extr.get('I18n_parent_key')))
 
         elif extr['type'] == 'TExtractorFlat':
             extractors.append(client.TExtractorFlat(
                 root=extr['root'],
                 exts=extr['extention_list'],
                 text_key=extr.get('text_key'),
-                I18n_parent_key=extr['I18n_parent_key'],
+                I18n_parent_key=extr.get('I18n_parent_key'),
                 custom_regex=extr.get("custom_regex")
             ))
 
@@ -81,7 +81,7 @@ elif 'init' in sys.argv:
     print("created default uggaugga_config.json")
 
 else:
-    
+
     doc = f"""
 
 COMMANDS:
