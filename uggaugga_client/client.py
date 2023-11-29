@@ -313,10 +313,11 @@ def _save_json(i18n_data):
 
 def _save_android(i18n_data):
     for lang in i18n_data.keys():
+        if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
+            continue
         path = f'values{"" if lang == (DEFAULT_LANG or "en") else f"-{lang}"}.xml'
+       
         with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
-            if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
-                continue
             if DEFAULT_LANG and lang == DEFAULT_LANG:
                 data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep="_")
             else:
@@ -327,10 +328,11 @@ def _save_android(i18n_data):
 
 def _save_ios(i18n_data):
     for lang in i18n_data.keys():
+        if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
+            continue
+        
         path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
         with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
-            if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
-                continue
             if DEFAULT_LANG and lang == DEFAULT_LANG:
                 data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep=".")
             else:
