@@ -335,8 +335,8 @@ def _extract_from_po(po_path):
     matches = []
     with open(po_path, 'r') as fp:
         buffer = []
-        import pdb;pdb.set_trace()
         for line in fp.readlines():
+            import pdb;pdb.set_trace()
             if line.startswith("msgid \""):
                 t = line.split("msgid \"", 1)[1]
                 if len(t) >= 2:
