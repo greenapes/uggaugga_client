@@ -33,6 +33,7 @@ if 'sync' in sys.argv:
             extractors.append(client.XgettexExtractor(
                 root=extr['root'],
                 ext=extr['extension'],
+                text_key=extr.get('text_key'),
                 language=extr['language'],
                 I18n_parent_key=extr.get('I18n_parent_key')))
 
