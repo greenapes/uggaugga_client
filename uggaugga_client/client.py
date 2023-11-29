@@ -320,7 +320,6 @@ def matches_to_nested_i18n(matches):
 
 def import_po(po_path, lang, dry_run=False):
     matches = _extract_from_po(po_path)
-    import pdb;pdb.set_trace()
     i18n = matches_to_flat_i18n(matches, None, None)
     if not lang in i18n:
         raise Exception(f"{lang} not found, add in supported_langs in uggaugga_config.json")
@@ -332,25 +331,39 @@ def import_po(po_path, lang, dry_run=False):
 # === PRIVATE METHODS ===
 
 def _extract_from_po(po_path):
-    matches = []
+    matches = {}
     with open(po_path, 'r') as fp:
         buffer = []
+        buffer_msg = []
+        current_key = None
         for line in fp.readlines():
-            import pdb;pdb.set_trace()
             if line.startswith("msgid \""):
                 t = line.split("msgid \"", 1)[1]
                 if len(t) >= 2:
                     buffer.append(t[:-2])
             elif buffer:
                 if line.startswith('msgstr "'):
+                    import pdb;pdb.set_trace()
                     buffer = [x for x in buffer if x]
                     t = "\n".join(buffer)
                     if t:
-                        matches.append(t)
+                        k = hashlib.md5(t.encode()).hexdigest()
+                        current_key = k
+                    buffer_msg.append(line.split("msgstr \"", 1)[1])
                     buffer = []
                 else:
                     t = line[1:-2]
                     buffer.append(t)
+            elif current_key:
+                if line.strip() == "":
+                    buffer_msg = [x for x in buffer_msg if x]
+                    v = "\n".join(buffer_msg)
+                    matches[current_key] = v
+                    buffer_msg = []
+                    current_key = None
+                else:
+                    t = line[1:-2]
+                    buffer_msg.append(t)
     return matches
 
 def _save_json(i18n_data):
