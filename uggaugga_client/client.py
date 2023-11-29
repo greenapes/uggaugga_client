@@ -94,9 +94,89 @@ def sync(extract_from_code=False, dry_run=False):
 
 
 class _Extractor():
-
+    
     def extract():
         raise NotImplementedError()
+    
+    def matches_to_flat_i18n(self, matches, I18n_parent_key, text_key):
+        """
+        returns md5:value or value:value under each languages
+         
+        {
+            'ORIGINAL': {
+                'asnc1h89hj1ddjasdsad': "default value"
+            }, 
+            'it': {
+                'asnc1h89hj1ddjasdsad': ""
+            },
+            ...
+        }
+        """
+        out = {}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            if I18n_parent_key:
+                out[lang] = {I18n_parent_key: {}}
+            else:
+                out[lang] = {}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            for x in matches:
+                if text_key:
+                    k = x
+                else:
+                    k = hashlib.md5(x.encode()).hexdigest()
+                
+                dest = out[lang]
+                if I18n_parent_key:
+                    dest = out[lang][I18n_parent_key]
+                dest[k] = x if lang == ORIGINAL_LANGUAGE else ''
+        return out
+        
+    def matches_to_nested_i18n(self, matches):
+        out = {}
+        """ 
+        returns nested key.sub:value under each languages
+        
+        {
+            'ORIGINAL': {
+                'main': {
+                    'key_sample': {
+                        'sub': 'default value'
+                    } 
+                }
+            }, 
+            'it': {
+                'main': {
+                    'key_sample': {
+                        'sub': '',
+                    }
+                }
+            },
+            ...
+        }
+        """
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            out[lang] = {}
+        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+            for x in matches:
+                key_flatten, default = x
+                tmp = None
+                subs = key_flatten.split('.')
+                out_lang = out[lang]
+                for index, sub in enumerate(subs):
+                    if tmp is None:
+                        if not out_lang.get(sub):
+                            last_iter = len(subs) - 1 == index
+                            value = default if lang == ORIGINAL_LANGUAGE else ''
+                            out_lang[sub] = value if last_iter else {}
+                        tmp = out_lang[sub]
+                    else:
+                        if not tmp.get(sub):
+                            tmp[sub] = {}
+                        if len(subs) - 1 == index:
+                            tmp[sub] = default if lang == ORIGINAL_LANGUAGE else ''
+                        else:
+                            tmp = tmp[sub]
+        return out
 
 
 class TExtractor(_Extractor):
@@ -125,7 +205,7 @@ class TExtractor(_Extractor):
     def extract(self):
         print("Using TExtractor...")
 
-        out_text = []
+        matches = []
         """
             [
                 ('main.key_sample.sub', 'default value'), 
@@ -133,56 +213,14 @@ class TExtractor(_Extractor):
             ]
         """
         if os.path.isfile(self.root):
-            out_text.extend(self._rewrite_code(self.root))
+            matches.extend(self._rewrite_code(self.root))
         else:
             for root, dirs, files in os.walk(self.root):
                 for path in files:
-                    out_text.extend(self._rewrite_code(
+                    matches.extend(self._rewrite_code(
                         os.path.join(root, path)))
 
-        out = {}
-        """ 
-        {
-            'ORIGINAL': {
-                'main': {
-                    'key_sample': {
-                        'sub': 'default value'
-                    } 
-                }
-            }, 
-            'it': {
-                'main': {
-                    'key_sample': {
-                        'sub': '',
-                    }
-                }
-            },
-            ...
-        }
-        """
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            out[lang] = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            for x in out_text:
-                key_flatten, default = x
-                tmp = None
-                subs = key_flatten.split('.')
-                out_lang = out[lang]
-                for index, sub in enumerate(subs):
-                    if tmp is None:
-                        if not out_lang.get(sub):
-                            last_iter = len(subs) - 1 == index
-                            value = default if lang == ORIGINAL_LANGUAGE else ''
-                            out_lang[sub] = value if last_iter else {}
-                        tmp = out_lang[sub]
-                    else:
-                        if not tmp.get(sub):
-                            tmp[sub] = {}
-                        if len(subs) - 1 == index:
-                            tmp[sub] = default if lang == ORIGINAL_LANGUAGE else ''
-                        else:
-                            tmp = tmp[sub]
-        return out
+        return self.matches_to_nested_i18n(matches)
 
 
 class TExtractorFlat(_Extractor):
@@ -216,44 +254,19 @@ class TExtractorFlat(_Extractor):
     def extract(self):
         print("Using TExtractorFlat...")
 
-        out_text = []
+        matches = []
         """
             ["default value"]
         """
         if os.path.isfile(self.root):
-            out_text.extend(self._rewrite_code(self.root))
+            matches.extend(self._rewrite_code(self.root))
         else:
             for root, dirs, files in os.walk(self.root):
                 for path in files:
-                    out_text.extend(self._rewrite_code(
+                    matches.extend(self._rewrite_code(
                         os.path.join(root, path)))
 
-        out = {}
-        """ 
-        {
-            'ORIGINAL': {
-                'asdasdasdasd': "default value"
-            }, 
-            'it': {
-                'asdasdasdasd': ""
-            },
-            ...
-        }
-        """
-        out = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            if self.text_key:
-                out[lang] = {}
-            else:
-                out[lang] = {self.I18n_parent_key: {}}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            for x in out_text:
-                if self.text_key:
-                    out[lang][x] = x if lang == ORIGINAL_LANGUAGE else ''
-                else:
-                    k = hashlib.md5(x.encode()).hexdigest()
-                    out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
-        return out
+        return self.matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
 
 
 class XgettexExtractor(_Extractor):
@@ -261,13 +274,18 @@ class XgettexExtractor(_Extractor):
     ext = None
     language = None
     root = '.'
-    I18n_parent_key = 'strings'
+    text_key = None
+    I18n_parent_key = None
 
-    def __init__(self, root, ext, language, I18n_parent_key):
+    def __init__(self, root, ext, language, text_key=False, I18n_parent_key=None):
         self.root = root
         self.ext = ext
         self.language = language
         self.I18n_parent_key = I18n_parent_key
+        self.text_key = text_key
+        if self.I18n_parent_key and self.text_key:
+            raise Exception(
+                "if text_as_key is disabled you cant set I18n_parent_key")
 
     def extract(self):
         print("Using XgettexExtractor...")
@@ -294,14 +312,7 @@ class XgettexExtractor(_Extractor):
                         t = line[1:-2]
                         buffer.append(t)
         os.remove(po_path)
-        out = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            out[lang] = {self.I18n_parent_key: {}}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            for x in matches:
-                k = hashlib.md5(x.encode()).hexdigest()
-                out[lang][self.I18n_parent_key][k] = x if lang == ORIGINAL_LANGUAGE else ''
-        return out
+        return self.matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
 
 
 # === PRIVATE METHODS ===
@@ -313,32 +324,22 @@ def _save_json(i18n_data):
 
 def _save_android(i18n_data):
     for lang in i18n_data.keys():
-        if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
-            continue
-        path = f'values{"" if lang == (DEFAULT_LANG or "en") else f"-{lang}"}.xml'
+        path = f'values{"" if lang == (DEFAULT_LANG or ORIGINAL_LANGUAGE) else f"-{lang}"}.xml'
        
         with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
-            if DEFAULT_LANG and lang == DEFAULT_LANG:
-                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep="_")
-            else:
-                data = _flatten_data(i18n_data[lang], sep="_")
+            data = _flatten_data(i18n_data[lang], sep="_")
             for k in data.keys():
                 fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
 
 
 def _save_ios(i18n_data):
     for lang in i18n_data.keys():
-        if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
-            continue
-        
         path = f'Localizable.strings'
         folder = f"{lang}.lproj"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
+        
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'a+') as fp:
-            if DEFAULT_LANG and lang == DEFAULT_LANG:
-                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep=".")
-            else:
-                data = _flatten_data(i18n_data[lang], sep=".")
+            data = _flatten_data(i18n_data[lang], sep=".")
             for k in data.keys():
                 value = data[k].replace('"', '\"')
                 fp.write("/* No comment provided by engineer. */\n")
@@ -347,6 +348,10 @@ def _save_ios(i18n_data):
 
 
 def _save_to_file(i18n_data):
+    if DEFAULT_LANG:
+        i18n_data[DEFAULT_LANG] = i18n_data[ORIGINAL_LANGUAGE]
+        del i18n_data[ORIGINAL_LANGUAGE]
+
     if EXPORT_FORMAT == EXPORT_FORMAT_JSON:
         _save_json(i18n_data)
     elif EXPORT_FORMAT == EXPORT_FORMAT_ANDROID:
