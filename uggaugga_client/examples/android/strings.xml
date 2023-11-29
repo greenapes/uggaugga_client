@@ -1,0 +1,8 @@
+<string name="venues_is_open">Open</string>
+<string name="venues_is_closed">Closed</string>
+<string name="venue_open_closes_at">Open: closes at %s</string>
+<string name="venue_closed_opens">Close: opens %s</string>
+<string name="venues_list_title">Where do you want to check-in?</string>
+<string name="venues_permissions_not_granted">Cannot access location :(</string>
+<string name="venues_allow_gps">Allow GPS</string>
+<string name="venues_check_in">Check-in</string>

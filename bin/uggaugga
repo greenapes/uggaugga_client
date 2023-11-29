@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+from uggaugga_client import client
+from pprint import pprint
+import json
+import sys
+import os
+
+config_path = './uggaugga_config.json'
+
+if 'sync' in sys.argv:
+    if not os.path.exists(config_path):
+        raise Exception("file ./uggaugga_config.json not found")
+
+    conf = None
+    with open(config_path, 'r') as fp:
+        conf = json.load(fp)
+
+    DRY_RUN = False
+    if '--n' in sys.argv:
+        DRY_RUN = True
+
+    extractors = []
+    for extr in conf['extractors']:
+
+        if extr['type'] == 'TExtractor':
+            extractors.append(client.TExtractor(
+                root=extr['root'],
+                exts=extr['extention_list'],
+                custom_regex=extr.get("custom_regex")))
+
+        elif extr['type'] == 'XgettexExtractor':
+            extractors.append(client.XgettexExtractor(
+                root=extr['root'],
+                ext=extr['extension'],
+                language=extr['language'],
+                I18n_parent_key=extr['I18n_parent_key']))
+
+        elif extr['type'] == 'TExtractorFlat':
+            extractors.append(client.TExtractorFlat(
+                root=extr['root'],
+                exts=extr['extention_list'],
+                text_key=extr.get('text_key'),
+                I18n_parent_key=extr['I18n_parent_key'],
+                custom_regex=extr.get("custom_regex")
+            ))
+
+    client.config(namespace=conf['namespace'],
+                  connection_url=conf['server']['url'],
+                  public_key=conf['server']['public_key'],
+                  secret_key=conf['server']['secret_key'],
+                  supported_langs=conf['langs'],
+                  i18n_local_path=conf["i18n_path"],
+                  disable_upload=conf.get('disable_upload', False),
+                  code_extractors=extractors,
+                  export_format=conf.get('export_format', 'json'))
+
+    I18N = client.sync(extract_from_code=True,
+                       dry_run=DRY_RUN or conf.get('debug', False))
+
+elif 'init' in sys.argv:
+    print("INIT UGGAUGGA PROJECT...")
+    with open('./uggaugga_config.json', 'w+') as fp:
+        out = {
+            "namespace": "",
+            "langs": [],
+            "i18n_path": "",
+            "export_format": "json",
+            "server": {
+                "url": "",
+                "public_key": "",
+                "secret_key": ""
+            },
+            "extractors": [
+            ],
+            "debug": True
+        }
+        json.dump(out, fp)
+    pprint(out)
+    print("created default uggaugga_config.json")
+
+else:
+    if not os.path.exists(config_path):
+        print("Launch `uggaugga init` to initialize the project")
+    else:
+        conf = None
+        with open(config_path, 'r') as fp:
+            conf = json.load(fp)
+        pprint(conf)

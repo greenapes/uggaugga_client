@@ -2,6 +2,7 @@
     "namespace": "sample_app",
     "langs": ["it", "en"],
     "i18n_path": ".i18n.json",
+    "export_format": "json",
     "server": {
         "url": "http://127.0.0.1:5005",
         "public_key": "uggaugga",

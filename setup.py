@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='uggaugga_client',
-    version='0.1.3',    
+    version='0.2.0',    
     description='Client for uggaugga service',
     url='https://github.com/greenapes/uggaugga_client',
     author='Marco Pretelli',
@@ -10,7 +10,7 @@ setup(
     license='MIT',
     packages=['uggaugga_client'],
     install_requires=['requests'],
-    scripts=['bin/uggaugga_sync'],
+    scripts=['bin/uggaugga'],
 
     classifiers=[
         'Development Status :: 3 - Alpha',

@@ -12,6 +12,11 @@ SUPPORTED_LANGS = None  # example ['en', 'it']
 I18N_LOCAL_PATH = None
 extractors = None
 NAMESPACE = None
+EXPORT_FORMAT_JSON = 'json'
+EXPORT_FORMAT_ANDROID = 'xml_android'
+EXPORT_FORMAT_IOS = 'strings_ios'
+EXPORT_FORMAT = EXPORT_FORMAT_JSON
+DISABLE_UPLOAD = False
 
 base = None
 token = None
@@ -23,7 +28,9 @@ def config(namespace: str,
            secret_key: str,
            supported_langs: list,
            i18n_local_path: str,
-           code_extractors=None) -> None:
+           disable_upload=False,
+           code_extractors=None,
+           export_format=EXPORT_FORMAT_JSON) -> None:
     """
     ### params
     - namespace: is the i18n namaspace for this project
@@ -35,13 +42,15 @@ def config(namespace: str,
     - code_extractors: the list of code extractor used to extract strings from code.
                        must be on of available extractors: TExtractor or XgettexExtractor
     """
-    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors, NAMESPACE
+    global base, token, I18N_LOCAL_PATH, SUPPORTED_LANGS, extractors, NAMESPACE, EXPORT_FORMAT, DISABLE_UPLOAD
     NAMESPACE = namespace
     base = connection_url
     token = base64.b64encode(f"{public_key}:{secret_key}".encode())
     SUPPORTED_LANGS = supported_langs
     I18N_LOCAL_PATH = i18n_local_path
+    DISABLE_UPLOAD = disable_upload
     extractors = code_extractors
+    EXPORT_FORMAT = export_format
 
 
 def sync(extract_from_code=False, dry_run=False):
@@ -72,7 +81,8 @@ def sync(extract_from_code=False, dry_run=False):
         print(f"namespace = {NAMESPACE}")
         pprint(I18N, indent=2)
     else:
-        _upload(I18N)
+        if not DISABLE_UPLOAD:
+            _upload(I18N)
         _save_to_file(I18N)
 
     return I18N
@@ -287,10 +297,35 @@ class XgettexExtractor(_Extractor):
 
 # === PRIVATE METHODS ===
 
+def _save_json(i18n_data):
+    with open(I18N_LOCAL_PATH, 'w+') as fp:
+            json.dump(i18n_data, fp, indent=2)
+            
+def _save_android(i18n_data):
+    for lang in i18n_data.keys():
+        path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
+        with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
+            data = _flatten_data(i18n_data[lang])
+            for k in data.keys():
+               fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
+    
+def _save_ios(i18n_data):
+    for lang in i18n_data.keys():
+        path = f'values{"" if lang == "en" else f"-{lang}"}.xml'
+        with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
+            data = _flatten_data(i18n_data[lang])
+            for k in data.keys():
+               fp.write(f'"{k}" = "{data[k]}"' + '\n')
+    
 
 def _save_to_file(i18n_data):
-    with open(I18N_LOCAL_PATH, 'w+') as fp:
-        json.dump(i18n_data, fp, indent=2)
+    if EXPORT_FORMAT == EXPORT_FORMAT_JSON:
+        _save_json(i18n_data)
+    elif EXPORT_FORMAT == EXPORT_FORMAT_ANDROID:
+        _save_android(i18n_data)
+    elif EXPORT_FORMAT == EXPORT_FORMAT_IOS:
+        _save_ios(i18n_data)
+            
     print(f"File {I18N_LOCAL_PATH} saved")
 
 
@@ -352,3 +387,21 @@ def _find_and_place(place_in, search_in):
             else:
                 place_in[key] = search_in[key]
     return place_in
+
+def _flatten_data(y):
+    out = {}
+
+    def flatten(x, name=''):
+        if type(x) is dict:
+            for a in x:
+                flatten(x[a], name + a + '_')
+        elif type(x) is list:
+            i = 0
+            for a in x:
+                flatten(a, name + str(i) + '_')
+                i += 1
+        else:
+            out[name[:-1]] = x
+
+    flatten(y)
+    return out
