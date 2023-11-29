@@ -86,6 +86,10 @@ def sync(extract_from_code=False, dry_run=False):
         print(f"namespace = {NAMESPACE}")
         pprint(I18N, indent=2)
     else:
+        if DEFAULT_LANG:
+            I18N[DEFAULT_LANG] = I18N[ORIGINAL_LANGUAGE]
+            del I18N[ORIGINAL_LANGUAGE]
+
         if not DISABLE_UPLOAD:
             _upload(I18N)
         _save_to_file(I18N)
@@ -343,10 +347,6 @@ def _save_ios(i18n_data):
 
 
 def _save_to_file(i18n_data):
-    if DEFAULT_LANG:
-        i18n_data[DEFAULT_LANG] = i18n_data[ORIGINAL_LANGUAGE]
-        del i18n_data[ORIGINAL_LANGUAGE]
-
     if EXPORT_FORMAT == EXPORT_FORMAT_JSON:
         _save_json(i18n_data)
     elif EXPORT_FORMAT == EXPORT_FORMAT_ANDROID:
