@@ -82,22 +82,17 @@ elif 'init' in sys.argv:
 
 else:
     
-    doc = """
-    
-    COMMANDS:
+    doc = f"""
 
-        init - Create the config file `./uggaugga_config.json`
-    
-        sync - Do the uggaugga sync 
-               (extract string from code using extracors in the config file and upload to remote and save file to local)
+COMMANDS:
+
+    {Back.GREEN}init{Style.RESET_ALL} - Create the config file `./uggaugga_config.json`
+
+    {Back.GREEN}sync{Style.RESET_ALL} - Do the uggaugga sync 
+            (extract string from code using extracors in the config file and upload to remote and save file to local)
     """
     
     print(doc)
     
     if not os.path.exists(config_path):
         print(Fore.BLACK + Back.GREEN + 'Launch `uggaugga init` to initialize the project' + Style.RESET_ALL)
-    else:
-        conf = None
-        with open(config_path, 'r') as fp:
-            conf = json.load(fp)
-        pprint(conf)
