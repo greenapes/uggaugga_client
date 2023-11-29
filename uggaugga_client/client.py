@@ -56,7 +56,7 @@ def config(namespace: str,
     DEFAULT_LANG = default_lang
 
 
-def sync(extract_from_code=False, dry_run=False):
+def sync(extract_from_code=False, dry_run=False, import_data=None):
     assert I18N_LOCAL_PATH
     assert base
     assert token
@@ -73,6 +73,9 @@ def sync(extract_from_code=False, dry_run=False):
             I18N = _merge(from_code_i18n, I18N)
             print(
                 f"[MERGED] with from_code_i18n -> I18N = I18N USING {extractor.__class__.__name__}")
+
+    if import_data:
+        I18N = import_data
 
     remote_i18n = _download()
 
@@ -101,87 +104,6 @@ class _Extractor():
     
     def extract():
         raise NotImplementedError()
-    
-    def matches_to_flat_i18n(self, matches, I18n_parent_key, text_key):
-        """
-        returns md5:value or value:value under each languages
-         
-        {
-            'ORIGINAL': {
-                'asnc1h89hj1ddjasdsad': "default value"
-            }, 
-            'it': {
-                'asnc1h89hj1ddjasdsad': ""
-            },
-            ...
-        }
-        """
-        print("parent ", I18n_parent_key)
-        out = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            if I18n_parent_key:
-                out[lang] = {I18n_parent_key: {}}
-            else:
-                out[lang] = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            for x in matches:
-                if text_key:
-                    k = x
-                else:
-                    k = hashlib.md5(x.encode()).hexdigest()
-                
-                dest = out[lang]
-                if I18n_parent_key:
-                    dest = out[lang][I18n_parent_key]
-                dest[k] = x if lang == ORIGINAL_LANGUAGE else ''
-        return out
-        
-    def matches_to_nested_i18n(self, matches):
-        out = {}
-        """ 
-        returns nested key.sub:value under each languages
-        
-        {
-            'ORIGINAL': {
-                'main': {
-                    'key_sample': {
-                        'sub': 'default value'
-                    } 
-                }
-            }, 
-            'it': {
-                'main': {
-                    'key_sample': {
-                        'sub': '',
-                    }
-                }
-            },
-            ...
-        }
-        """
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            out[lang] = {}
-        for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
-            for x in matches:
-                key_flatten, default = x
-                tmp = None
-                subs = key_flatten.split('.')
-                out_lang = out[lang]
-                for index, sub in enumerate(subs):
-                    if tmp is None:
-                        if not out_lang.get(sub):
-                            last_iter = len(subs) - 1 == index
-                            value = default if lang == ORIGINAL_LANGUAGE else ''
-                            out_lang[sub] = value if last_iter else {}
-                        tmp = out_lang[sub]
-                    else:
-                        if not tmp.get(sub):
-                            tmp[sub] = {}
-                        if len(subs) - 1 == index:
-                            tmp[sub] = default if lang == ORIGINAL_LANGUAGE else ''
-                        else:
-                            tmp = tmp[sub]
-        return out
 
 
 class TExtractor(_Extractor):
@@ -225,7 +147,7 @@ class TExtractor(_Extractor):
                     matches.extend(self._rewrite_code(
                         os.path.join(root, path)))
 
-        return self.matches_to_nested_i18n(matches)
+        return matches_to_nested_i18n(matches)
 
 
 class TExtractorFlat(_Extractor):
@@ -271,7 +193,7 @@ class TExtractorFlat(_Extractor):
                     matches.extend(self._rewrite_code(
                         os.path.join(root, path)))
 
-        return self.matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
+        return matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
 
 
 class XgettexExtractor(_Extractor):
@@ -292,29 +214,124 @@ class XgettexExtractor(_Extractor):
         os.system(
             f'find {self.root} -name \*.{self.ext} | xgettext -o {po_path} --from-code=UTF-8 -L {self.language} -f -')
 
-        matches = []
-        with open(po_path, 'r') as fp:
-            buffer = []
-            for line in fp.readlines():
-                if line.startswith("msgid \""):
-                    t = line.split("msgid \"", 1)[1]
-                    if len(t) >= 2:
-                        buffer.append(t[:-2])
-                elif buffer:
-                    if line.startswith('msgstr "'):
-                        buffer = [x for x in buffer if x]
-                        t = "\n".join(buffer)
-                        if t:
-                            matches.append(t)
-                        buffer = []
-                    else:
-                        t = line[1:-2]
-                        buffer.append(t)
+        matches = _extract_from_po(po_path)
         os.remove(po_path)
-        return self.matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
+        return matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
 
 
+def matches_to_flat_i18n(matches, I18n_parent_key, text_key):
+    """
+    returns md5:value or value:value under each languages
+        
+    {
+        'ORIGINAL': {
+            'asnc1h89hj1ddjasdsad': "default value"
+        }, 
+        'it': {
+            'asnc1h89hj1ddjasdsad': ""
+        },
+        ...
+    }
+    """
+    print("parent ", I18n_parent_key)
+    out = {}
+    for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+        if I18n_parent_key:
+            out[lang] = {I18n_parent_key: {}}
+        else:
+            out[lang] = {}
+    for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+        for x in matches:
+            if text_key:
+                k = x
+            else:
+                k = hashlib.md5(x.encode()).hexdigest()
+            
+            dest = out[lang]
+            if I18n_parent_key:
+                dest = out[lang][I18n_parent_key]
+            dest[k] = x if lang == ORIGINAL_LANGUAGE else ''
+    return out
+        
+def matches_to_nested_i18n(matches):
+    out = {}
+    """ 
+    returns nested key.sub:value under each languages
+    
+    {
+        'ORIGINAL': {
+            'main': {
+                'key_sample': {
+                    'sub': 'default value'
+                } 
+            }
+        }, 
+        'it': {
+            'main': {
+                'key_sample': {
+                    'sub': '',
+                }
+            }
+        },
+        ...
+    }
+    """
+    for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+        out[lang] = {}
+    for lang in SUPPORTED_LANGS + [ORIGINAL_LANGUAGE]:
+        for x in matches:
+            key_flatten, default = x
+            tmp = None
+            subs = key_flatten.split('.')
+            out_lang = out[lang]
+            for index, sub in enumerate(subs):
+                if tmp is None:
+                    if not out_lang.get(sub):
+                        last_iter = len(subs) - 1 == index
+                        value = default if lang == ORIGINAL_LANGUAGE else ''
+                        out_lang[sub] = value if last_iter else {}
+                    tmp = out_lang[sub]
+                else:
+                    if not tmp.get(sub):
+                        tmp[sub] = {}
+                    if len(subs) - 1 == index:
+                        tmp[sub] = default if lang == ORIGINAL_LANGUAGE else ''
+                    else:
+                        tmp = tmp[sub]
+    return out
+
+
+def import_po(po_path, lang, dry_run=False):
+    matches = _extract_from_po(po_path)
+    i18n = matches_to_flat_i18n(matches, None, None)
+    if not lang in i18n:
+        raise Exception(f"{lang} not found, add in supported_langs in uggaugga_config.json")
+    data = {lang: i18n[lang]}
+    sync(extract_from_code=False, dry_run=dry_run, import_data=data)
+
+       
 # === PRIVATE METHODS ===
+
+def _extract_from_po(po_path):
+    matches = []
+    with open(po_path, 'r') as fp:
+        buffer = []
+        for line in fp.readlines():
+            if line.startswith("msgid \""):
+                t = line.split("msgid \"", 1)[1]
+                if len(t) >= 2:
+                    buffer.append(t[:-2])
+            elif buffer:
+                if line.startswith('msgstr "'):
+                    buffer = [x for x in buffer if x]
+                    t = "\n".join(buffer)
+                    if t:
+                        matches.append(t)
+                    buffer = []
+                else:
+                    t = line[1:-2]
+                    buffer.append(t)
+    return matches
 
 def _save_json(i18n_data):
     with open(I18N_LOCAL_PATH, 'w+') as fp:

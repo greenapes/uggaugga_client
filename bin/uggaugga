@@ -8,17 +8,13 @@ from colorama import Fore, Back, Style
 
 config_path = './uggaugga_config.json'
 
-if 'sync' in sys.argv:
+def init():
     if not os.path.exists(config_path):
         raise Exception("file ./uggaugga_config.json not found")
 
     conf = None
     with open(config_path, 'r') as fp:
         conf = json.load(fp)
-
-    DRY_RUN = False
-    if '--n' in sys.argv:
-        DRY_RUN = True
 
     extractors = []
     for extr in conf['extractors']:
@@ -56,6 +52,14 @@ if 'sync' in sys.argv:
                   default_lang=conf.get('default_lang'),
                   code_extractors=extractors,
                   export_format=conf.get('export_format', 'json'))
+    return conf
+
+if 'sync' in sys.argv:
+    DRY_RUN = False
+    if '--n' in sys.argv:
+        DRY_RUN = True
+    
+    conf = init()
 
     I18N = client.sync(extract_from_code=True,
                        dry_run=DRY_RUN or conf.get('debug', False))
@@ -81,6 +85,11 @@ elif 'init' in sys.argv:
     pprint(out)
     print("created default uggaugga_config.json")
 
+elif 'import_po' in sys.argv:
+    conf = init()
+    lang = " ".join(sys.argv).split('--lang=')[1].split(" ")[0]
+    path = " ".join(sys.argv).split('--path=')[1].split(" ")[0]
+    client.import_po(path, lang=lang)
 elif 'specs' in sys.argv:
     print(Back.BLACK + Fore.CYAN + """
 
@@ -308,6 +317,8 @@ COMMANDS:
         {Back.GREEN}sync --n{Style.RESET_ALL} - DRY RUN mode, only print what will do but dont do it
     
     {Back.GREEN}specs{Style.RESET_ALL} - print the uggaugga_config.json SPECS documentations
+    
+    {Back.GREEN}import_po --path=path/to/file.po --lang=it{Style.RESET_ALL} - import a po file. --path is the .po file paht. --lang is the language inside the po file
     """
 
     print(doc)
