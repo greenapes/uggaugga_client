@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='uggaugga_client',
-    version='0.2.0',    
+    version='0.2.1',    
     description='Client for uggaugga service',
     url='https://github.com/greenapes/uggaugga_client',
     author='Marco Pretelli',
