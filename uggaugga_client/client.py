@@ -349,7 +349,7 @@ def _extract_from_po(po_path):
                     if t:
                         k = hashlib.md5(t.encode()).hexdigest()
                         current_key = k
-                    buffer_msg.append(line.split("msgstr \"", 1)[1])
+                        buffer_msg.append(line.split("msgstr \"", 1)[1])
                     buffer = []
                 else:
                     t = line[1:-2]
