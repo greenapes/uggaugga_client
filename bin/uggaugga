@@ -82,7 +82,7 @@ elif 'init' in sys.argv:
     print("created default uggaugga_config.json")
 
 elif 'specs' in sys.argv:
-    print({Back.BLACK} + {Fore.CYAN} + """
+    print(Back.BLACK + Fore.CYAN + """
 
 {
     /* 
@@ -273,7 +273,7 @@ elif 'specs' in sys.argv:
     ]
 }
 
-    """+{Style.RESET_ALL})
+    """+Style.RESET_ALL)
 else:
 
     doc = f"""
