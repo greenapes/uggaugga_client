@@ -214,7 +214,24 @@ class XgettexExtractor(_Extractor):
         os.system(
             f'find {self.root} -name \*.{self.ext} | xgettext -o {po_path} --from-code=UTF-8 -L {self.language} -f -')
 
-        matches = _extract_from_po(po_path)
+        matches = []
+        with open(po_path, 'r') as fp:
+            buffer = []
+            for line in fp.readlines():
+                if line.startswith("msgid \""):
+                    t = line.split("msgid \"", 1)[1]
+                    if len(t) >= 2:
+                        buffer.append(t[:-2])
+                elif buffer:
+                    if line.startswith('msgstr "'):
+                        buffer = [x for x in buffer if x]
+                        t = "\n".join(buffer)
+                        if t:
+                            matches.append(t)
+                        buffer = []
+                    else:
+                        t = line[1:-2]
+                        buffer.append(t)
         os.remove(po_path)
         return matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
 
@@ -318,6 +335,7 @@ def _extract_from_po(po_path):
     matches = []
     with open(po_path, 'r') as fp:
         buffer = []
+        import pdb;pdb.set_trace()
         for line in fp.readlines():
             if line.startswith("msgid \""):
                 t = line.split("msgid \"", 1)[1]
