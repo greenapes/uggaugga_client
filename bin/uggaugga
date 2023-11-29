@@ -84,19 +84,20 @@ elif 'init' in sys.argv:
 elif 'specs' in sys.argv:
     print(Back.BLACK + Fore.CYAN + """
 
-{
+{"""+Fore.GREEN+"""
     /* 
         REQUIRED 
         the name of your project is the file uploaded to the server
-    */
-    "namespace": "sample_app", 
-    
+    */"""+Fore.CYAN+"""
+    "namespace":"""+Fore.BLUE+""" "sample_app", 
+    """+Fore.GREEN+"""
     /*
         REQUIRED
         list of supported langs (2 letter format)
     */
-    "langs": ["it", "en"],
-    
+    """+Fore.CYAN+"""
+    "langs": """+Fore.BLUE+"""["it", "en"],
+    """+Fore.GREEN+"""
     /*
         OPTIONAL
 
@@ -108,8 +109,9 @@ elif 'specs' in sys.argv:
         - if is set the default strings values goes under 
         this language
     */
-    "default_lang": "en",
-    
+    """+Fore.CYAN+"""
+    "default_lang":"""+Fore.BLUE+""" "en",
+    """+Fore.GREEN+"""
     /*
         OPTIONAL default 'json'
 
@@ -119,8 +121,9 @@ elif 'specs' in sys.argv:
         - 'json': i18n.json format (nested or not)
         - 'xml_android' is for native android app create .xml files under `i18n_path`
         - 'strings_ios' is for native ios app create .strings files unedr `i18n_path`
-    */
-    "export_format": "json",
+    */"""+Fore.CYAN+"""
+    "export_format":"""+Fore.BLUE+""" "json","""+Fore.CYAN+"""
+    """+Fore.GREEN+"""
     /*
         REQUIRED
         is the path where save the output file.
@@ -130,109 +133,122 @@ elif 'specs' in sys.argv:
 
         If the `export_format` is 'xml_android' or 'strings_ios'
         the `i18n_path` must be a folder path
-    */
-    "i18n_path": "./locales/i18n.json",
-
+    */"""+Fore.CYAN+"""
+    "i18n_path":"""+Fore.BLUE+""" "./locales/i18n.json","""+Fore.CYAN+"""
+    """+Fore.GREEN+"""
     /*
         OPTIONAL default false
         if is set the sync only print, not upload, not save local
 
         boolean debug mode wins over `--n`
-    */
-    "debug": false
-
+    */"""+Fore.CYAN+"""
+    "debug":"""+Fore.BLUE+""" false"""+Fore.CYAN+"""
+"""+Fore.GREEN+"""
     /*
         OPTIONAL default false
         if is set the sync not upload to remote, only save local
     */
-    "disable_upload": false
-    
+    """+Fore.CYAN+"""
+    "disable_upload":"""+Fore.BLUE+""" false """+Fore.CYAN+"""
+    """+Fore.GREEN+"""
     /*
         REQUIRED
         UggaUgga server connection infos
-    */
+    */"""+Fore.CYAN+"""
     "server": {
+        """+Fore.GREEN+"""
         // the server base url
-        "url": "<my uggaugga server url>",
+        "url": """+Fore.BLUE+""""<my uggaugga server url>","""+Fore.CYAN+"""
+        """+Fore.GREEN+"""
         // the given public
-        "public_key": "<my uggaugga server public key>",
+        """+Fore.CYAN+"""
+        "public_key": """+Fore.BLUE+""""<my uggaugga server public key>","""+Fore.CYAN+"""
+        """+Fore.GREEN+"""
         // the given secret
-        "secret_key": "<my uggaugga server secret key>"
+        """+Fore.CYAN+"""
+        "secret_key": """+Fore.BLUE+""""<my uggaugga server secret key>" """+Fore.CYAN+"""
     },
-
+"""+Fore.GREEN+"""
     /*
         REQUIRED
         A list of code extractors to automatically extract
         the strings from code files.
-    */
+    */"""+Fore.CYAN+"""
     "extractors": [
+        """+Fore.GREEN+"""
         /*
         TExtractor
 
         Extract  from `T('my.key', 'default value')` or use custom_regex.
 
         Nested, not flat
-        */
+        */"""+Fore.CYAN+"""
         {
+            """+Fore.GREEN+"""
             // REQUIRED
-            "type": "TExtractor",
-            
+            """+Fore.CYAN+"""
+            "type":"""+Fore.BLUE+""" "TExtractor",
+            """+Fore.GREEN+"""
             /* 
                 REQUIRED
                 This extractor search only under this
                 root path
-            */
-            "root": "./example_app_t",
-
+            */"""+Fore.CYAN+"""
+            "root":"""+Fore.BLUE+""" "./example_app_t","""+Fore.CYAN+"""
+"""+Fore.GREEN+"""
             /*
                 REQUIRED
                 The list of the file extentions to check
-            */
-            "extention_list": ["js", "ts", "jsx", "tsx"],
-
+            */"""+Fore.CYAN+"""
+            "extention_list":"""+Fore.BLUE+""" ["js", "ts", "jsx", "tsx"],"""+Fore.CYAN+"""
+"""+Fore.GREEN+"""
             /*
                 OPTIONAL
                 A regex to extract code, must have 2 groups, the first for the key, the second for the default value
-            */
-           "custom_regex": "{{\\s*T\\s+['\"](.*)['\"]\\s*['\"](.*?)['\"]\\s*}}",
+            */"""+Fore.CYAN+"""
+           "custom_regex":"""+Fore.BLUE+""" "{{\\s*T\\s+['\"](.*)['\"]\\s*['\"](.*?)['\"]\\s*}}","""+Fore.CYAN+"""
         }
+        """+Fore.GREEN+"""
         /*
             TExtractorFlat
             Extract from `T('my string')` or use custom_regex.
 
             Only flat, not nested.
-        */
+        */"""+Fore.CYAN+"""
         {
-            // REQUIRED
-            "type": "TExtractorFlat",
+            """+Fore.GREEN+"""
+            // REQUIRED"""+Fore.CYAN+"""
+            "type":"""+Fore.BLUE+""" "TExtractorFlat","""+Fore.CYAN+"""
 
+"""+Fore.GREEN+"""
             /* 
                 REQUIRED
                 This extractor search only under this
                 root path
-            */
-            "root": "./example_app_t_flat_md5",
-
+            */"""+Fore.CYAN+"""
+            "root":"""+Fore.BLUE+""" "./example_app_t_flat_md5","""+Fore.CYAN+"""
+"""+Fore.GREEN+"""
             /*
                 REQUIRED
                 The list of the file extentions to check
-            */
-            "extension_list": ["html"],
-
+            */"""+Fore.CYAN+"""
+            "extension_list":"""+Fore.BLUE+""" ["html"],"""+Fore.CYAN+"""
+"""+Fore.GREEN+"""
             /*
                 OPTIONAL:
                 and optional parent key under goes all
                 translations
-            */
-            "I18n_parent_key": "server_strings"
-
+            */"""+Fore.CYAN+"""
+            "I18n_parent_key":"""+Fore.BLUE+""" "server_strings" """+Fore.CYAN+"""
+"""+Fore.GREEN+"""
             /*
                 OPTIONAL
                 A regex to extract code, must have 1 group for
                 the default value
-            */
-            "custom_regex": "translate\\s>(.*)<"
+            */"""+Fore.CYAN+"""
+            "custom_regex":"""+Fore.BLUE+""" "translate\\s>(.*)<" """+Fore.CYAN+"""
         },
+        """+Fore.GREEN+"""
         /*
         XgettexExtractor
 
@@ -243,32 +259,37 @@ elif 'specs' in sys.argv:
         Extract from `_('my string')`.
 
         Only flat, not nested.
-        */
+        */"""+Fore.CYAN+"""
         {
+            """+Fore.GREEN+"""
             // REQUIRED
-            "type": "XgettexExtractor",
+            "type":"""+Fore.BLUE+""" "XgettexExtractor",
+            """+Fore.GREEN+"""
             /* 
                 REQUIRED
                 This extractor search only under this
                 root path
-            */
-            "root": "./example_app_xgettext",
+            */"""+Fore.CYAN+"""
+            "root":"""+Fore.BLUE+""" "./example_app_xgettext",
+            """+Fore.GREEN+"""
             /*
                 REQUIRED
                 xgettext extension field
-            */
-            "extension": "py",
+            */"""+Fore.CYAN+"""
+            "extension":"""+Fore.BLUE+""" "py",
+            """+Fore.GREEN+"""
             /*
                 REQUIRED
                 xgettext language field
-            */
-            "language": "python",
+            */"""+Fore.CYAN+"""
+            "language":"""+Fore.BLUE+""" "python",
+            """+Fore.GREEN+"""
             /*
                 OPTIONAL:
                 and optional parent key under goes all
                 translations
-            */
-            "I18n_parent_key": "server_strings"
+            */"""+Fore.CYAN+"""
+            "I18n_parent_key":"""+Fore.BLUE+""" "server_strings"
         }
     ]
 }
