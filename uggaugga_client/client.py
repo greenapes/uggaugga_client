@@ -318,9 +318,9 @@ def _save_android(i18n_data):
             if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
                 continue
             if DEFAULT_LANG and lang == DEFAULT_LANG:
-                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE])
+                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep="_")
             else:
-                data = _flatten_data(i18n_data[lang])
+                data = _flatten_data(i18n_data[lang], sep="_")
             for k in data.keys():
                 fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
 
@@ -332,9 +332,9 @@ def _save_ios(i18n_data):
             if DEFAULT_LANG and lang == ORIGINAL_LANGUAGE:
                 continue
             if DEFAULT_LANG and lang == DEFAULT_LANG:
-                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE])
+                data = _flatten_data(i18n_data[ORIGINAL_LANGUAGE], sep=".")
             else:
-                data = _flatten_data(i18n_data[lang])
+                data = _flatten_data(i18n_data[lang], sep=".")
             for k in data.keys():
                 fp.write(f'"{k}" = "{data[k]}"' + '\n')
 
@@ -413,17 +413,17 @@ def _find_and_place(place_in, search_in):
     return place_in
 
 
-def _flatten_data(y):
+def _flatten_data(y, sep='.'):
     out = {}
 
     def flatten(x, name=''):
         if type(x) is dict:
             for a in x:
-                flatten(x[a], name + a + '_')
+                flatten(x[a], name + a + sep)
         elif type(x) is list:
             i = 0
             for a in x:
-                flatten(a, name + str(i) + '_')
+                flatten(a, name + str(i) + sep)
                 i += 1
         else:
             out[name[:-1]] = x
