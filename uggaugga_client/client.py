@@ -375,7 +375,7 @@ def _save_android(i18n_data):
     for lang in i18n_data.keys():
         path = f'values{"" if lang == (DEFAULT_LANG or ORIGINAL_LANGUAGE) else f"-{lang}"}.xml'
        
-        with open(os.path.join(I18N_LOCAL_PATH, path), 'a+') as fp:
+        with open(os.path.join(I18N_LOCAL_PATH, path), 'w+') as fp:
             data = _flatten_data(i18n_data[lang], sep="_")
             for k in data.keys():
                 fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
@@ -390,7 +390,7 @@ def _save_ios(i18n_data):
             folder = f"{lang}.lproj"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
         
-        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'a+') as fp:
+        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'w+') as fp:
             data = _flatten_data(i18n_data[lang], sep=".")
             for k in data.keys():
                 value = data[k].replace('"', '\"')
