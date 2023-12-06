@@ -379,7 +379,10 @@ def _save_android(i18n_data):
 def _save_ios(i18n_data):
     for lang in i18n_data.keys():
         path = f'Localizable.strings'
-        folder = f"{lang}.lproj"
+        if lang == DEFAULT_LANG:
+            folder = "Base.lproj"
+        else:
+            folder = f"{lang}.lproj"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
         
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'a+') as fp:
