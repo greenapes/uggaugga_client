@@ -125,9 +125,14 @@ class TExtractor(_Extractor):
 
         if self.custom_regex:
             match = self.custom_regex
-        with open(path, 'r', encoding='utf-8') as f:
-            text = f.read()
-            return re.findall(match, text)
+        try:
+            with open(path, 'r') as f:
+                text = f.read()
+        except Exception:
+            with open(path, 'r', encoding='utf-16le') as f:
+                text = f.read()
+            
+        return re.findall(match, text)
 
     def extract(self):
         print("Using TExtractor...")
