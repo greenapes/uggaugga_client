@@ -104,6 +104,15 @@ class _Extractor():
     
     def extract():
         raise NotImplementedError()
+    
+    def _ios(self, path):
+        import codecs
+        encoded_text = open(path, 'rb').read()     #you should read in binary mode to get the BOM correctly
+        bom = codecs.BOM_UTF16_LE                               #print dir(codecs) for other encodings
+        assert encoded_text.startswith(bom)                     #make sure the encoding is what you expect, otherwise you'll get wrong data
+        encoded_text = encoded_text[len(bom):]                  #strip away the BOM
+        decoded_text = encoded_text.decode('utf-16le')
+        return decoded_text
 
 
 class TExtractor(_Extractor):
@@ -132,15 +141,6 @@ class TExtractor(_Extractor):
                 text = f.read()
 
         return re.findall(match, text)
-
-    def _ios(self, path):
-        import codecs
-        encoded_text = open(path, 'rb').read()     #you should read in binary mode to get the BOM correctly
-        bom = codecs.BOM_UTF16_LE                               #print dir(codecs) for other encodings
-        assert encoded_text.startswith(bom)                     #make sure the encoding is what you expect, otherwise you'll get wrong data
-        encoded_text = encoded_text[len(bom):]                  #strip away the BOM
-        decoded_text = encoded_text.decode('utf-16le')
-        return decoded_text
 
     def extract(self):
         print("Using TExtractor...")
@@ -187,9 +187,12 @@ class TExtractorFlat(_Extractor):
 
         if self.custom_regex:
             match = self.custom_regex
-        with open(path) as f:
-            text = f.read()
-            return re.findall(match, text)
+        if EXPORT_FORMAT == EXPORT_FORMAT_IOS:
+            text = self._ios(path)
+        else:
+            with open(path) as f:
+                text = f.read()
+        return re.findall(match, text)
 
     def extract(self):
         print("Using TExtractorFlat...")
