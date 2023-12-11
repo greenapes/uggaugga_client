@@ -413,9 +413,10 @@ def _save_ios(i18n_data):
             import codecs
             fp.write(codecs.BOM_UTF16_LE)
             for k in data.keys():
+                key = i18n_data[DEFAULT_LANG][k]
                 value = data[k].replace('"', '\"')
                 fp.write("/* No comment provided by engineer. */\n".encode("utf-16le"))
-                fp.write((f'"{k}" = "{value}";' + '\n').encode("utf-16le"))
+                fp.write((f'"{key}" = "{value}";' + '\n').encode("utf-16le"))
                 fp.write("\n".encode("utf-16le"))
 
 
