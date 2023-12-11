@@ -418,6 +418,11 @@ def _save_ios(i18n_data):
                 key = key.replace('%2$@', '%@') # CODICE ORRENDO
                 key = key.replace('%3$@', '%@') # CODICE ORRENDO
                 key = key.replace('%4$@', '%@') # CODICE ORRENDO
+                key = key.replace('%1$d', '%d') # CODICE ORRENDO
+                key = key.replace('%2$d', '%d') # CODICE ORRENDO
+                key = key.replace('%3$d', '%d') # CODICE ORRENDO
+                key = key.replace('%4$d', '%d') # CODICE ORRENDO
+
                 value = data[k].replace('"', '\"') 
                 fp.write("/* No comment provided by engineer. */\n".encode("utf-16le"))
                 fp.write((f'"{key}" = "{value}";' + '\n').encode("utf-16le"))
