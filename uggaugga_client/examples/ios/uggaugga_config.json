@@ -1,5 +1,5 @@
 {
-    "namespace": "android",
+    "namespace": "ios",
     "langs": ["it", "en"],
     "i18n_path": ".",
     "export_format": "strings_ios",
@@ -14,14 +14,9 @@
     "extractors": [
         {
             "type": "TExtractor",
-            "root":".",
+            "root":"./Localizable.strings",
             "extention_list": ["strings"],
-            "custom_regex": "\"(.*?)\" = \"(.*?)\""
-        },
-        {
-            "type": "TExtractor",
-            "root":".",
-            "extention_list": ["js"]
+            "custom_regex": "\"(.*?)\" = \"(.*?)\";"
         }
     ]
 }

@@ -125,12 +125,11 @@ class TExtractor(_Extractor):
 
         if self.custom_regex:
             match = self.custom_regex
-        try:
+        if EXPORT_FORMAT == EXPORT_FORMAT_IOS:
+            text = self._ios(path)
+        else:
             with open(path, 'r') as f:
                 text = f.read()
-        except Exception:
-            if EXPORT_FORMAT == EXPORT_FORMAT_IOS:
-               text = self._ios(path)
 
         return re.findall(match, text)
 
