@@ -278,13 +278,19 @@ def matches_to_flat_i18n(matches, I18n_parent_key, text_key):
         for x in matches:
             if text_key:
                 k = x
+                v = x
             else:
-                k = hashlib.md5(x.encode()).hexdigest()
+                if type(x) == tuple:
+                    k = hashlib.md5(x[0].encode()).hexdigest()
+                    v = x[1]
+                else:
+                    k = hashlib.md5(x.encode()).hexdigest()
+                    v = x
             
             dest = out[lang]
             if I18n_parent_key:
                 dest = out[lang][I18n_parent_key]
-            dest[k] = x if lang == ORIGINAL_LANGUAGE else ''
+            dest[k] = v if lang == ORIGINAL_LANGUAGE else ''
     return out
         
 def matches_to_nested_i18n(matches):
