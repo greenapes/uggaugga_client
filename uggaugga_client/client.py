@@ -8,7 +8,8 @@ import hashlib
 
 
 ORIGINAL_LANGUAGE = 'ORIGINAL'
-SUPPORTED_LANGS = None  # example ['en', 'it']
+# example ['en', 'it']
+SUPPORTED_LANGS = None  
 I18N_LOCAL_PATH = None
 extractors = None
 NAMESPACE = None
