@@ -398,7 +398,7 @@ def _save_ios(i18n_data):
             folder = f"{lang}.lproj"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
         
-        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'w+', encoding="utf-16le") as fp:
+        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'wb+', encoding="utf-16le") as fp:
             data = _flatten_data(i18n_data[lang], sep=".")
             import codecs
             fp.write(codecs.BOM_UTF16_LE)
