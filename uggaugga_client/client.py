@@ -129,10 +129,19 @@ class TExtractor(_Extractor):
             with open(path, 'r') as f:
                 text = f.read()
         except Exception:
-            with open(path, 'r', encoding='utf-16le') as f:
-                text = f.read()
-            
+            if EXPORT_FORMAT == EXPORT_FORMAT_IOS:
+               text = self._ios(path)
+
         return re.findall(match, text)
+
+    def _ios(self, path):
+        import codecs
+        encoded_text = open(path, 'rb').read()     #you should read in binary mode to get the BOM correctly
+        bom = codecs.BOM_UTF16_LE                               #print dir(codecs) for other encodings
+        assert encoded_text.startswith(bom)                     #make sure the encoding is what you expect, otherwise you'll get wrong data
+        encoded_text = encoded_text[len(bom):]                  #strip away the BOM
+        decoded_text = encoded_text.decode('utf-16le')
+        return decoded_text.encode('utf8')
 
     def extract(self):
         print("Using TExtractor...")
@@ -390,13 +399,25 @@ def _save_ios(i18n_data):
             folder = f"{lang}.lproj"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
         
-        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'w+') as fp:
+        import codecs
+        encoded_text = open('utf16lebom_file', 'rb').read()     #you should read in binary mode to get the BOM correctly
+        bom = codecs.BOM_UTF16_LE                               #print dir(codecs) for other encodings
+        assert encoded_text.startswith(bom)                     #make sure the encoding is what you expect, otherwise you'll get wrong data
+        encoded_text = encoded_text[len(bom):]                  #strip away the BOM
+        decoded_text = encoded_text.encode('utf-16le')
+
+        f = open('utf8_file', 'wb')
+        f.write(decoded_text.encode('utf8'))
+        f.close()
+        
+        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'w+', ecoding="utf-16le") as fp:
             data = _flatten_data(i18n_data[lang], sep=".")
+            fp.write(codecs.BOM_UTF16_LE)
             for k in data.keys():
                 value = data[k].replace('"', '\"')
-                fp.write("/* No comment provided by engineer. */\n")
-                fp.write(f'"{k}" = "{value}";' + '\n')
-                fp.write("\n")
+                fp.write("/* No comment provided by engineer. */\n".encode("utf-16le"))
+                fp.write((f'"{k}" = "{value}";' + '\n').encode("utf-16le"))
+                fp.write("\n".encode("utf-16le"))
 
 
 def _save_to_file(i18n_data):
