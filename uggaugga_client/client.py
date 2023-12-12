@@ -400,8 +400,16 @@ def _save_android(i18n_data):
         path = 'strings.xml'
         old_file = ""
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'r+') as fp:
-            pattern = r"<string\s(.*?)</string>\n"
+            pattern = r"<string\s(?s:.)</string>\n"
+            pattern_header1 = r"<\?xml\s(.*?)\?>"
+            pattern_header2 = r"<resources\s(.*?)\">"
+            pattern_footer = r"<resources/>"
+            pattern_comment = r"<\!--(.*?)-->"
             old_file = re.sub(pattern, '', fp.read())
+            old_file = re.sub(pattern_header1, '', fp.read())
+            old_file = re.sub(pattern_header2, '', fp.read())
+            old_file = re.sub(pattern_footer, '', fp.read())
+            old_file = re.sub(pattern_comment, '', old_file)
        
         xml_header = """
 <?xml version="1.0" encoding="utf-8"?>
