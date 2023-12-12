@@ -404,7 +404,7 @@ def _save_android(i18n_data):
             pattern_header1 = r"<\?xml\s.*?\?>"
             pattern_header2 = r"<resources\s.*?\">"
             pattern_footer = r"</resources>"
-            pattern_comment = r"<\!--\s.*?\s-->"
+            pattern_comment = r"<\!--.*?-->"
             old_file = re.sub(pattern, '', fp.read())
             old_file = re.sub(pattern_header1, '', old_file)
             old_file = re.sub(pattern_header2, '', old_file)

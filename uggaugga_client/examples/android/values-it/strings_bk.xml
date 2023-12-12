@@ -621,8 +621,7 @@
     <!-- LOGOUT / DELETE APE -->
     <string name="logout_dialog_message">Sei sicuro di volerti scollegare da greenApes?</string>
     <string name="delete_ape_first_dialog_message">Sei sicuro di voler cancellare il tuo account \"%1$s\"?</string>
-    <string name="delete_ape_last_dialog_message">Se prosegui, il tuo account verrà rimosso da greenApes. Tutte le informazioni, testi e foto saranno eliminati in maniera permanente e non potranno essere recuperati. Sei sicuro di voler cancellare il tuo account \"%1$s\"?
-    </string>
+    <string name="delete_ape_last_dialog_message">Se prosegui, il tuo account verrà rimosso da greenApes. Tutte le informazioni, testi e foto saranno eliminati in maniera permanente e non potranno essere recuperati. Sei sicuro di voler cancellare il tuo account \"%1$s\"?</string>
     <string name="button_profile_logout">Esci</string>
     <string name="button_profile_delete">Elimina utente</string>
     <string name="button_profile_delete_progress">Sto cancellando&#8230;</string>

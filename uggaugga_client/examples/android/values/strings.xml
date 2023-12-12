@@ -782,10 +782,7 @@
 
     <string name="logout_dialog_message">Are you sure you want to logout from greenApes?</string>
     <string name="delete_ape_first_dialog_message">Are you sure you want to delete your account \"%1$s\"?</string>
-    <string name="delete_ape_last_dialog_message">If you proceed, your account will be deleted from the greenApes system.
-        All information, texts and photos will be permanently deleted with no way to be recovered.
-        Are you sure you want to delete your account \"%1$s\"?
-    </string>
+    <string name="delete_ape_last_dialog_message">If you proceed, your account will be deleted from the greenApes system.\nAll information, texts and photos will be permanently deleted with no way to be recovered.\nAre you sure you want to delete your account \"%1$s\"?</string>
     <string name="button_profile_logout">Log out</string>
     <string name="button_profile_delete">Delete user</string>
     <string name="button_profile_delete_progress">Deleting…</string>
