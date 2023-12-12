@@ -15,11 +15,11 @@
     },
     "extractors": [{
         "type": "TExtractor",
-        "root": "./strings.xml",
+        "root": "./values/strings.xml",
         "extention_list": [
             "xml"
         ],
-        "custom_regex": "string\\s*name=\"(.*?)\".*?>(.*?)<"
+        "custom_regex": "<string\\s*name=\"(.*?)\".*?>(.*?)<"
     }],
     "debug": false
 }
