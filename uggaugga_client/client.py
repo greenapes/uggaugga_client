@@ -394,7 +394,7 @@ def _save_android(i18n_data):
         if lang == DEFAULT_LANG:
             folder = "values"
         else:
-            folder = f"value-{lang}"
+            folder = f"values-{lang}"
         os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
 
         path = 'strings.xml'
