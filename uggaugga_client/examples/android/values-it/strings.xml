@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, TypographyEllipsis, Typos">
+    <!-- DATA -->
+    <!-- MENU AND SECTION -->
+    <string name="more_section">Altro</string>
+    <!-- TEXT -->
+    <!-- GENERIC -->
+    <string name="how_green">Ape Rank</string>
+    <string name="how_popular">Eco-ispiratore</string>
+    <string name="my_bankonuts">Le mie TWIN</string>
+    <string name="ape_rank">Ape Rank</string>
+    <string name="day">giorno fa</string>
+    <string name="days">giorni fa</string>
+    <string name="month">mese fa</string>
+    <string name="months">mesi fa</string>
+    <string name="year">anno fa</string>
+    <string name="years">anni fa</string>
+    <string name="hr">ora fa</string>
+    <string name="hrs">ore fa</string>
+    <string name="min">minuto fa</string>
+    <string name="mins">minuti fa</string>
+    <string name="add_comment">Aggiungi un commento</string>
+    <string name="m">Maschio</string>
+    <string name="f">Femmina</string>
+    <string name="x">Che importa?</string>
+    <string name="no_internet_connection">Non prende internet! Respira...</string>
+    <string name="meters">metri</string>
+    <string name="co2">CO2 risparmiata</string>
+    <!-- NEW ONBOARDING -->
+    <string name="onboard_welcome">Un benvenuto da</string>
+    <string name="onboard_subtitle">Fai la differenza e premiati</string>
+    <string name="onboard_back_welcome">Bentornato su</string>
+    <string name="onboard_btn_firsttime">Non hai un account? Registrati</string>
+    <string name="onboard_btn_already">Hai già un account? Entra</string>
+    <string name="onboard_btn_privacy">Informativa sulla privacy</string>
+    <string name="onboard_btn_tou">Termini di Utilizzo</string>
+    <string name="onboard_pickCountry">Scegli il tuo paese</string>
+    <string name="onboard_pickDistrict">Scegli la tua provincia</string>
+    <string name="onboard_description">Questo ti aiuterà a trovare premi, progetti speciali e altre persone nella tua zona</string>
+    <string name="onboard_btnNext">Avanti</string>
+    <string name="onboard_btnAddImage">Aggiungi un\'immagine</string>
+    <string name="onboard_btnSelect">Seleziona</string>
+    <string name="onboard_btnSendCode">Invia codice</string>
+    <string name="onboard_createAccount">Non hai un account? Registrati</string>
+    <string name="onboard_alreadyHaveAccount">Sei già registrato?</string>
+    <string name="onboard_btnSignInGoogle">Iscriviti con Google</string>
+    <string name="onboard_btnSignInFacebook">Iscriviti con Facebook</string>
+    <string name="onboard_btnSignInSMS">Iscriviti con SMS</string>
+    <string name="google_login_error">Al momento non è possibile connettersi a Google. Riprova fra un po\'!</string>
+    <string name="facebook_login_error">Ok, grazie</string>
+    <string name="already_linked_with_another_account">Utente già loggato con un altro account</string>
+    <string name="onboard_btnLoginGoogle">Accedi con Google</string>
+    <string name="onboard_btnLoginFacebook">Entra con Facebook</string>
+    <string name="onboard_btnLoginSMS">Entra con SMS</string>
+    <string name="onboard_btnAlreadyRegistered">Hai già un account? Accedi</string>
+    <string name="onboard_btnDontHaveAccount">Non hai un account? Registrati</string>
+    <string name="onboard_insertPhone">Inserisci un numero di telefono valido</string>
+    <string name="onboard_weSendYouCode">Ti invieremo un codice di conferma</string>
+    <string name="onboard_insertSMSCode">Inserisci il codice di 5 cifre</string>
+    <string name="onboard_didntGetCode">Non hai ricevuto il codice?</string>
+    <string name="onboard_receivePhoneCall">Nessun problema, clicca qua e ti chiameremo</string>
+    <string name="onboard_bySigningup">Registrandoti</string>
+    <string name="onboard_acceptTouPrivacy">Accetti Termini d\'Uso e Privacy Policy</string>
+    <string name="onboard_acceptTouPrivacy_md">Accetti i [Termini d\'Uso](https://www.greenapes.com/legal/terms-of-use/) e [Privacy Policy](https://www.greenapes.com/legal/privacy-policy-app/)</string>
+    <string name="onboard_andConfirm">e confermi che hai</string>
+    <string name="onboard_under16">Meno di 16 anni</string>
+    <string name="onboard_over16">Più di 16 anni</string>
+    <string name="onboard_picture">Scegli una foto profilo</string>
+    <string name="onboard_username">Scegli il tuo nickname</string>
+    <string name="onboard_username_placeholder">Nickname</string>
+    <string name="onboard_username_subtitle">Deve avere almeno 5 caratteri</string>
+    <string name="onboard_email">La tua email</string>
+    <string name="onboard_email_placeholder">Email</string>
+    <string name="onboard_almostdone">Hai quasi fatto!</string>
+    <string name="onboard_codeTitle">Hai un codice?</string>
+    <string name="onboard_codeSubtitle">Inserisci il Codice che hai ricevuto oppure Salta e prosegui</string>
+    <string name="onboard_code_placeholder">GREENAPES20</string>
+    <string name="onboard_btnConfirm">Conferma il codice</string>
+    <string name="onboard_btnSkip">Salta e completa la registrazione</string>
+    <string name="onboard_btnSave">Salva</string>
+    <string name="onboard_avatar_camera">Scatta una foto</string>
+    <string name="onboard_avatar_gallery">Seleziona fra le tue foto</string>
+    <string name="onboard_avatar_avatars">Scegli un avatar</string>
+    <string name="onboarding_firstregistration_title">Entra nella Giungla con...</string>
+    <string name="onboarding_country_title">Scegli il tuo paese</string>
+    <string name="onboarding_country_pickregion">Scegli la tua provincia</string>
+    <string name="onboarding_country_description">ti aiuterà a trovare Premi e &amp; scimmiette nel tuo paese ( e accedere a progetti speciali in alcune città)</string>
+    <string name="btn_back_login">Hai già un account? Accedi</string>
+    <string name="signin_location_title">Che succede in giro</string>
+    <string name="signin_location_subtitle">Tocca Ok, cosi possiamo fornirti contenuti sulle cose che accadono vicino a te</string>
+    <string name="signin_location_share_title">Condividi la tua posizione</string>
+    <string name="signin_location_share_subtitle">greenApes vorrebbe accedere alla tua posizione</string>
+    <string name="signin_location_btnlater">Più tardi</string>
+    <string name="signin_location_btnyes">Ok</string>
+    <string name="signin_famousapes_btnfinish">Fine</string>
+    <string name="signin_join_title">Eccoti nella giungla</string>
+    <string name="signin_join_subtitle">Completa l\'iscrizione</string>
+    <string name="onboard_registration_title">Scegli una foto profilo</string>
+    <string name="onboard_registration_subtitle">Carica una foto o scegli un avatar</string>
+    <string name="onboard_registration_pickusername">Scegli un username</string>
+    <string name="onboard_registration_pickusername_desc">Il tuo username deve essere almeno di 5 caratteri</string>
+    <string name="signin_join_hint_nickname">Nickname</string>
+    <string name="signin_join_nickname_error">Il tuo username deve essere almeno di 5 caratteri</string>
+    <string name="signin_join_hint_email">Email</string>
+    <string name="signin_join_email_error">Email non valida</string>
+    <string name="signin_join_hint_country">Paese</string>
+    <string name="signin_join_country_error">La nazione è obbligatoria</string>
+    <string name="signin_join_hint_region">Provincia</string>
+    <string name="signin_join_region_error">La provincia è obbligatoria</string>
+    <string name="signin_join_hint_coupon">Inserisci qui il Codice Segreto</string>
+    <string name="signin_join_coupon_error">Codice Segreto non valido</string>
+    <string name="signin_join_have_coupon">Hai un Codice Segreto?</string>
+    <string name="signin_join_redeem_coupon">Codice valido</string>
+    <string name="signin_join_btn_go">Vai!</string>
+    <string name="signin_join_addphoto">Aggiungi una foto</string>
+    <string name="signin_join_wait_fb_login">Login in corso&#8230; </string>
+    <string name="signin_url_privacy_title">Informativa sulla privacy</string>
+    <string name="signin_url_terms_title">Termini di Utilizzo</string>
+    <string name="signin_url_terms">https://www.greenapes.com/legal/terms-of-use/</string>
+    <string name="signin_url_privacy">https://www.greenapes.com/legal/privacy-policy-app/</string>
+    <string name="empty_list_message">Nessun post qui :(</string>
+    <string name="signin_coupon_wait_validation">Convalida Codice Segreto&#8230;</string>
+    <string name="signin_coupon_success">Codice Segreto inserito con successo!</string>
+    <string name="signin_coupon_error">Codice Segreto non valido</string>
+    <!-- BASE ACTIVITY [drawer, toolbar, notification drawer] -->
+    <!-- menu -->
+    <string name="sections_jungle">Giungla</string>
+    <string name="sections_reward">Scopri i premi</string>
+    <string name="sections_about_this_app">Questa app</string>
+    <string name="sections_checkfornewversion">Cerca aggiornamenti</string>
+    <string name="sections_more">Altro</string>
+    <string name="sections_mybankonuts">Le mie TWIN</string>
+    <string name="sections_greenapes">www.greenapes.com</string>
+    <string name="sections_tutorial">Prova una donazione</string>
+    <!-- notification -->
+    <string name="notification_drawer_title">Notifiche</string>
+    <!-- share -->
+    <string name="share">Condividi</string>
+    <string name="share_action">Racconta qui la tua storia</string>
+    <!-- JUNGLE -->
+    <string name="jungle_latest_title">Più recenti</string>
+    <!-- item -->
+    <string name="xp_for_me">XP per me</string>
+    <!-- clappers list -->
+    <string name="clappers_list_title">Clappers</string>
+    <!-- report -->
+    <string name="dialog_report_title">Segnala il post</string>
+    <string name="dialog_report_content">Segnala contenuto inappropriato</string>
+    <string name="dialog_report_complete_title">Grazie</string>
+    <string name="dialog_report_complete_content">Il tuo report è stato consegnato, e presto sarà visionato dal nostro staff. Grazie</string>
+    <string name="dialog_delete_complete_content">Il tuo post è stato cancellato!</string>
+    <string name="dialog_delete_title">Elmina elemento</string>
+    <string name="dialog_delete_content">Sei sicuro di volerlo eliminare?</string>
+    <string name="dialog_delete_comment_title">Elimina commento</string>
+    <string name="dialog_delete_comment">Sei sicuro di volerlo eliminare?</string>
+    <string name="send_button_text">invia</string>
+    <!-- item details -->
+    <!-- PROFILE / VIA / COMMUNITIES -->
+    <string name="years_old">anni</string>
+    <string name="btn_follow">Segui</string>
+    <string name="btn_sendmessage">Messaggio</string>
+    <string name="btn_following">Following</string>
+    <string name="btn_edit">Modifica</string>
+    <string name="in_the_world">#%1$d nel mondo</string>
+    <string name="no_popular">Qui si dorme</string>
+    <!-- profile tab -->
+    <string name="profile_bio">Bio</string>
+    <string name="profile_about">Io...</string>
+    <string name="profile_habits_stat">Statistiche</string>
+    <string name="profile_wall">Giungla</string>
+    <!-- profile cards -->
+    <string name="about_title">A proposito di...</string>
+    <string name="bio_title">Bio-grafia</string>
+    <string name="followers">%1$d che ti seguono</string>
+    <string name="following">%1$d che segui</string>
+    <string name="interest_card_title">I miei Interessi</string>
+    <string name="max_level">Livello massimo raggiunto</string>
+    <string name="nuts_to_next">XP per raggiungere l\'Ape Rank</string>
+    <string name="ape_parade_title">Eco-ispiratori</string>
+    <string name="ape_parade_subtitle">I più grandi ispiratori</string>
+    <string name="btn_charts">Classifiche</string>
+    <string name="chart_card_title">La mia esperienza</string>
+    <!-- charts -->
+    <string name="chart_ape_parade">Eco-ispiratori</string>
+    <string name="chart_ape_parade_subtitle">Chi sta ispirando il mondo? (TWIN)</string>
+    <string name="chart_green_chart">Eco-classifica</string>
+    <string name="chart_green_chart_subtitle">Chi sembra il più sostenibile?</string>
+    <string name="listview_other_title">Altro</string>
+    <string name="listview_near_me_title">in zona</string>
+    <!-- chart box -->
+    <string name="chart_filter_dialog_title">Quando</string>
+    <string name="chart_filter_now">Ora!</string>
+    <string name="chart_filter_alltime">Storico</string>
+    <!-- edit -->
+    <string name="edit_profile_title">Torna al mio profilo</string>
+    <string name="edit_profile_change_avatar">Cambia avatar</string>
+    <string name="edit_profile_username">Nome utente</string>
+    <string name="edit_profile_nickname">Nickname</string>
+    <string name="edit_profile_btn_apefy">Scimmiami</string>
+    <string name="edit_profile_hint_about">Qualcosa su di te</string>
+    <string name="edit_profile_hint_email">ilmioindirizzo@email.com</string>
+    <string name="edit_profile_hint_affiliation">Membro di</string>
+    <string name="edit_profile_error_email">Questo indirizzo mail non è valido&#8230;</string>
+    <string name="edit_profile_gender">Genere</string>
+    <string name="edit_profile_region">Provincia</string>
+    <string name="edit_profile_birthday">Nato/a il</string>
+    <string name="edit_profile_select_country">Scegli una nazione</string>
+    <string name="edit_profile_select_region">Scegli la provincia</string>
+    <string name="profile_connection_sms_disabled">Collega il tuo numero di telefono</string>
+    <string name="profile_connection_sms_subtitle_msg">Puoi usare il tuo numero di telefono per registrarti con un SMS. Non useremo il tuo numero per altri scopi</string>
+    <string name="profile_connection_fb_disabled">Connetti il tuo account di Facebook</string>
+    <string name="profile_connection_fb_subtitle_msg">Collega il tuo account Facebook per ispirare i tuoi amici con le tue azioni green. Non pubblicheremo niente automaticamente: potrai sempre decidere cosa condividere</string>
+    <string name="profile_connection_google_disabled">Collega il tuo profilo Google</string>
+    <string name="profile_connection_google_subtitle_msg">Puoi usare il tuo account Google per fare il login su greenApes</string>
+    <string name="profile_connection_active">Collegato: %1$s</string>
+    <string name="profile_connected">Connesso</string>
+    <string name="birthdayErrorMessage">Questo campo è obbligatorio</string>
+    <string name="birthdayErrorInvalidMessage">Data non valida</string>
+    <string name="edit_profile_country">Paese</string>
+    <string name="edit_profile_privacy_title">Impostazioni Privacy</string>
+    <string name="edit_profile_privacy_text">Cosa vuoi che vedano gli altri utenti?</string>
+    <string name="edit_profile_request_data_title">Ti serve una copia dei tuoi dati?</string>
+    <string name="edit_profile_chb_birthday_public">Età</string>
+    <string name="edit_profile_chb_show_fb_profile">Il mio profilo Facebook</string>
+    <string name="chb_age_string">La mia età</string>
+    <string name="wait_for_regions">Aspetta, stiamo cercando le province</string>
+    <string name="dialog_avatarchoose_title">Scegli un avatar</string>
+    <string name="dialog_datechoose_title">Scegli una data</string>
+    <string name="dialog_countrychoose_title">Scegli un paese</string>
+    <!-- IMAGE CROP SCREEN -->
+    <string name="intro">Scegli un\'immagine da tagliare</string>
+    <string name="picture">Foto</string>
+    <string name="capture">Macchina Fotografica</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="saving_image">Salvataggio immagine</string>
+    <string name="preparing_card">Sto preparando la card</string>
+    <string name="no_storage_card">Non trovo la card</string>
+    <string name="not_enough_space">Non c\'è spazio</string>
+    <!-- FACEBOOK ACTIVITY -->
+    <string name="cancelled">Annullato</string>
+    <string name="permission_not_granted">Non sono riuscito a completare l\'operazione, non avevo i permessi necessari</string>
+    <string name="ok">OK</string>
+    <!-- SHARE SCREEN -->
+    <string name="share_button_text">condividi</string>
+    <string name="chb_choose_topic">Scegli un topic</string>
+    <!-- CROP IMAGE -->
+    <string name="crop_image_btn_cancel">Annulla</string>
+    <string name="crop_image_btn_save">Salva</string>
+    <!-- GENERIC -->
+    <string name="aperank">Ape Rank</string>
+    <!--        -->
+    <!--  + PROFILE SECTION -->
+    <!-- FBLOGIN -->
+    <string name="login_status_error">Non sei loggato</string>
+    <string name="add_a_comment">Aggiungi un commento</string>
+    <string name="menu_action_search">Cerca</string>
+    <string name="menu_action_message">Messaggi</string>
+    <string name="menu_action_report_delete">Segnala il post</string>
+    <string name="ape_rank_0_m">Neonato</string>
+    <string name="ape_rank_0_f">Neonato</string>
+    <string name="ape_rank_1_m">Bambuino</string>
+    <string name="ape_rank_1_f">Bambuino</string>
+    <string name="ape_rank_2_m">Adolescimmia</string>
+    <string name="ape_rank_2_f">Adolescimmia</string>
+    <string name="ape_rank_3_m">Surfanazé</string>
+    <string name="ape_rank_3_f">Surfanazé</string>
+    <string name="ape_rank_4_m">SchiacciaNuts</string>
+    <string name="ape_rank_4_f">SchiacciaNuts</string>
+    <string name="ape_rank_5_m">Very Important Scimmia</string>
+    <string name="ape_rank_5_f">Very Important Scimmia</string>
+    <string name="ape_rank_6_m">ScimpanzRe</string>
+    <string name="ape_rank_6_f">Sua Gorillezza</string>
+    <string name="ape_rank_7_m">ApeOstolo</string>
+    <string name="ape_rank_7_f">ApeOstolo</string>
+    <!-- TOPIC -->
+    <string name="topic_house_label">Casa</string>
+    <string name="topic_stuff_label">Shopping</string>
+    <string name="topic_food_label">Mangiare</string>
+    <string name="topic_mobility_label">Muoversi</string>
+    <string name="topic_stories_label">Storie</string>
+    <string name="topic_energy_label">Energia</string>
+    <string name="topic_donate_label">Donazioni</string>
+    <string name="topic_tourism_label">Turismo</string>
+    <string name="topic_biodiversity_label">Biodiversità</string>
+    <string name="topic_others_label">Altri</string>
+    <!-- -->
+    <!-- LABEL NUTS -->
+    <string name="notopic">Azione generica</string>
+    <string name="nuts_house">casa</string>
+    <string name="nuts_stuff">roba</string>
+    <string name="nuts_food">cibo</string>
+    <string name="nuts_house_label">Ridurre, Riusare, Riparare e Riciclare</string>
+    <string name="nuts_stuff_label">Acquisti Sostenibili</string>
+    <string name="nuts_food_label">Alimentazione Sostenibile</string>
+    <string name="nuts_mobility_label">Mobilità Sostenibile</string>
+    <string name="nuts_stories_label">Educazione ed Eventi</string>
+    <string name="nuts_energy_label">Risparmiare Energia e Acqua</string>
+    <string name="nuts_donate_label">Donazioni e Volontariato</string>
+    <string name="nuts_tourism_label">Turismo Sostenibile</string>
+    <string name="nuts_biodiversity_label">Biodiversità</string>
+    <!--            -->
+    <!-- EDIT PROFILE -->
+    <string name="edit_toolbar_title">Modifica profilo</string>
+    <string name="dialog_box_wait_save">Salvataggio in corso, attendere prego</string>
+    <string name="dialog_box_wait_delete">Cancellazione del profilo in corso, attendere prego</string>
+    <string name="edit_profile_error">C\'è stato un errore nel salvataggio dei dettagli del tuo profilo! Prova ancora.</string>
+    <!-- END EDIT PROFILE -->
+    <string-array name="apify">
+        <item>Lemure</item>
+        <item>LaScimmia</item>
+        <item>Banana</item>
+        <item>Penzoloni</item>
+        <item>GotNuts</item>
+        <item>Orango-</item>
+        <item>Mr.#Gorilla</item>
+        <item>Mrs.#Gorilla</item>
+        <item>Mpanzè</item>
+        <item>IlGibbone</item>
+        <item>SullaLiana</item>
+        <item>Liana</item>
+        <item>DalRamo</item>
+        <item>TraLeFrasche</item>
+        <item>Giungla</item>
+    </string-array>
+    <string-array name="ApesNameFemale">
+        <item>Agnes</item>
+        <item>Aldith</item>
+        <item>Avelina</item>
+        <item>Berta</item>
+        <item>Dionisia</item>
+        <item>Estrilda</item>
+        <item>Gundred</item>
+        <item>Hilda</item>
+        <item>Isolda</item>
+        <item>Margery</item>
+        <item>Matilda</item>
+        <item>Muriel</item>
+        <item>Philippa</item>
+        <item>Petronilla</item>
+        <item>Sabelina</item>
+        <item>Sibilla</item>
+    </string-array>
+    <string-array name="ApesNameMale">
+        <item>Aldred</item>
+        <item>Anselm</item>
+        <item>Baldric</item>
+        <item>Edwin</item>
+        <item>Gervase</item>
+        <item>Leofwin</item>
+        <item>Maurice</item>
+        <item>Osbert</item>
+        <item>Ranulf</item>
+        <item>Silvester</item>
+        <item>Theobald</item>
+        <item>Waleran</item>
+    </string-array>
+    <!-- ONBOARDING -->
+    <!-- APP SECTIONS -->
+    <!-- ACTIONS -->
+    <string name="action_share_nuts_for_you"> XP per te!</string>
+    <!-- EATING -->
+    <string name="eating_topic_title">Cibo</string>
+    <string name="eating_vegetarian_meal">Ho mangiato vegetariano</string>
+    <string name="eating_vegan_meal">Ho mangiato vegano</string>
+    <string name="eating_vegetarian_meal_popup">Bonus! Gli ingredienti erano:</string>
+    <string name="eating_meat_meal">Ho mangiato prodotti locali/bio</string>
+    <string name="eating_meat_meal_popup">Ecco gli ingredienti</string>
+    <string name="eating_option_organic">Biologico</string>
+    <string name="eating_option_local">Km 0</string>
+    <string name="eating_option_organic_local">Bio &amp; Km 0</string>
+    <string name="eating_option_none">Niente</string>
+    <string name="eating_vegetarian_recipe">Ho condiviso una ricetta vegetariana/vegana</string>
+    <string name="eating_green_restaurant">Ho trovato un ristorante sostenibile</string>
+    <string name="eating_dontwaste_food">Non ho sprecato il cibo</string>
+    <!-- MOVING -->
+    <string name="moving_topic_title">Muoversi</string>
+    <string name="moving_walked">Sono andato a piedi</string>
+    <string name="moving_walked_popup">Quanto hai camminato?</string>
+    <string name="moving_biked">Sono andato in bici</string>
+    <string name="moving_biked_popup">Che distanza?</string>
+    <string name="moving_collective_transport">Ho preso il bus/la metro/ Il treno</string>
+    <string name="moving_carsharing">Ho usato il carsharing</string>
+    <string name="moving_carpooled">Ho fatto carpooling</string>
+    <string name="moving_carpooled_popup">Persone a bordo</string>
+    <string name="moving_carpooled_option_1">Io +1</string>
+    <string name="moving_carpooled_option_2">Io +2</string>
+    <string name="moving_carpooled_option_3">Io +3</string>
+    <string name="moving_option_1km">1-2km</string>
+    <string name="moving_option_5km">2-5km</string>
+    <string name="moving_option_morekm">5+ km</string>
+    <string name="moving_flight">Ho compensato le emissioni del mio volo</string>
+    <!-- HOUSING -->
+    <string name="housing_topic_title">Casa</string>
+    <string name="housing_energy">Ho pulito/lavato in modo sostenibile</string>
+    <string name="housing_energy_popup">Come hai risparmiato energia?</string>
+    <string name="housing_energy_option_washing">Fare il bucato; asciugare in maniera green</string>
+    <string name="housing_energy_option_heating">Tenendo il riscaldamento spento (e sono &lt;15°C fuori)</string>
+    <string name="housing_energy_option_cooling">Non ho acceso l\'aria condizionata (e la temperatura esterna è >30°C)</string>
+    <string name="housing_repaired_it">L\'ho riparato</string>
+    <string name="housing_shower">Doccia veloce per risparmiare acqua</string>
+    <string name="housing_shower_popup">Veloce... ma quanto?</string>
+    <string name="housing_energy_5m">meno di 5\'</string>
+    <string name="housing_energy_8m">5\'-8\'</string>
+    <string name="housing_energy_more">8\'+</string>
+    <string name="housing_special_waste">Avevo qualcosa che non mi serviva più</string>
+    <string name="housing_special_waste_popup">Cosa ci hai fatto?</string>
+    <string name="housing_special_waste_recycling">L\'ho portato all\'isola ecologica</string>
+    <string name="housing_special_waste_secondhand">L\'ho rivenduto</string>
+    <string name="housing_special_waste_givefree">L\'ho regalato</string>
+    <string name="housing_creatively_recycled">Ho riciclato in modo creativo</string>
+    <!-- SHOPPING -->
+    <string name="shopping_topic_title">Shopping</string>
+    <string name="shopping_topic_bought_title">Ho comprato...</string>
+    <string name="shopping_bought_ecolabel">Un prodotto eco-certificato</string>
+    <string name="shopping_bought_secondhand">Un prodotto usato</string>
+    <string name="shopping_bought_recycled">Un prodotto riciclato</string>
+    <string name="shopping_green_store">Ho trovato un negozio sostenibile</string>
+    <string name="shopping_topic_avoided_buying">Ho fatto a meno di comprare perché ho...</string>
+    <string name="shopping_avoided_buying_rented">Noleggiato</string>
+    <string name="shopping_voided_buying_resisted">Resistito alla tentazione!</string>
+    <!-- THOUGHT -->
+    <string name="thoughts_topic_title">Storie</string>
+    <string name="thoughts_joined_campaign">Ho partecipato alla campagna</string>
+    <string name="thoughts_wwf_earthhour">19 Marzo: la mia Earth Hour&#8230;</string>
+    <string name="thoughts_green_movie">Ho visto un bel film sul tema della sostenibilità</string>
+    <string name="thoughts_ask_question">Ho letto qualcosa di interessante</string>
+    <string name="thoughts_cool_project">Ho scoperto un progetto fantastico</string>
+    <string name="thoughts_share_article">Ho una storia da raccontare</string>
+    <string name="thoughts_share_thought">Ho una domanda</string>
+    <!-- BANKO -->
+    <string name="banko_values">TWIN</string>
+    <string name="banko_sharing_title">Condivisione (fatto!)</string>
+    <string name="banko_image_photo">Foto</string>
+    <string name="banko_image_description">Descrizione</string>
+    <string name="banko_image_venue">Dove</string>
+    <string name="banko_image_fb_share">Condividi su FB</string>
+    <string name="banko_inspiration_title">Quanto sto ispirando (.. e non è finita)</string>
+    <string name="banko_image_claps">Clap</string>
+    <string name="banko_image_fb_likes">\"Mi piace\" su FB</string>
+    <string name="banko_image_product">Recensione prodotto</string>
+    <string name="banko_image_comment">Commenti</string>
+    <string name="banko_image_certified">Certificate</string>
+    <string name="banko_image_competition">Sfida vinta</string>
+    <string name="banko_inspiring_the_world">per aver ispirato il mondo</string>
+    <string name="confirm_reward_button_text">conferma</string>
+    <string name="waiting_reward_button_text">Scopri i premi</string>
+    <string name="reward_take_BtnSshare">Condividi!</string>
+    <string name="reward_take_BtnNotnow">non adesso</string>
+    <string name="need_more_nuts">Ti servono ancora %1$d TWIN</string>
+    <string name="cant_save_email_profile">Non è stato possibile salvare l\'indirizzo email, riprova.</string>
+    <string name="cant_save_reward">Non è stato possibile assegnare il reward, riprova!</string>
+    <string name="confirm_reward_dialog">Conferma</string>
+    <string name="rewardgained_title">Evviva! Controlla la tua email!</string>
+    <string name="confirm_reward_message">Confermi la scelta del premio?</string>
+    <string name="sendemail_reward_message">Invieremo il tuo coupon premio a:</string>
+    <string name="btn_confirm_reward_message">Conferma</string>
+    <string name="btn_cancel_reward_message">No, grazie</string>
+    <string name="reward_message_sharing">Un premio per il mio stile di vita</string>
+    <string name="reward_valid_until">valido fino al </string>
+    <string name="reward_claimed_quantity">richiesti</string>
+    <string name="reward_tab_title_global">Globali</string>
+    <string name="reward_tab_title_near">in zona</string>
+    <string name="reward_max_quantity">Disponibile</string>
+    <string name="reward_quantity">Disponibili %1$d</string>
+    <string name="reward_max_quantity_reached">OOPS! Questo premio non è più disponibile</string>
+    <string name="reward_list_empty">Nessun Premio disponibile! </string>
+    <!-- INTRO -->
+    <string name="previous_intro">Indietro</string>
+    <string name="next_intro">Avanti</string>
+    <string name="skip_intro">Salta la intro</string>
+    <string name="intro_title_do">Condividi</string>
+    <string name="intro_text_do">Stai già facendo qualcosa per il pianeta? O vuoi scoprire come poter fare di più?\nSu greenApes puoi ispirare gli altri e farti ispirare condividendo azioni ed idee.</string>
+    <string name="intro_title_earn">Guadagna</string>
+    <string name="intro_text_earn">Tutto quello che fai ti da punti esperienza (XP). Questo ti permette di salire di livello. \nAzioni certificate o interessanti ti daranno TWIN, la valuta speciale della Giungla. </string>
+    <string name="intro_title_reward">Premiati!</string>
+    <string name="intro_text_reward">Colleziona punti XP e sali di livello. \nScopri i Premi disponibili e scegli come spendere le tue TWIN!</string>
+    <string name="intro_title_start">Cominciamo</string>
+    <string name="intro_text_start">E\' il momento di cominciare la tua vita nella Giungla!</string>
+    <string name="intro_row_start1">Condividi un\'azione o un\'idea e comincia a collezionare punti </string>
+    <string name="intro_row_start2">Cerca attività sostenibili nella tua zona</string>
+    <string name="intro_row_start3">Fatti ispirare dalle azioni degli altri e fai clap se ti piacciono</string>
+    <string name="intro_row_start4">Guadagna TWIN automaticamente quando vai a piedi o in bici</string>
+    <!-- INTEREST -->
+    <string name="why_its_important">Perché è importante</string>
+    <string name="whos_interest_this">Chi è interessato</string>
+    <string name="add_interest">Aggiungi un Interesse</string>
+    <string name="no_interest_box">Quali temi ti appassionano di più? Scegli i tuoi Interessi preferiti!</string>
+    <string name="remove_interest">Rimuovi un Interesse</string>
+    <string name="conjof">di</string>
+    <string name="chatnotavaible_doalog_title">Hai ricevuto un messaggio di chat! </string>
+    <string name="chatnotavaible_doalog_text">Al momento la chat non è disponibile su Android, usa la versione web per rispondere a questo messaggio!</string>
+    <!-- CHATS -->
+    <string name="activity_chats_title">Messaggi</string>
+    <string name="activity_chats_details_menu">Impostazioni</string>
+    <string name="activity_chats_details_dialog_delete">Cancella conversazione</string>
+    <string name="activity_chats_details_dialog_block">Blocca questo utente</string>
+    <string name="date_name_today">Oggi</string>
+    <string name="date_name_yesterday">Ieri</string>
+    <string name="block_ape_title">Blocca questo utente</string>
+    <string name="block_ape_text">Vuoi bloccare questo scimmione?</string>
+    <string name="unblock_ape">Sblocca</string>
+    <string name="chat_message_hint">scrivi qua&#8230;</string>
+    <!-- connection error messages -->
+    <string name="jungle_error_title">Giungla, abbiamo un problema!</string>
+    <string name="jungle_error_retry">riprovo tra</string>
+    <string name="button_retry"> Riprova </string>
+    <string name="jungle_error_text">Oops, sto provando a connettermi.</string>
+    <string name="jungle_error_chat">Oops, sto provando a connettermi...</string>
+    <string name="jungle_error_chatDetails">Oops, sto provando a connettermi...</string>
+    <string name="bankonutslog_error_provider">Non riesco a caricare i provider</string>
+    <string name="bankonutslog_error_list">Non riesco a caricare il Registro TWIN</string>
+    <string name="jungle_error_explore">Oops, sto provando a connettermi</string>
+    <!-- SEARCH -->
+    <string name="search_title">Cerca</string>
+    <string name="search_placeholder">Cerca</string>
+    <string name="search_initial_message">Inizia a scrivere qualcosa</string>
+    <string name="search_result_apes">Scimmie</string>
+    <string name="search_result_topics">Argomenti</string>
+    <string name="search_result_moreapes">altre scimmie &gt;</string>
+    <string name="search_no_result">Nessun risultato trovato</string>
+    <string name="search_result_count">risultati</string>
+    <string name="search_result_count_action">post di questo tipo</string>
+    <string name="search_result_count_tag">post contenenti questo hastag</string>
+    <string name="search_fulltext_message">Vedi tutti i post contenenti \"%1$s\"</string>
+    <string name="search_qt_result">%1$d risultato</string>
+    <!-- DELETED APE -->
+    <string name="item_not_found">Oooops, questo elemento non è disponibile! :(</string>
+    <string name="ape_not_found">Spiacente questo scimmiotto non è raggiungibile! :(</string>
+    <string name="share_action_title">Scegli una categoria</string>
+    <!-- BANKONUTS LOG-->
+    <string name="bankonutslog_title">Registro TWIN</string>
+    <string name="bankonutslog_header_title">Il mio bilancio</string>
+    <string name="bankonutslog_header_btn">Extra BankoNuts</string>
+    <string name="bankonutslog_image_text">TWIN</string>
+    <string name="bankonutslog_list_pending_title">In attesa di conferma</string>
+    <string name="bankonutslog_list_title">Più recenti</string>
+    <string name="bankonutslog_row_btndelete">Cancella</string>
+    <string name="bankonutslog_row_btnconfirm">Conferma azione</string>
+    <string name="bankonutslog_row_btnshare">Condividi</string>
+    <string name="bankonutslog_row_bankocount_certified">%1$d TWIN certificate</string>
+    <string name="bankonutslog_row_bankocount_inspirational">%1$d TWIN ispirazionali</string>
+    <string name="bankonutslog_earnmore_header">Guadagna più TWIN</string>
+    <string name="bankonutslog_earnmore_title">Guadagna TWIN collegando altre app:</string>
+    <string name="bankonutslog_earnmore_btn_active">Attivo</string>
+    <string name="bankonutslog_earnmore_btn_disconnect">Disconnetti</string>
+    <string name="bankonutslog_earnmore_btn_disconnect_msg">Disconnessione riuscita!</string>
+    <string name="bankonutslog_earnmore_btn_connect">Connetti</string>
+    <string name="bankonutslog_earnmore_btn_learn_more">Scopri</string>
+    <string name="bankonutslog_earnmore_btn_install">Installa</string>
+    <string name="bankonutslog_earnmore_providerDetails">Connetti</string>
+    <string name="bankonutslog_remove_provider_dialog_title">Disconnetti</string>
+    <string name="bankonutslog_remove_provider_dialog_text">Vuoi davvero disconnetterti?\nNon riceverai TWIN da questa app</string>
+    <string name="bankonutslog_connection_provider">Connessione in corso&#8230;</string>
+    <string name="bankonutslog_disconnection_provider">Disconnessione in corso&#8230;</string>
+    <string name="bankonutslog_tab_title_rewards">Premi</string>
+    <string name="bankonutslog_tab_title_bankonutslog">Registro</string>
+    <string name="bankonutslog_tab_title_otherapps">Altre App</string>
+    <string name="bankonutslog_provider_status">Connesso</string>
+    <string name="bankonutslog_provider_header_title">Azioni di mobilità verificate</string>
+    <string name="google_fit_status_disconnected">Disconnetti</string>
+    <string name="google_fit_status_cant_connect">Google Fit al momento non è raggiungibile. Prova più tardi!</string>
+    <string name="google_fit_description">Connetti il tuo account Google Fit a greenApes. Guadagnerai automaticamente 2 TWIN per ogni Km percorso in bici o a piedi. Massimo 10 TWIN per ciascuno spostamento!</string>
+    <string name="bankonutslog_reward_middle_title">Premiati!</string>
+    <string name="bankonutslog_reward_share_position">Condividi posizione</string>
+    <string name="bankonutslog_reward_empty_list">Oops, al momento non ci sono Premi disponibili in zona</string>
+    <string name="bankonutslog_reward_local_title">Nella tua zona</string>
+    <string name="bankonutslog_reward_global_title">Online</string>
+    <string name="bankonutslog_reward_share_middle_text">Clicca qui per condividere la tua posizione e trovare attività sostenibili vicino a te</string>
+    <string name="bankonutslog_reward_share_bottom_text">(non salveremo nè mostreremo mai il dato)</string>
+    <string name="bankonutslog_subtitle_details_googlefit">da google-fit</string>
+    <string name="bankonutslog_last_log_received">Aggiornato </string>
+    <string name="bankonutslog_insert_coupon">Inserisci il Codice Segreto</string>
+    <string name="bankonutslog_redeem_coupon">Conferma</string>
+    <string name="bankonutslog_message_error_coupon">Controlla il codice!</string>
+    <string name="bankonutslog_coupon_description">Codice Segreto inserito con successo</string>
+    <string name="bankonutslog_coupon_generic_error">Codice Segreto non trovato</string>
+    <string name="bankonutslog_coupon_dialog_title">Codice Segreto</string>
+    <string name="bankonutslog_coupon_dialog_description">Se hai un Codice Segreto, inseriscilo qui per riscuotere le tue TWIN:</string>
+    <string name="bankonuts_provider_click_info">Scopri</string>
+    <!-- famous ape card -->
+    <string name="famousape_card_title">Connetti</string>
+    <string name="famousape_card_text">Connetti</string>
+    <!-- Permission -->
+    <string name="permission_rewards_locale_title">Permesso Localizzazione</string>
+    <string name="permission_rewards_locale_text">Condividi la tua posizione per cercare Premi sostenibili disponibili nella tua zona</string>
+    <string name="permission_explore_locale_text">Condividi la tua posizione per trovare locali sostenibili vicino a te (non preoccuparti: la tua posizione esatta non sarà mostrata a nessuno né tracciata né registrata)</string>
+    <string name="permission_photo_title">Autorizzo ad accedere alle mie foto</string>
+    <string name="permission_photo_description">Scatta una foto o aggiungila dalla galleria per ispirare le altre scimmiette (e guadagnare più TWIN)</string>
+    <string name="permission_photoprofile_description">Scatta una foto o aggiungila dalla tua galleria per personalizzare il tuo profilo</string>
+    <string name="permission_gafit_locale_title">Permesso Localizzazione</string>
+    <string name="permission_gafit_locale_text">Traccia la tua camminata o giro in bici per ottenere automaticamente TWIN (non preoccuparti: la tua posizione esatta no verrà mostrata, ne tracciata ne registrata)</string>
+    <!-- AFFILIATION -->
+    <string name="affiliation_dialog_title">oOk oOk</string>
+    <string name="affiliation_dialog_text">Complimenti! Adesso sei membro di un gruppo speciale: %1$s</string>
+    <string name="affiliation_profile_string">Membro di %1$s</string>
+    <string name="affiliation_profile_title">Team</string>
+    <string name="affiliation_profile_hint">Sei membro di un team?</string>
+    <string name="profile_custom_info_row">%1$s Dati</string>
+    <!-- SMS LOGIN -->
+    <string name="smslogn_titlte">Inserisci un numero di cellulare valido</string>
+    <string name="smslogn_subtitlte">Ti invieremo un codice di accesso</string>
+    <string name="smslogn_hint_mobile">numero di cellulare</string>
+    <string name="smslogn_btnsubmit">Invia</string>
+    <string name="smslogn_btnsubmit_progress">Sto inviando&#8230;</string>
+    <string name="smslogn_btnsubmit_complete">Inviato!</string>
+    <string name="smslogn_btncall_wait">Ti chiameremo tra %1$d sec.</string>
+    <string name="smslogn_btncall_now">Chiamami adesso!</string>
+    <string name="smslogn_btncall_calling">Chiamata in corso&#8230;</string>
+    <string name="smslogn_confirm_title">Inserisci il codice che ti abbiamo appena mandato per Sms</string>
+    <string name="smslogn_confirm_hint">Digita il codice qui</string>
+    <string name="smslogn_confirm_btnconfirm">Conferma</string>
+    <string name="smslogn_confirm_btnDidntReceived">Codice non ricevuto?</string>
+    <string name="smslogn_confirm_btnResend">Re-invio sms</string>
+    <string name="smslogn_step_one_confirm_message">Registrazione con SMS completata!</string>
+    <string name="smslogn_step_two_code_error">Codice non valido</string>
+    <string name="smslogn_step_one_code_error">Telefono non valido</string>
+    <string name="smslogn_step_two_code_error_user_mismatch">Questo numero è già registrato!</string>
+    <string name="login_cant_save_profile">Non è possibile salvare il profilo, prova di nuovo</string>
+    <string name="edit_profile_cant_delete">Non è possibile eliminare il profilo in questo momento, riprova più tardi</string>
+    <!-- LOGOUT / DELETE APE -->
+    <string name="logout_dialog_message">Sei sicuro di volerti scollegare da greenApes?</string>
+    <string name="delete_ape_first_dialog_message">Sei sicuro di voler cancellare il tuo account \"%1$s\"?</string>
+    <string name="delete_ape_last_dialog_message">Se prosegui, il tuo account verrà rimosso da greenApes. Tutte le informazioni, testi e foto saranno eliminati in maniera permanente e non potranno essere recuperati. Sei sicuro di voler cancellare il tuo account \"%1$s\"?
+    </string>
+    <string name="button_profile_logout">Esci</string>
+    <string name="button_profile_delete">Elimina utente</string>
+    <string name="button_profile_delete_progress">Sto cancellando&#8230;</string>
+    <string name="button_generic_status_err">Errore</string>
+    <string name="button_open_camera">Fotocamera</string>
+    <string name="button_open_gallery">Galleria</string>
+    <!-- Bookmarks -->
+    <string name="bookmarks_button_open">Salvato dalla Giungla</string>
+    <string name="bookmarks_subbutton_open">Vai</string>
+    <string name="bookmarks_save_message">Salvato tra i preferiti</string>
+    <string name="bookmarks_remove_message">Rimosso dai preferiti</string>
+    <string name="bookmarks_text_emptylist">Salva i tuoi post preferiti dalla Giungla facendo clic sull\'icona del segnalibro e controllali cliccando qui!</string>
+    <!-- profileHelperfile -->
+    <string name="profile_mylvl_title">Il mio livello</string>
+    <string name="profile_popular_title">Eco-ispiratore</string>
+    <string name="profile_invite_button">Invita</string>
+    <string name="invite_menu">Invita su greenApes</string>
+    <string name="more_available_soon">Disponibile a breve!</string>
+    <string name="more_stay_tuned">Stay Tuned!</string>
+    <string name="more_about_sharingmi">info su SharingMi</string>
+    <string name="profile_settings_button">Impostazioni</string>
+    <string name="profile_bankonutslog_button">Vai al registro TWIN</string>
+    <string name="profile_provider_button">BankoNuts Provider</string>
+    <!-- EXPLORE -->
+    <string name="activity_explore_title">Esplora</string>
+    <string name="explore_venue_shareBtn">Condividi un\'azione fatta qui</string>
+    <string name="explore_venue_whoshere">Chi è passato di qui?</string>
+    <string name="explore_venue_info">info</string>
+    <string name="explore_filter_showOnlyRewards">Visualizza solo i Premi</string>
+    <string name="explore_share_button_text">Aggiungi un luogo</string>
+    <string name="explore_share_novenues">Oops, nessuna venue vicino a te! \nProva a spostarti nella mappa!</string>
+    <!-- REWARD -->
+    <string name="reward_details_description">Descrizione</string>
+    <string name="reward_details_btngetit">Ottieni questo premio!</string>
+    <string name="reward_details_btnnonuts">Non hai abbastanza Nuts</string>
+    <!-- Ape Rank ANIMATION -->
+    <string name="dara_bnforclap_text">Quando clappi aggiungi al post \n%1$s %2$s</string>
+    <string name="dara_level_text">Livello %1$s</string>
+    <string name="title_activity_maps">Mappa</string>
+    <!-- REWARD GAINED -->
+    <string name="reward_gained_button_share">Condividi</string>
+    <string name="reward_gained_button_close">Chiudi</string>
+    <!-- ENEGAN -->
+    <string name="enegan_login_message">Inserisci qui il nome utente e password del tuo account e comincia a guadagnare TWIN</string>
+    <string name="provider_login_error_timeout_screen">Chiudo tra %1$d sec.</string>
+    <string name="provider_login_success_timeout_screen">Chiudo tra %1$d sec.</string>
+    <string name="provider_login_error_401">Nome utente / password non corretti</string>
+    <string name="provider_login_token_error_401">Token non valido</string>
+    <string name="provider_login_error_503">Problemi con il server, riprova</string>
+    <string name="provider_login_error_generic">Impossibile connettersi ora, riprova più tardi</string>
+    <string name="provider_login_username_hint">Nome utente</string>
+    <string name="provider_login_username_error">Inserisci un nome</string>
+    <string name="provider_login_password_hint">Password</string>
+    <string name="provider_login_password_error">Inserisci la password</string>
+    <string name="provider_login_title">Connetti con </string>
+    <string name="provider_login_status_loading">Connetti</string>
+    <string name="provider_login_btn_connection_ok">OK</string>
+    <string name="provider_login_from_token_error">Impossibile caricare i provider, riprova</string>
+    <string name="provider_login_from_token_error_invalid">Token non valido</string>
+    <string name="reward_sold_out">Terminato</string>
+    <!-- INTEREST -->
+    <string name="interests_title">Interessi</string>
+    <string name="onboard_interests_title">I tuoi interessi</string>
+    <string name="onboard_interests_description">Su greenApes puoi trovare e condividere storie interessanti sulla sostenibilità. Scegli i tuoi argomenti preferiti!</string>
+    <string name="onboard_interests_description_sharingmi">su sharingMi puoi trovare e condividere storie legate all\'eco-sostenibilità. Scegli i tuoi argomenti preferiti</string>
+    <string name="onboarding_interests_btn_chooseone">Scegline almeno uno</string>
+    <string name="registration_popup_description">Guadagnerai altre TWIN per aver ispirato gli altri, condividendo le tue azioni e idee. Usa le TWIN per ottenere fantastici Premi green offerti dai nostri partner.</string>
+    <string name="registration_popup_shout">Scoprili nella sezione \"Premi\"!</string>
+    <!--
+        <string name="registration_popup_bankonuts_firstmessage">Your First</string>
+        <string name="registration_popup_bankonuts_gift_banko">%1$d BankoNuts!</string>
+    -->
+    <string name="registration_popup_title">%1$d TWIN per te!</string>
+    <string name="registration_popup_bankonuts_invite_record">%1$d TWIN per aver ricevuto un invito da un\'altra scimmietta</string>
+    <string name="registration_popup_bankonuts_code_record">%1$d TWIN per aver inserito un Codice Segreto</string>
+    <string name="registration_popup_bankonuts_coupon_record">%1$d TWIN come regalo di benvenuto!</string>
+    <string name="registration_popup_bankonuts_gotit_button">Ok, ho capito!</string>
+    <string name="share_coupon_message">oOk oOk il tuo codice è stato inserito con successo! Adesso, se vuoi, puoi condividere la tua storia nella Giungla!</string>
+    <string name="share_coupon_message_without_share">oOk oOk il tuo codice è stato inserito con successo!</string>
+    <string name="barilla_summary_description">SU-EATABLE LIFE premia le tue scelte sostenibili e sane</string>
+    <string name="btn_read_mode">Scopri di più</string>
+    <string name="btn_read_translate">Traduci</string>
+    <string name="btn_read_show_original">Visualizza originale</string>
+    <!-- Send item status message -->
+    <string name="senditem_alert">Sto condividendo...</string>
+    <string name="senditem_sendphoto_waiting">Caricamento foto in corso...</string>
+    <string name="senditem_sendphoto_error">Ci sono problemi nella pubblicazione della foto, riprova più tardi</string>
+    <string name="senditem_sendphoto_success">La tua foto è stata caricata con successo</string>
+    <string name="senditem_senditem_waiting">Invio della tua storia in corso...</string>
+    <string name="senditem_senditem_error">Ci sono problemi nella pubblicazione della tua storia, riprova più tardi</string>
+    <string name="senditem_senditem_success">La tua storia è stata inviata</string>
+    <!-- GDPR -->
+    <string name="btn_request_data">Richiedi una copia dei tuoi dati</string>
+    <string name="dialog_request_data">Se vuoi esportare tutti i tuoi dati che sono salvati su greenApes puoi scriverci una e-mail e li esporteremo per te. Nei prossimi mesi lavoreremo per rendere automatica questa esportazione, adesso richiede un pò di tempo quindi dacci un paio di giorni per prepararli.</string>
+    <string name="dialog_confirm_request_data">Invia mail di richiesta</string>
+    <string name="email_subject_request_data">Richiesta di dati profilo</string>
+    <string name="email_subject_notify_bug">Bug trovato</string>
+    <string name="email_body_request_data">Ciao greenApes!,\nSono %1$s (%2$s),\nVi chiedo di inviare una copia dei miei dati a questo indirizzo email.\noOk oOk!</string>
+    <string name="email_body_notifybug">Ciao Team greenApes!,\nquesto è %1$s (%2$s),\nI usando la versione gA %3$s di android %4$s (%5$s)\n\n il mio problema è: \n\n </string>
+    <!-- profile -->
+    <string name="btn_personal_wall">Storie</string>
+    <string name="tou_screen_title">Registrandomi confermo che:</string>
+    <string name="tou_screen_checktou">Accetto i Termini d\'uso</string>
+    <string name="tou_screen_checkpp">Accetto la Privacy Policy</string>
+    <string name="tou_screen_btngo">Avanti!</string>
+    <string name="after_share_coolyouearn">Ben fatto! Hai guadagnato:</string>
+    <string name="after_share_shareandinspire">Ispira il mondo:</string>
+    <!-- CUSTOM AFFILIATIONS -->
+    <string name="bwm_affiliation_title">Buona caccia al tesoro!</string>
+    <string name="BMW_affiliation_description">- non più attuale-</string>
+    <!-- Secret Code -->
+    <string name="bm_secret_code_label">Ho trovato un Codice Segreto</string>
+    <string name="confirm_exit_share">Sei sicuro di uscire? Il tuo post verrà eliminato</string>
+    <string name="onboard_start_tutorial_title">Siamo pronti!</string>
+    <string name="onboard_start_tutorial_description">La tua avventura nella Giungla sta per iniziare: che ne dici di un piccolo tour per scoprire come funziona la app?</string>
+    <string name="onboard_start_tutorial_button">Si, fammi fare un giro!</string>
+    <string name="onboard_skip_tutorial_button">Salta, portami nella Giungla</string>
+    <string name="tutorial_skip_btn">salta</string>
+    <string name="tutorial_next_btn">avanti</string>
+    <string name="tutorial_prev_btn">indietro</string>
+    <string name="tutorial_gotojungle_btn">vai nella Giungla</string>
+    <string name="section_impact">Impatto positivo</string>
+    <string name="section_explore">Esplora</string>
+    <string name="section_reward">Premiati</string>
+    <string name="section_more">Altro</string>
+    <string name="checkin_button">Check In</string>
+    <!--- provider -->
+    <string name="provider_connection_success"> Applicazione connessa con successo</string>
+    <string name="how_to_use_this_reward">Come ottenere il tuo premio:</string>
+    <!-- INVITE -->
+    <string name="dialog_invite_title">Porta i tuoi amici nella Giungla!</string>
+    <string name="dialog_invite_description">Usa questo link per invitare i tuoi amici. Se lo useranno riceverai 100 TWIN</string>
+    <string name="dialog_invite_copylink_button">Copia</string>
+    <string name="dialog_invite_button">Invita su greenApes</string>
+    <string name="dialog_copied_text_on_clipboard">Link copiato negli appunti</string>
+    <string name="dialog_invite_headertitle">Invita i tuoi amici e sarete premiati</string>
+    <string name="dialog_short_post_message">Il testo della tua storia è molto breve. Vuoi aggiungere altre informazioni per renderla più interessante per la community?</string>
+    <string name="dialog_short_post_ok">Ok</string>
+    <string name="dialog_short_post_no">No, grazie</string>
+    <!-- check in -->
+    <string name="bs_checkin_description_success">Facendo check-in in un luogo sostenibile guadagni TWIN che puoi usare per ottenere premi sostenibili. \nCondividili con la Giungla per guadagnare più TWIN o vai al tuo registro TWIN</string>
+    <string name="bs_checkin_description_error_month">Grazie per aver fatto check-in, hai già guadagnato tutte le TWIN che potevi ottenere in questo luogo questo mese. Vuoi condividere una storia con altre scimmiette (e guadagnare TWIN)?</string>
+    <string name="bs_checkin_description_error_day">Grazie per aver fatto check-in, hai già guadagnato tutte i TWIN che potevi ottenere in questo luogo oggi. Vuoi condividere una storia con le altre scimmiette (e guadagnare TWIN)?</string>
+    <string name="bs_checkin_title_error">Bentornato</string>
+    <string name="bs_checkin_other_button">Non adesso: Vai al registro TWIN</string>
+    <string name="bs_checkin_other_button_without_not_now">Vai al registro TWIN</string>
+    <string name="bs_checkin_wait_message">Validazione in corso...</string>
+    <string name="bs_checkin_no_data">oOk oOk! Non ci sono attività o iniziative legate a greenApes nelle tue immediate vicinanze</string>
+    <string name="bs_checkin_too_far_message">Ci dispiace ma sei troppo lontano da questo luogo</string>
+    <string name="bs_checkin_startgps_message">Condividi la tua posizione per scoprire nuovi luoghi sostenibili vicino a te</string>
+    <string name="bs_checkin_startgps_btn">Condivi la tua posizione</string>
+    <string name="profile_wake_up">Svegliati! </string>
+    <string name="button_specials">Specials</string>
+    <string name="button_explore">Esplora</string>
+    <string name="button_rewards">Premi</string>
+    <string name="button_me">Profilo</string>
+    <string name="button_story">Storia</string>
+    <string name="button_check_in">Check-In</string>
+    <string name="button_code">Codice</string>
+    <string name="spacials_provider_title">Certifica il tuo stile di vita</string>
+    <string name="spacials_challenge_title">Le tue Sfide</string>
+    <string name="spacials_provider_see_all"><![CDATA[vedi tutte]]></string>
+    <string name="challenge_button_get_your_reward">Premiati</string>
+    <string name="challenge_button_accept">Accetta la Sfida</string>
+    <string name="challenge_button_quit">Abbandona la Sfida</string>
+    <string name="challenge_quit_confirm">Sei sicuro di voler abbandonare la Sfida?</string>
+    <string name="notification_see_all">vedi tutte</string>
+    <string name="challenge_reward_slim_description_bn">+%1$d TWIN</string>
+    <string name="challenge_reward_description_bn">Guadagna %1$d TWIN</string>
+    <string name="challenge_reward_description_reward">e sblocca un premio speciale</string>
+    <string name="challenge_reward_description_venue">offerto da</string>
+    <string name="challenge_status_completed">Completata</string>
+    <string name="challenge_status_running">Attiva</string>
+    <string name="more_faq_section">FAQ</string>
+    <string name="bug_section">Segnala un bug</string>
+    <string name="challenge_all_title">Tutte le Sfide</string>
+    <string name="challenge_all_subtitle">lista completa</string>
+    <string name="partner_all_title">Tutti i partner</string>
+    <string name="partner_all_subtitle">lista completa</string>
+    <string name="challenge_filter_active">Attive</string>
+    <string name="challenge_filter_completed">Completate</string>
+    <string name="greenapes_faq_link">https://www.greenapes.com/faqs/</string>
+    <string name="secretcode_description">Inserisci il Codice Segreto qui:</string>
+    <string name="secretcode_button">Conferma</string>
+    <string name="secretcode_qr_description">O scannerizza un codice QR</string>
+    <string name="secretcode_qr_button">Scannerizza</string>
+    <string name="scool_food_title">sCOOL FOOD</string>
+    <string name="challenge_quit_message">Hai abbandonato la Sfida</string>
+    <string name="google_fit_short_text">+2 TWIN al km</string>
+    <string name="challenge_expiring_today">Scade oggi</string>
+    <string name="challenge_days_left">%1$d giorni rimanenti</string>
+    <string name="challenge_popup_title">Accetta la Sfida</string>
+    <string name="challenge_popup_description_days">Hai %1$d giorni per completarla, buon divertimento!</string>
+    <string name="challenge_popup_description_today">Hai soltanto oggi per completarla, buon divertimento!</string>
+    <string name="challenge_popup_description_notime">Buon divertimento!</string>
+    <string name="challenge_popup_button_accept">Accetta</string>
+    <string name="challenge_popup_button_cancel">Annulla</string>
+    <string name="reward_challenge_unlock">Completa la Sfida %1$s per sbloccarlo</string>
+    <string name="reward_redeem_days">Puoi ottenere questo premio solo una volta ogni %1$d giorni</string>
+    <string name="reward_redeem_lifetime">Puoi ottenere questo premio solo una volta</string>
+    <string name="personal_jungle_empty_message">Qui troverai tutte le tue storie. \nPremi il bottone \'+\' per condividere la tua prima storia!</string>
+    <string name="btn_report_post">Segnala</string>
+    <string name="checkin_toolbar_title">Scegli il luogo in cui fare check-in</string>
+    <string name="eco_certifier_error_limit">Hai già guadagnato i tuoi punti per un pasto oggi. oOk oOk</string>
+    <string name="eco_certifier_error_invalid">Questo QR code è già stato usato. Chiedine uno nuovo!</string>
+    <string name="sharingmi_banner_description">Sei parte di SharingMi powered by greenApes</string>
+    <string name="default_notification_channel_id">Inbox</string>
+    <string name="notification_channel_title">Notifiche push</string>
+    <string name="tou_btn_underage">Ho meno di 16 anni</string>
+    <string name="tou_btn_overage">Ho almeno 16 anni</string>
+    <string name="tou_underage_text">Ho ricevuto il consenso dei miei genitori e il codice di sblocco per iscrivermi.</string>
+    <string name="tou_underage_placeholder">Il mio codice di sblocco</string>
+    <string name="tou_underage_code_error">Codice non valido</string>
+    <string name="provider_external_connection_error">Ops, connessione non riuscita, riprova fra 5 minuti!</string>
+    <!-- PostMore -->
+    <string name="postMore_save_post_to_favourite">Salva nei preferiti</string>
+    <string name="postMore_remove_post_from_favourite">Togli dai preferiti</string>
+    <string name="postMore_close">Chiudi</string>
+    <string name="postMore_saved_to_bookmarks">Salvato tra i preferiti</string>
+    <string name="postMore_removed_from_bookmarks">Rimosso dai preferiti</string>
+    <string name="postMore_report_post">Qualcosa non va in questo post?</string>
+    <string name="postMore_report_tell_us">Ci segnali che questo post:</string>
+    <string name="postMore_report_inappropriate">E\' inappropriato e/o offensivo</string>
+    <string name="postMore_report_not_good">Non è adatta alla community di greenApes</string>
+    <string name="postMore_report_result_title">Grazie per la segnalazione.</string>
+    <string name="postMore_report_result_message">Grazie per la segnalazione. Il tuo feedback ci aiuta a proteggere la community</string>
+    <string name="postMore_error">Si è verificato un errore, riprova di nuovo fra 5 minuti</string>
+    <string name="postMore_comment_report">Il commento è inappropriato e/o offensivo</string>
+    <string name="postMore_comment_delete">Cancella il mio commento</string>
+    <string name="postMore_comment_edit">Modifica il mio commento</string>
+    <string name="postMore_comment_edit_history">Vedi modifiche</string>
+    <string name="onboard_avatar_explained">Se vuoi cambiarla lo potrai fare dalle impostazioni del tuo profilo (oppure fai subito tap qui)</string>
+    <string name="onboard_end_screen_description">La tua avventura nella giungla comincia ora!</string>
+    <!-- Partners -->
+    <string name="partners_app_status_connected">Connesso</string>
+    <string name="partners_google_fit_not_connected">Collega e guadagna 1 TWIN al km</string>
+    <string name="partners_google_fit_connected">Stai guadagnando 1 TWIN al km</string>
+    <string name="partners_way_of_earning">Come guadagnare TWIN</string>
+    <string name="partners_check_in">Check-in</string>
+    <string name="partners_goto">Vai alla pagina di %s</string>
+    <string name="partners_goto_and_install">Vai al Play store e scarica</string>
+    <string name="partners_insert_magic_code">Inserisci il Codice Segreto</string>
+    <string name="partners_validate">Invia</string>
+    <string name="partners_connect_app">Connetti %s</string>
+    <string name="partners_disconnect_app">Disconnetti %s</string>
+    <string name="partners_keywords">Keywords</string>
+    <string name="partners_show_more">Espandi</string>
+    <string name="partners_show_less">Riduci</string>
+    <string name="partners_details_photo">Immagini</string>
+    <string name="partners_details_photo_see_all">Vedi tutte</string>
+    <string name="partners_cta_checkin">Check-in</string>
+    <string name="partners_cta_code">Inserisci il codice</string>
+    <string name="partners_cta_connected">Connesso</string>
+    <string name="partners_cta_connect">Connetti</string>
+    <string name="partners_cta_install">Installa</string>
+    <string name="partners_cta_not_connected">Non connesso</string>
+    <string name="partners_online">Online</string>
+    <string name="partners_read_more">Scopri di più</string>
+    <string name="partners_read_less">Riduci</string>
+    <string name="partners_get_in_touch">Come raggiungerci</string>
+    <string name="partners_get_in_touch_button">Domande? Scrivi a</string>
+    <string name="partners_contact_details">Contatti</string>
+    <string name="partners_locations">Sedi</string>
+    <string name="partners_view_on_google_maps">Vedi su Google Maps</string>
+    <string name="partners_go_to_top_to_checkin">Esplora dove trovare le sedi</string>
+    <string name="partners_multiple_locations_description">Esplora le sedi nella tua zona, trova informazioni aggiuntive e fai check-in se vuoi.</string>
+    <string name="partner_all_photos_of">Tutte le immagini di %s</string>
+    <string name="partners_claim_reward_placeholder">Ottieni questo premio</string>
+    <string name="partners_accept_the_challenge">Accetta la Sfida!</string>
+    <string name="partners_feeds_about_placeholder">Storie su %s</string>
+    <string name="partners_feeds_about_subtitle_placeholder">Tutte le storie con #hashtag %s</string>
+    <string name="venues_is_open">Aperto</string>
+    <string name="venues_is_closed">Chiuso</string>
+    <string name="venue_open_closes_at">Aperto: chiude  %s</string>
+    <string name="venue_closed_opens">Chiuso: apre %s</string>
+    <string name="venues_list_title">Dove vuoi fare check-in?</string>
+    <string name="venues_permissions_not_granted">Non è possiibile accedere alla tua posizione:(</string>
+    <string name="venues_allow_gps">Autorizza accesso alla posizione</string>
+    <string name="venues_check_in">Check-in</string>
+    <string name="venues_too_far">Oops! Sembra che tu sia un po\' troppo lontano per fare check-in qui.</string>
+    <string name="venues_opening_hours">Orari di apertura</string>
+    <string name="venues_find_us">Dove trovarci</string>
+    <string name="venues_earning_periodically">Puoi guadagnare %d TWIN una volta ogni %d giorni</string>
+    <string name="venues_earning_once">Puoi guadagnare %d TWIN solo la prima volta che fai check-in</string>
+    <string name="venues_earning_no_limits">Puoi guadagnare %d TWIN tutti i giorni</string>
+    <string name="venues_cannot_open_maps">Non riesco a trovare una app per le mappe</string>
+    <string name="venues_share_with_friends">Condividi con la community</string>
+    <string name="venues_well_done">Mitico!</string>
+    <string name="venues_welcome_back">Bentornato!</string>
+    <string name="venues_checkin_success">Hai guadagnato %d TWIN facendo check-in presso %s</string>
+    <string name="venues_checkin_success_but_no_earn">Siamo sempre felici di vederti! Stavi cercando le tue TWIN? Verifiche le regole nella pagina dove hai fatto check-in.</string>
+    <string name="venues_venues_around_you">Sedi %s nella tua area</string>
+    <string name="partners_reward_title">Scopri di più sul nostro partner</string>
+    <!-- Projects -->
+    <string name="projects_menu_title">Progetti di cui fai parte</string>
+    <string name="projects_read_more">Scopri di più sul progetto</string>
+    <string name="projects_registration_details">Dettagli di registrazione</string>
+    <string name="projects_dont_forget_to">Cose che puoi fare...</string>
+    <string name="projects_see_statistics">Numeri e risultati</string>
+    <string name="projects_invite_new_members">Invita su greenApes</string>
+    <string name="projects_your_details">I tuoi dettagli</string>
+    <string name="projects_edit">Modifica</string>
+    <string name="projects_close">Chiudi</string>
+    <string name="projects_save">Salva</string>
+    <string name="projects_reminder_title">Hey! \n E\' ora di completare il tuo profilo!</string>
+    <string name="projects_reminder_content">Sono necessarie alcune informazioni per completare</string>
+    <string name="projects_reminder_complete_now">Completa ora</string>
+    <string name="projects_reminder_remind_me_later">Ricordamelo più tardi</string>
+    <string name="projects_reminder_ok_thanks">Ok, grazie</string>
+    <string name="projects_reminder_message">Completa il tuo profilo con le informazioni mancanti per iniziare</string>
+    <string name="projects_welcome_ok">Cominciamo</string>
+    <string name="forms_error_required">Campo obbligatorio</string>
+    <string name="forms_error_not_in_range">Minimo %s caratteri, maximum %s</string>
+    <string name="forms_error_email">E-mail non valida</string>
+    <string name="forms_error_number">Non è un numero valido</string>
+    <string name="forms_error_date">Data non valida</string>
+    <string name="forms_select_placeholder">Seleziona un valore</string>
+    <string name="forms_info_message">Dati inseriti correttamente</string>
+    <string name="forms_info_close">Chiudi</string>
+    <string name="forms_error_message">Errore nell\'inserire i dati, riprovare fra un po!</string>
+    <string name="forms_error_close">OK</string>
+    <string name="dive_into_the_jungle">Fai un salto nella Giungla</string>
+    <string name="explore_rewards">Scopri i premi</string>
+    <string name="onboard_project_description">Stai entrando a far parte di un gruppo speciale su greenApes! Completa la registrazione.</string>
+    <string name="skip">Salta</string>
+    <string name="next">Avanti</string>
+    <string name="tutorial_slide_1_title">Raccogli</string>
+    <string name="tutorial_slide_1_text">Raccogli punti (TWIN) con le tue azioni quotidiane e completando sfide divertenti</string>
+    <string name="tutorial_slide_2_title">Dona</string>
+    <string name="tutorial_slide_2_text">Fai la differenza! Usa i tuoi TWIN per supportare iniziative sociali e ambientali</string>
+    <string name="tutorial_slide_3_title">Premi</string>
+    <string name="tutorial_slide_3_text">Più doni e più sorprese sblocchi nella sezione “Premi”</string>
+    <plurals name="available_rewards">
+        <item quantity="one">un premio rimasto</item>
+        <item quantity="other">%d premi rimasti</item>
+    </plurals>
+    <plurals name="available_rewards_short">
+        <item quantity="one">uno rimasto</item>
+        <item quantity="other">%d rimasti</item>
+    </plurals>
+    <string name="refresh_action">Aggiorna</string>
+    <string name="connect_provider_error">Si è verificato un problema. Scrivici a support@greenapes.com</string>
+    <string name="about_your_privacy_settings">Privacy e gestione dati</string>
+    <string name="privacy_data_request_failed">Ops..si è verificato un problema\nProva di nuovo più tardi</string>
+    <string name="privacy_dialog_title">Sei sicuro che ti serva una copia dei tuoi dati?</string>
+    <string name="privacy_dialog_title_success">Ottimo, richiesta inviata</string>
+    <string name="privacy_dialog_message">Ti inviaremo una email con una copia di tutti i tuoi dati su greenApes</string>
+    <string name="privacy_dialog_message_success">Riceverai i tuoi dati in un file al tuo indirizzo email</string>
+    <string name="privacy_dialog_button">Sì, vorrei una copia dei miei dati</string>
+    <string name="privacy_dialog_button_success">Chiudi</string>
+    <string name="privacy_dialog_close_button">Torna al profilo</string>
+    <string name="yes">Ok</string>
+    <string name="no">No</string>
+    <string name="provider_not_found_error">Errore, applicazione non trovata</string>
+    <string name="title_delete_chat">Cancella conversazione</string>
+    <string name="message_confirm_delete_chat">Sei sicuro di voler eliminare questa conversazione?</string>
+    <string name="confirm_delete_chat">Cancella</string>
+    <string name="cancel_delete_chat">Annulla</string>
+    <string name="error_deleting_chat">Errore durante la cancellazione della conversazione, riprovare più tardi</string>
+    <string name="wait_deleting_chat">Cancellazione in corso, per favore attendi...</string>
+    <string name="wrong_email_reward">Errore: Inserisci un\'email valida.</string>
+    <string name="rewards_filters_all">Tutti</string>
+    <string name="rewards_filters_online">Online</string>
+    <string name="rewards_filters_local">Locali</string>
+    <string name="reward_from_placeholder">%s</string>
+    <string name="expiring_soon">In scadenza</string>
+    <string name="expires_on_placeholder">Scade il %s</string>
+    <plurals name="reward_expires_in">
+        <item quantity="one">Scade in %d giorno</item>
+        <item quantity="other"> Scade in %d giorni</item>
+    </plurals>
+    <plurals name="reward_left_items">
+        <item quantity="one">Solo %d rimasto</item>
+        <item quantity="other">Solo %d rimasti</item>
+    </plurals>
+    <plurals name="reward_left_items_extended">
+        <item quantity="one">Sbrigati! Ne rimane solo %d!</item>
+        <item quantity="other">Sbrigati! Ne rimangono solo %d!</item>
+    </plurals>
+    <string name="rewards_location_warning_title">Stai visualizzando solo i premi online!</string>
+    <string name="rewards_location_warning_description">Condividi la tua posizione per cercare premi nella tua zona.</string>
+    <string name="rewards_location_warning_action">Modifica le impostazioni</string>
+    <string name="rewards_no_rewards_title">Ops..non ci sono premi nella tua zona.</string>
+    <string name="rewards_no_rewards_description">Al momento non ci sono premi locali attivi vicino a te. Vuoi proporne qualcuno? Contatta il nostro team.</string>
+    <string name="reward_instructions_title">Istruzioni per il ritiro</string>
+    <string name="reward_details_challenge_title">Completa questa Sfida per ottenere il premio!</string>
+    <string name="reward_details_partner_mini_title">Partner</string>
+    <string name="reward_details_bankonuts_mini_title">TWIN</string>
+    <string name="reward_details_challenge_mini_title">Sfida</string>
+    <string name="reward_details_claim_now_for">Ottieni ora con %d TWIN</string>
+    <string name="reward_details_contacts_title">Informazioni di contatto</string>
+    <string name="reward_details_map_title">Dove ottenerlo</string>
+    <string name="reward_details_partner_title">Offerto da</string>
+    <string name="reward_redeem_dialog_title">Confermi la tua email?</string>
+    <string name="reward_redeem_dialog_description">Invieremo il tuo coupon premio a:</string>
+    <string name="reward_redeem_dialog_confirm">Conferma</string>
+    <string name="start_chat">Messaggio</string>
+    <string name="block_this_ape">Blocca questo utente</string>
+    <string name="dialog_block_ape_message">Se blocchi questo/a utente non potrete scambiare messaggi nè vedere post, commenti e profilo dell\'altra persona. Sei sicuro/a?</string>
+    <string name="dialog_block_ape_button_cancel">Annulla</string>
+    <string name="dialog_block_ape_button_confirm">Sì, blocca questo utente.</string>
+    <string name="loading_please_wait">Sto caricando, solo un attimo!</string>
+    <string name="ape_blocked_successfully">Utente bloccato con successo!</string>
+    <string name="cannot_block_yourself">Non puoi bloccare te stesso!</string>
+    <string name="ape_already_blocked">Utente già bloccato!</string>
+    <string name="generic_error_blocking_ape">Si è verificato un errore nel bloccare questo utente, riprova più tardi.</string>
+    <string name="apes_i_have_blocked">Utenti bloccati/e</string>
+    <string name="unblock_this_ape">Sblocca</string>
+    <string name="dialog_unblock_ape_message">Vuoi sbloccare questo utente?</string>
+    <string name="dialog_unblock_ape_button_cancel">Annulla</string>
+    <string name="dialog_unblock_ape_button_confirm">Sì, sblocca questo utente</string>
+    <string name="generic_error_unblocking_ape">Si è verificato un errore nello sbloccare questo utente, riprova più tardi.</string>
+    <string name="no_blocked_apes">Non hai utenti bloccati al momento</string>
+    <string name="error_loading_partner_title">Oops qualcosa è andato storto!</string>
+    <string name="error_loading_partner_description">Errore durante il download dei dati, per favore riprova</string>
+    <string name="dialog_creating_new_user_message">Nessun profilo trovato.Torna indietro per provare a recuperare il tuo profilo con un altro metodo di login/credenziali.</string>
+    <string name="dialog_creating_new_user_negative_button">Indietro</string>
+    <string name="gfit_not_connected_but_associated">Oops, la connesione con la tua app Google Fit non sembra attiva. Vai alla sezione Specials per riattivarla (e premiare i tuoi spostamenti a piedi e in bici)</string>
+    <string name="clap">Clap</string>
+    <string name="reply">Rispondi</string>
+    <plurals name="see_all_comments_placeholder">
+        <item quantity="one">Vedi %d commento</item>
+        <item quantity="other">Vedi tutti i %d commenti</item>
+    </plurals>
+    <plurals name="claps_placeholder">
+        <item quantity="one">%d clap</item>
+        <item quantity="other">%d claps</item>
+    </plurals>
+    <string name="post_actions_save_to_bookmarks">Salva il post</string>
+    <string name="post_actions_delete_from_bookmarks">Rimuovi il post dai bookmark</string>
+    <string name="post_actions_follow_ape_placeholder">Segui %s</string>
+    <string name="post_actions_unfollow_ape_placeholder">Smetti di seguire %s</string>
+    <string name="post_actions_report_post">Segnala il post</string>
+    <string name="post_actions_report_user">Segnala l\'utente</string>
+    <string name="post_actions_block_user">Blocca l\'utente</string>
+    <string name="post_actions_delete_post">Cancella post</string>
+    <string name="post_actions_edit_post">Modifica il post</string>
+    <string name="post_actions_edit_post_history">Vedi modifiche</string>
+    <string name="delete_confirm">Cancella</string>
+    <string name="close">Chiudi</string>
+    <string name="who_clapped">Chi ha fatto clap</string>
+    <string name="who_donated">Supporter</string>
+    <string name="some_apes_might_not_be_visible">Alcuni utenti potrebbero non essere visibili</string>
+    <string name="apes_you_follow">Utenti che seguo</string>
+    <string name="other_apes">Altri utenti</string>
+    <string name="comments">Commenti</string>
+    <string name="send">Pubblica</string>
+    <string name="reply_to">Rispondi a %s...</string>
+    <string name="error_fetching_apes">Si è verificato un errore recuperando la lista degli utenti, per favore riprova più tardi</string>
+    <string name="visible_for_group_placeholder">Nel gruppo %s</string>
+    <plurals name="shares_placeholder">
+        <item quantity="one">%d condivisione</item>
+        <item quantity="other">%d condivisioni</item>
+    </plurals>
+    <string name="read_more">... Scopri di più</string>
+    <string name="view_translation">Vedi traduzione</string>
+    <string name="view_original">Visualizza originale</string>
+    <string name="translating">Traducendo</string>
+    <string name="youre_replying_to">Stai rispondendo a %s</string>
+    <string name="create_post">Crea un Post</string>
+    <string name="comment_edit_history">Cronologia modifiche</string>
+    <string name="post_edit_history">Cronologia modifiche</string>
+    <string name="publish">Pubblica</string>
+    <string name="upload">Carica</string>
+    <string name="post_type">Tema del Post</string>
+    <string name="show_all_m">Mostra tutti</string>
+    <string name="show_all_f">Mostra tutte</string>
+    <string name="write_something">Scrivi qua...</string>
+    <string name="media">Aggiungi una foto</string>
+    <string name="max_media_added">Oops, rimuovi qualche immagine prima di aggiungerne altre</string>
+    <string name="take_picture">Scatta una foto</string>
+    <string name="choose_from_gallery">Scegli dalla galleria</string>
+    <string name="selected">Selezionato</string>
+    <string name="categories_type">Argomenti</string>
+    <string name="topics_for_the_whole_community">Temi per tutta la community</string>
+    <string name="topics_for_my_group">Temi per i miei gruppi</string>
+    <string name="share_a_post">Condividi un post...</string>
+    <string name="generic_error">Si è verificato un errore, riprova di nuovo fra 5 minuti</string>
+    <string name="you_are_now_following">Stai seguendo %s</string>
+    <string name="you_are_now_unfollowing">Hai smesso di seguire %s</string>
+    <string name="campaigns">Donazioni</string>
+    <string name="supporters">Supporter</string>
+    <string name="bnRaised">TWIN ricevuti</string>
+    <string name="goal">Obiettivo</string>
+    <string name="goal_achieved">Obiettivo raggiunto</string>
+    <plurals name="supporters_apes_donated_placeholder">
+        <item quantity="one">%d supporter</item>
+        <item quantity="other">%d supporters</item>
+    </plurals>
+    <plurals name="you_and_supporters_apes_donated_placeholder">
+        <item quantity="one">Tu e altri %d supporter</item>
+        <item quantity="other">Tu e altri %d supporter</item>
+    </plurals>
+    <string name="you_donated_placeholder">Hai donato %d TWIN</string>
+    <string name="about_this_campaign">L\'iniziativa</string>
+    <string name="campaign_read_more">Continua a leggere</string>
+    <string name="watch_our_video">Video di presentazione</string>
+    <string name="get_to_know_us">Promosso da</string>
+    <string name="supported_by">Finanziato da</string>
+    <string name="donate_bn">Dona</string>
+    <string name="complete_challenge_to_donate">Completa la sfida per donare</string>
+    <string name="share_this_success">Condividi l\'iniziativa</string>
+    <string name="campaign_failed">Peccato! Questa iniziativa non ha raggiunto il suo obiettivo</string>
+    <string name="campaign_expires_on_placeholder">Termina il %s</string>
+    <string name="campaign_expired_on_placeholder">Concluso il %s</string>
+    <string name="campaign_starts_on_placeholder">Le donazioni inizieranno il %s</string>
+    <string name="campaign_not_active_yet">Coming soon!</string>
+    <string name="initiative_completed_on_placeholder">Iniziativa completata il %s</string>
+    <string name="goal_achieved_on_placeholder">Obiettivo raggiunto il %s</string>
+    <string name="campaigns_challenges_title">Completa questa Sfida per supportare l\'iniziativa</string>
+    <plurals name="campaigns_challenges_title_placeholder">
+        <item quantity="one">Sfida con cui supportare una iniziativa</item>
+        <item quantity="other">Sfide con cui supportare l’iniziativa</item>
+    </plurals>
+    <plurals name="campaigns_challenges_subtitle_placeholder">
+        <item quantity="one">Completando questa Sfida supporterai l\'iniziativa</item>
+        <item quantity="other">Completando queste Sfide supporterai l\'iniziativa</item>
+    </plurals>
+    <string name="date_format">dd MMMM yyyy</string>
+    <string name="donation_title_placeholder">Hai %d TWIN disponibili. Quanto vorresti donare?</string>
+    <string name="max_donation_error">Puoi donare un massimo di %d TWIN</string>
+    <string name="donation_hint">es. 100</string>
+    <string name="donate">Dona</string>
+    <string name="donation_step_1">TWIN da donare</string>
+    <string name="donation_step_2">Conferma</string>
+    <string name="donation_step_3">Fatto!</string>
+    <string name="confirm_your_donation">Tutto giusto?</string>
+    <string name="campaign_selected">Iniziativa</string>
+    <string name="bankonuts_you_donate">Donazione</string>
+    <string name="confirm_donation">Dona adesso</string>
+    <string name="donation_successful">Hai appena aiutato il pianeta!</string>
+    <string name="share_the_news">Condividi e promuovi l\'iniziativa</string>
+    <string name="keep_browsing">Salta</string>
+    <string name="my_wallet">TWIN</string>
+    <string name="my_wallet_donate_to_unlock_placeholder">I tuoi TWIN sono validi fino a %s</string>
+    <string name="my_wallet_max">Continua a donare e a fare la differenza!</string>
+    <string name="campaign">Dona e fai la differenza</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="past_projects">Progetti passati</string>
+    <string name="more_details">Scopri di più</string>
+    <string name="campaign_pledged_placeholder">%1$s TWIN ricevute su %2$s</string>
+    <string name="campaign_no_goal_pledged_placeholder">%1$s TWIN ricevute%2$s</string>
+    <string name="campaign_my_donations_placeholder">%1$d TWIN donati</string>
+    <plurals name="supporters_placeholder">
+        <item quantity="one">%d supporter</item>
+        <item quantity="other">%d supporter</item>
+    </plurals>
+    <string name="share_on_the_jungle">Condividi su greenApes</string>
+    <string name="share_now">Condividi ora</string>
+    <string name="search">Cerca post, persone&#8230;</string>
+    <string name="nav_jungle">Giungla</string>
+    <string name="nav_collect">Raccogli</string>
+    <string name="nav_donate">Dona</string>
+    <string name="nav_rewards">Premi</string>
+    <string name="nav_profile">Profilo</string>
+    <string name="action_create_post">Crea un Post</string>
+    <string name="action_check_in">Check-in</string>
+    <string name="action_special_code">Codice speciale</string>
+    <string name="logo_description">logo greenApes</string>
+    <string name="other">Altro</string>
+    <string name="spring">Primavera</string>
+    <string name="fall">Autunno</string>
+    <string name="winter">Inverno</string>
+    <string name="summer">Estate</string>
+    <string name="current_season">Stagione corrente</string>
+    <string name="all_rewards_list">Tutti i premi</string>
+    <string name="completed_challenges">Sfide completate</string>
+    <string name="rewards_linked_to_challenges">Premi legati a sfide</string>
+    <string name="past_seasons">Stagioni passate</string>
+    <string name="rewards_filters_all_placeholder">Tutti (%d)</string>
+    <string name="rewards_filters_current_placeholder">Stagione corrente (%d)</string>
+    <string name="rewards_filters_challenges_placeholder">Sfide (%d)</string>
+    <string name="rewards_filters_past_placeholder">Stagioni passate (%d)</string>
+    <string name="twin_donated">TWIN donate</string>
+    <string name="unlocked_rewards">Premi sbloccati</string>
+    <string name="start">INIZIO</string>
+    <string name="days_left_placeholder">%dg rimasti</string>
+    <string name="hours_left_placeholder">%dh rimaste</string>
+    <string name="open_now">Apri ora!</string>
+    <string name="donate_more_bn_placeholder">Dona altre %d TWIN</string>
+    <plurals name="rewards_placeholder">
+        <item quantity="one">%d premio</item>
+        <item quantity="other">%d premi</item>
+    </plurals>
+    <string name="locked">Bloccato</string>
+    <string name="unlocked_on">Sbloccato il %s</string>
+    <plurals name="donate_to_unlock_placeholder">
+        <item quantity="one">Dona altre %2$d TWIN per sbloccare questo box e accedere a %1$d premio</item>
+        <item quantity="other">Dona altre %2$d TWIN per sbloccare questo box e accedere a %1$d premi</item>
+    </plurals>
+    <string name="no_real_life_rewards_available">Ooops! Non ci sono premi attualmente nella tua zona</string>
+    <string name="get_in_touch_to_add_rewards">Contatta il nostro team per aggiungere premi per la tua città o organizzazione</string>
+    <string name="swipe_to_remove_leaves">Scorri per aprire</string>
+    <string name="swipe_to_remove_leaves_title_placeholder">%s</string>
+    <string name="unlock_pack_placeholder">Yay! Hai sbloccato la %s!</string>
+    <string name="dont_miss_out">Non perderti le novità!</string>
+    <string name="share_phone_location">Condividi la tua posizione per scoprire possibili premi nella tua zona.</string>
+    <string name="dismiss">Annulla</string>
+    <string name="collections_available_to_you">Premi</string>
+    <string name="claim_now">Richiedi subito</string>
+    <!--  Tutorial  -->
+    <string name="tutorial_step_0_title">Avanti!</string>
+    <string name="tutorial_step_0_description">Come regalo di benvenuto ti abbiamo accreditato 30 TWIN per provare la app.</string>
+    <string name="tutorial_step_0_title_repeating">Pronto a donare?</string>
+    <string name="tutorial_step_0_description_repeating">Supportare una iniziativa è facile! Iniziamo!</string>
+    <string name="tutorial_step_0_title_need_twin">Oops!</string>
+    <string name="tutorial_step_0_description_need_twin">Hai bisogno di almeno un 1 TWIN per fare una donazione. Vai nella sezione Collect per guadagnarne di nuove e ritorna qui per la donazione!</string>
+    <string name="tutorial_step_1_section">Raccogli</string>
+    <string name="tutorial_step_1_title">TWIN?</string>
+    <string name="tutorial_step_1_description">I TWIN sono le tue preziose monete.\n\nGuadagnerai TWIN con semplici azioni quotidiane e completando sfide divertenti.</string>
+    <string name="tutorial_step_2_section">Raccogli</string>
+    <string name="tutorial_step_2_title">A che servono?</string>
+    <string name="tutorial_step_2_description">Puoi usare i TWIN per aiutare iniziative ambientali e sociali.\n\nVai nella sezione Dona!</string>
+    <string name="tutorial_step_3_section">Dona</string>
+    <string name="tutorial_step_3_title">Fai la differenza!</string>
+    <string name="tutorial_step_3_description">Prova subito a donare i tuoi TWIN per aiutare questa iniziativa.\n\nPiù tardi potrai scoprire tutte le informazioni su questa e sulle altre iniziative.</string>
+    <string name="tutorial_step_4_section">Dona</string>
+    <string name="tutorial_step_4_title">Quanto vuoi donare?</string>
+    <string name="tutorial_step_4_description">Scegli quanti TWIN donare e conferma.</string>
+    <string name="tutorial_step_5_section">Dona</string>
+    <string name="tutorial_step_5_title">Conferma</string>
+    <string name="tutorial_step_5_description">Controlla e procedi!</string>
+    <string name="tutorial_step_6_section">Dona</string>
+    <string name="tutorial_step_6_title">Fantastico!</string>
+    <string name="tutorial_step_6_description">La tua donazione sta aiutando questa iniziativa a realizzare il proprio progetto.\n\nMa non finisce qui...</string>
+    <string name="tutorial_step_7_section">Premi</string>
+    <string name="tutorial_step_7_title">Sblocca le box!</string>
+    <string name="tutorial_step_7_description">Ti presentiamo la tua mappa dei premi.\n\nPiù TWIN doni e più progredisci sulla tua mappa, sbloccando box di premi reali.\n\nLa tua donazione ti ha già avvicinato alla prima box!</string>
+    <string name="tutorial_step_8_section">Premi</string>
+    <string name="tutorial_step_8_title">Stagioni</string>
+    <string name="tutorial_step_8_description">Le box di premi si aggiornano ogni stagione.\n\nLa raccolta di TWIN ripartirà con la nuova stagione: assicurati di donare i tuoi punti prima che finisca.</string>
+    <string name="tutorial_step_9_title">Fatto!</string>
+    <string name="tutorial_step_9_description">Inizia la tua raccolta di TWIN qua nella sezione <font fgcolor="#FF2F793A">Raccogli</font> e naviga la app per conoscere la community nella sezione <font fgcolor="#FF2F793A">Giungla</font>!\n\nBuon divertimento! </string>
+    <string name="tutorial_next_button">Avanti</string>
+    <string name="tutorial_close_button">Chiudi</string>
+    <string name="collect_challenges_title">Sfide</string>
+    <string name="collect_challenges_subtitle">Per tutta la community</string>
+    <string name="collect_affiliations_challenges_subtitle">In esclusiva per i tuoi gruppi</string>
+    <string name="collect_partners_title">Per te</string>
+    <string name="collect_partners_subtitle">App e partner che trasformano le tue azioni reali in punti TWIN</string>
+    <string name="error_creating_comment">Si è verificato un errore durante la pubblicazione del tuo commento, per favore riprova più tardi</string>
+    <string name="error_deleting_comment">Si è verificato un errore durante la cancellazione del tuo commento, per favore riprova più tardi</string>
+    <string name="affiliation_landing_placeholder">Ci siamo! Stiamo preparando un’esperienza speciale per te con %s</string>
+    <string name="affiliation_landing_no_project">Ci siamo! Stiamo preparando la tua esperienza nella Giungla...</string>
+    <string name="no_comments">Nessun commento</string>
+    <string name="publish_successfully">Il tuo post è stato pubblicato!</string>
+    <string name="publish_error">Si è verificato un errore, riprova di nuovo fra 5 minuti</string>
+    <string name="special_post">Post speciale</string>
+    <string name="collect_twin">Raccogli TWIN</string>
+    <string name="collect_description">Come? Cammina, vai in bici, completa sfide, trova Codici Segreti, fai check-in&#8230;</string>
+    <string name="collect_explore_challenges">Scopri le Sfide</string>
+    <string name="collect_browse_by_topic">Esplora per Area d\'Impatto</string>
+    <plurals name="topic_challenges_placeholder">
+        <item quantity="one">%d Sfida</item>
+        <item quantity="other">%d Sfide</item>
+    </plurals>
+    <plurals name="topic_partners_placeholder">
+        <item quantity="one">%d Partner</item>
+        <item quantity="other">%d Partner</item>
+    </plurals>
+    <plurals name="topic_actions_placeholder">
+        <item quantity="one">%d Storia</item>
+        <item quantity="other">%d Storie</item>
+    </plurals>
+    <string name="show_all_challenges">Mostra tutte le sfide</string>
+    <string name="show_all_partners">Mostra tutti i partner</string>
+    <string name="partners_for_you">Per te</string>
+    <string name="partner_filters_checkin">Check-in</string>
+    <string name="partner_filters_code">Codice Segreto</string>
+    <string name="partner_filters_connect">Connetti</string>
+    <string name="challenges_filters_all">Tutti</string>
+    <string name="challenges_filters_for_community">Per la community</string>
+    <string name="challenges_sort_title">Mostra prima</string>
+    <string name="challenges_sort_completed">Completata</string>
+    <string name="challenges_sort_in_progress">In corso</string>
+    <string name="challenges_sort_to_begin">Da iniziare</string>
+    <string name="other_way_to_collect_title">Condividi con la community</string>
+    <string name="other_way_to_collect_subtitle">Ricevi punti TWIN quando le altre persone fanno \"clap\" alle tue storie</string>
+    <string name="other_way_to_collect_card_title">Condividi una Storia nella Giungla</string>
+    <string name="other_way_to_collect_actiontype_title">Condividi con la community</string>
+    <string name="other_way_to_collect_actiontype_subtitle">Condividi idee ed esperienze in questa area d\'impatto</string>
+    <string name="about_us">Su di noi</string>
+    <string name="readmore">Scopri di più</string>
+    <string name="readless">Riduci</string>
+    <string name="special_ape">Utente speciale</string>
+    <string name="partners_media">Media</string>
+    <string name="partners_videos">Video</string>
+    <string name="partners_photos">Foto</string>
+    <plurals name="locations">
+        <item quantity="one">Sede</item>
+        <item quantity="other">Sedi</item>
+    </plurals>
+    <plurals name="partners">
+        <item quantity="one">Partner</item>
+        <item quantity="other">Partner</item>
+    </plurals>
+    <plurals name="campaign">
+        <item quantity="one">Iniziativa</item>
+        <item quantity="other">Iniziative</item>
+    </plurals>
+    <plurals name="challenges">
+        <item quantity="one">Sfida</item>
+        <item quantity="other">Sfide</item>
+    </plurals>
+    <plurals name="rewards">
+        <item quantity="one">Premio</item>
+        <item quantity="other">Premi</item>
+    </plurals>
+    <plurals name="videos">
+        <item quantity="one">Video</item>
+        <item quantity="other">Video</item>
+    </plurals>
+    <plurals name="photos">
+        <item quantity="one">Foto</item>
+        <item quantity="other">Foto</item>
+    </plurals>
+    <string name="challenge_rewards">Premi legati alla sfida</string>
+    <string name="challenge_tasks">Obiettivo</string>
+    <string name="challenge_tasks_todo">Da completare</string>
+    <string name="challenge_tasks_completed">Completati</string>
+    <string name="task_status_todo">Da completare</string>
+    <string name="task_status_completed">Completata</string>
+    <string name="challenge_progress_completed">Evviva! Hai completato la Sfida!</string>
+    <string name="challenge_progress_uncompleted">Arriva qui per completare la sfida!</string>
+    <string name="challenge_progress_completed_not_mandatory">Oops! Per ottenere i premi è necessario completare i task obbligatori</string>
+    <string name="challenge_reward_bankonuts_placeholder">Guadagnerai %d TWIN</string>
+    <string name="challenge_reward_completed_bankonuts_placeholder">Hai guadagnato %d TWIN</string>
+    <string name="challenge_reward_donation_placeholder">Sbloccherai la donazione \"%s\"</string>
+    <string name="challenge_reward_completed_donation_placeholder">Hai sbloccato la donazione \"%s\"</string>
+    <string name="go_to_donation">Vai alla donazione</string>
+    <string name="challenge_reward_reward_placeholder">Hai sbloccato il premio \"%s\"</string>
+    <string name="go_to_reward">Vedi premio</string>
+    <string name="mandatory_with_dot">· obbligatorio</string>
+    <string name="reward_not_available">Non disponibile</string>
+    <string name="reward_no_longer_available">OOPS! Questo premio non è più disponibile!</string>
+    <string name="reward_online">Online</string>
+    <string name="reward_local">Km 0</string>
+    <string name="reward_unlocked_by_this_challenge">Premio sbloccato da questa sfida</string>
+    <string name="unlock_this_box_to_claim_the_reward">Sblocca questo livello per ottenere il premio</string>
+    <plurals name="days_left">
+        <item quantity="one">%d giorno rimasto</item>
+        <item quantity="other">%d giorni rimasti</item>
+    </plurals>
+    <string name="share_on">Condividi su&#8230;</string>
+    <string name="share_provider_facebook">Facebook</string>
+    <string name="share_provider_instagram">Instagram</string>
+    <string name="share_provider_twitter">Twitter</string>
+    <string name="share_provider_copy_image">Condividi immagine</string>
+    <string name="share_provider_copy_link">Copia link</string>
+    <string name="share_provider_system">Altro</string>
+    <string name="share_image_text_post">Ecco un post interessante</string>
+    <string name="share_image_text_campaign">Ecco un\'iniziativa che puoi sostenere con le tue azioni </string>
+    <string name="share_image_text_donation">Ho donato le mie azioni a questa iniziativa!</string>
+    <string name="share_image_text_reward">Ho riscosso questo premio</string>
+    <string name="share_image_text_bankonuts_log">Ho trovato un Codice Segreto</string>
+    <string name="share_text_post">Ecco un post che ho trovato su greenApes</string>
+    <string name="share_text_campaign">Ecco un\'iniziativa che puoi sostenere con le tue azioni su greenApes</string>
+    <string name="share_text_donation">Ho donato le mie azioni a questa iniziativa su greenApes!</string>
+    <string name="share_text_reward">Ho riscosso questo premio su greenApes!</string>
+    <string name="share_text_bankonuts_log">Ho riscosso questo premio su greenApes!</string>
+    <string name="share_campaign">Condividi l\'iniziativa</string>
+    <string name="publishing_post">Caricamento del post: potrebbe richiedere alcuni secondi</string>
+    <string name="publishing_post_error">Oops, c\'è stato un problema durante la pubblicazione del tuo post</string>
+    <string name="publishing_post_error_retry">Riprova</string>
+    <string name="secret_code">Codice Segreto</string>
+    <string name="secret_code_scan_qr_code">Scansiona codice QR</string>
+    <string name="secret_code_enter_secret_code">Inserisci il codice</string>
+    <string name="secret_code_hint">E.g. GREENAPES001</string>
+    <string name="secret_code_or">o</string>
+    <string name="secret_code_error_title">Oh no!</string>
+    <string name="secret_code_error_already_redeemed">Sembra che hai già riscattato questo codice</string>
+    <string name="secret_code_error_not_found">\"%1$s\" non esiste</string>
+    <string name="secret_code_error_generic">Errore imprevisto, prova di nuovo</string>
+    <string name="secret_code_add_code">Conferma</string>
+    <string name="secret_code_insert_manually">Oppure inserisci il codice manualmente</string>
+    <string name="permission_request_camera_title">Permessi necessari</string>
+    <string name="permission_request_camera_message">Per scansionare un codice QR è necessario accedere alla fotocamera.</string>
+    <string name="permission_request_camera_button">Ok</string>
+    <string name="dialog_secret_code_redeemed_title">Evviva!</string>
+    <string name="dialog_secret_code_redeemed_subtitle">Hai appena ottenuto</string>
+    <string name="dialog_secret_code_redeemed_subtitle_placeholder">%d TWIN</string>
+    <string name="dialog_secret_code_redeemed_primary_action">Condividi sulla Giungla</string>
+    <string name="secret_code_error_scan_another_code">Scansiona un altro codice</string>
+    <string name="redeemed_secret_code_message">Evviva!\nHo appena ottenuto delle TWIN con un codice segreto</string>
+    <string name="challenge_rewards_label">Potrai scegliere uno di questi premi</string>
+    <string name="challenge_rewards_not_redeemed_label">Adesso puoi riscuotere uno di questi premi</string>
+    <string name="challenge_rewards_redeemed_label">Hai riscosso questo premio</string>
+    <string name="or">o</string>
+    <string name="reward_unavailable_reason_not_available">Questo premio non è disponibile al momento.</string>
+    <string name="reward_unavailable_reason_not_redeemable">Questo premio ha regole speciali: trovale nella la descrizione</string>
+    <string name="reward_unavailable_reason_expired">Questo premio è scaduto il %s</string>
+    <string name="reward_unavailable_reason_max_quantity_reached">Oops, questo premio è esaurito</string>
+    <string name="reward_unavailable_reason_affiliation_required">Questo premio è disponibile solo per gruppo speciali</string>
+    <string name="reward_unavailable_reason_minimum_ape_rank_required">Aumenta il tuo Rank per sbloccare questo premio</string>
+    <string name="reward_unavailable_reason_redeems_frequency_reached">Hai riscosso questo premio da poco tempo. Controlla in descrizione quanto spesso lo puoi ottenere</string>
+    <string name="reward_unavailable_reason_challenge_completion_needed">Completa la sfida per ottenere questo premio</string>
+    <string name="reward_unavailable_reason_challenge_choice_made">Hai già riscosso un premio associato a questa Sfida</string>
+    <string name="reward_unavailable_reason_reward_tier_locked">Per richiedere il premo devi prima sbloccare la Box </string>
+    <string name="reward_unavailable_reason_reward_tier_manually_locked">Apri la Box per richiedere questo premio</string>
+    <string name="error_downloading_reward">Ops! Si è verificato un errore!</string>
+    <string name="dialog_reward_claimed_title">Evviva!</string>
+    <string name="dialog_reward_claimed_message">Ti abbiamo inviato per email il coupon \"%s\"</string>
+    <string name="dialog_reward_claimed_share_button">Condividi sulla Giungla</string>
+    <string name="dialog_duplicated_post_message">Ops, hai condiviso da poco un post con lo stesso testo. Se ancora non lo vedi nella giungla, aspetta qualche minuto. Se invece vuoi pubblicare un nuovo post, cambia il contenuto.</string>
+    <string name="dialog_duplicated_post_button">OK</string>
+    <string name="donated_all_time">/ donati</string>
+    <string name="send_message">Invia un messaggio</string>
+    <string name="twin_donated_placeholder">%d TWIN</string>
+    <string name="followers_label">followers</string>
+    <string name="following_label">following</string>
+    <string name="archive">Raccolte</string>
+    <string name="archive_posts">I miei post</string>
+    <string name="archive_saved_posts">Post salvati</string>
+    <string name="archive_rewards">Premi</string>
+    <string name="archive_donations">Donazioni</string>
+    <string name="archive_twin_log">Registro TWIN</string>
+    <string name="achievements">Traguardi</string>
+    <string name="badges">Badge</string>
+    <string name="medals">Medaglie</string>
+    <string name="empty_achievements">Ottieni Badge con le tue attività nella Giungla!\nCompleta una donazione e ricevi il tuo primo Badge</string>
+    <string name="level_placeholder">Livello %d</string>
+    <string name="more_to_reach_level_placeholder">altri %1$d per raggiungere il livello %2$d</string>
+    <string name="profile_settings_menu_title">Impostazioni</string>
+    <string name="profile_settings_other_menu_title">Impostazioni del profilo</string>
+    <string name="profile_settings_item_edit_profile">Modifica profilo</string>
+    <string name="profile_settings_item_account_settings">Impostazioni account</string>
+    <string name="profile_settings_item_privacy">Privacy e gestione dati</string>
+    <string name="profile_settings_item_block_user">Blocca l\'utente</string>
+    <string name="edit_profile_about_you">Io...</string>
+    <string name="edit_profile_date_of_birth">Data di nascita</string>
+    <string name="show">Mostra</string>
+    <string name="privacy_blocked_users">Utenti bloccati</string>
+    <string name="privacy_no_blocked_users">Nessun utente bloccato</string>
+    <string name="privacy_copy_of_data">Copia dei tuoi dati</string>
+    <string name="privacy_request_sending">Invia richiesta</string>
+    <string name="privacy_delete_account">Elimina account</string>
+    <string name="privacy_delete">Cancella</string>
+    <string name="no_blocked_accounts">Nessun utente bloccato</string>
+    <string name="email">Email</string>
+    <string name="account_login">Login account</string>
+    <string name="account_login_details">Avere più Account connessi ti permetterà di accedere più facilmente a greenApes da altri dispositivi o in caso uscissi dalla app</string>
+    <string name="phone_number">Numero di telefono</string>
+    <string name="add">Aggiungi</string>
+    <string name="connected_apps">Profili connessi</string>
+    <string name="logout_of_the_app">Fai logout dalla app</string>
+    <string name="logout">Logout</string>
+    <string name="connected_with_dot">· connesso</string>
+    <string name="save_changed_email">L\'email è cambiata. Vuoi salvare la modifica?</string>
+    <string name="your_donations">Le tue donazioni</string>
+    <string name="no_donations_yet">Ancora nessuna donazione</string>
+    <string name="select_background">Seleziona sfondo</string>
+    <string name="choose_an_image">Scegli immagine</string>
+    <string name="take_photo">Fai foto</string>
+    <string name="from_gallery">Da galleria</string>
+    <string name="error_saving_bg">Errore durante il salvataggio dello sfondo</string>
+    <string name="my_passport">Il mio passaporto</string>
+    <string name="region_visited">Territori esplorati</string>
+    <string name="discoveries">Scoperte</string>
+    <string name="since_placeholder">Nella Giungla dal %s</string>
+    <string name="error_downloading_medal">Errore nel download del badge, riprovare più tardi</string>
+    <string name="save_changes">Vuoi salvare i cambiamenti?</string>
+    <string name="date_of_birth_date_format">d-M-yyyy</string>
+    <string name="drag_badges">Tieni premuto e trascina nella posizione desiderata</string>
+    <string name="no_badges_to_drag">Inizia a ottenere Badge! Qui potrai scegliere quali mettere in evidenza sul tuo Profilo</string>
+    <string name="no_badges_to_save">Nessun badge selezionato! Il tuo profilo metterà in evidenza gli ultimi che hai ottenuto</string>
+    <string name="invite_friends">Fai scoprire greenApes</string>
+    <string name="invite_friends_subtitle">Diventa ambassador della sostenibilità. Invita chi vuoi a unirsi alla Giungla! </string>
+    <string name="share_your_code">Condividi il tuo Codice</string>
+    <string name="share_your_code_subtitle">Il Codice dovrà essere inserito da chi si iscrive durante la registrazione o entro 72 ore dall\'iscrizione (usando il tasto \"+\").</string>
+    <string name="rewards_for_you_and_your_friends">Premi per te e per chi inviti</string>
+    <string name="rewards_for_you_and_your_friends_subtitle">Riceverai 50 TWIN per ogni persona che si iscriverà usando il tuo codice.\n\nRiceverete un bonus di 100 TWIN a testa se la persona invitata donerà 200 TWIN nel suo primo mese su greenApes</string>
+    <string name="your_invited_friends_and_bonus">Chi ho portato nella Giungla</string>
+    <string name="your_invited_friends_and_bonus_subtitle">Ecco l\'elenco delle persone che si sono iscritte su greenApes grazie a te (e i punti TWIN che ti hanno fatto raccogliere).</string>
+    <string name="you_have_earned">Hai raccolto</string>
+    <string name="friends">Persone invitate</string>
+    <string name="no_friends_invited">Non hai ancora invitato nessuno</string>
+    <string name="code_copied_to_clipboard">Codice copiato negli appunti</string>
+    <string name="twin_placeholder">%1$s TWIN</string>
+    <string name="invited_friend_date_format">dd MMMM yyyy</string>
+    <string name="invite_consumed_title">Una sorpresa per te!</string>
+    <string name="invite_consumed_message">Grazie al Codice di invito che hai ricevuto puoi sbloccare un bonus speciale!\n\nRiceverai un bonus di 100 punti TWIN non appena raggiungerai 200 TWIN in donazioni! Hai 30 giorni di tempo!</string>
+    <string name="invite_share_text_title">Vieni a scoprire greenApes!</string>
+    <string name="invite_share_text_message_placeholder">Fai la differenza con le tue azioni sostenibili e premiati.\nIscriviti usando il mio Codice e inizia a raccogliere punti con cui sostenere progetti ambientali e sociali.\n\nCodice invito: %1$s\n\nhttps://jungle.greenapes.com/open_app</string>
+    <string name="invite_share_image_title">Conosci greenApes?</string>
+    <string name="invite_share_image_message">È la app per chi ha a cuore il Pianeta.\nScarica la app, usa il mio Codice e fai la differenza.</string>
+    <string name="app_version_placeholder">Versione app — V%1$s</string>
+    <string name="menu_item_invite_friends">Invita su greenApes</string>
+    <string name="menu_item_app_and_support">App &amp; Supporto</string>
+    <string name="menu_item_tutorial">Prova una donazione guidata</string>
+    <string name="menu_item_faq">FAQ</string>
+    <string name="menu_item_report_bug">Segnala bug</string>
+    <string name="menu_item_review">Lascia una recensione</string>
+    <string name="menu_item_check_updates">Controlla aggiornamenti</string>
+    <string name="menu_item_tos">Termini e condizioni</string>
+    <string name="menu_item_privacy">Informativa sulla privacy</string>
+    <string name="menu_item_website">www.greenapes.com</string>
+    <string name="error_no_mail_app_installed">Nessuna app per email trovata!</string>
+    <string name="review_error">Errore play store: %1$d</string>
+    <string name="suggestions">Suggerimenti</string>
+    <string name="show_all_results_for">Mostra tutti i risultati per \"%1$s\"</string>
+    <string name="all">Tutti</string>
+    <string name="posts">Post</string>
+    <string name="people">Persone</string>
+    <string name="sub_area">Sotto-area</string>
+    <string name="actions">Azioni</string>
+    <string name="no_matches_found">Ooops! Nessun risultato trovato.</string>
+    <string name="show_all_results_people">Mostra tutti i risultati - Persone</string>
+    <string name="show_all_results_posts">Mostra tutti i risultati - Post</string>
+    <string name="end_of_results">Ricerca completata</string>
+    <string name="all_posts_in_this_impact_area">Tutti i post in questa area d\'impatto</string>
+    <string name="follow">Segui</string>
+    <string name="unfollow">Smetti di seguire</string>
+    <string name="edited_with_dot_placeholder">%1$s · Modificato</string>
+</resources>
