@@ -411,8 +411,7 @@ def _save_android(i18n_data):
             old_file = re.sub(pattern_footer, '', old_file)
             old_file = re.sub(pattern_comment, '', old_file)
        
-        xml_header = """
-<?xml version="1.0" encoding="utf-8"?>
+        xml_header = """<?xml version="1.0" encoding="utf-8"?>
     <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, TypographyEllipsis, Typos">
 """
         xml_footer = """
