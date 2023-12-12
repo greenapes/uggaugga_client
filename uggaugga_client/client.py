@@ -400,6 +400,7 @@ def _save_android(i18n_data):
         path = 'strings.xml'
         old_file = ""
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'r+') as fp:
+            import pdb;pdb.set_trace()
             pattern = r"<string\s(?s:.)</string>\n"
             pattern_header1 = r"<\?xml\s(.*?)\?>"
             pattern_header2 = r"<resources\s(.*?)\">"
