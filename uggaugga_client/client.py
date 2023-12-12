@@ -393,10 +393,16 @@ def _save_android(i18n_data):
     for lang in i18n_data.keys():
         path = f'values{"" if lang == (DEFAULT_LANG or ORIGINAL_LANGUAGE) else f"-{lang}"}.xml'
        
+        old_file = ""
+        with open(os.path.join(I18N_LOCAL_PATH, path), 'r') as fp:
+            pattern = r"\<string\s(.*?)</string>\n"
+            old_file = re.sub(pattern, '', fp.read())
+       
         with open(os.path.join(I18N_LOCAL_PATH, path), 'w+') as fp:
             data = _flatten_data(i18n_data[lang], sep="_")
             for k in data.keys():
                 fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
+            fp.write(old_file)
 
 
 def _save_ios(i18n_data):
@@ -463,7 +469,7 @@ def _upload(data):
                          headers={
                              'Authorization': f'Basic {token.decode()}',
                              'Content-type': 'Application/json'},
-                         json={'i18n': data, 'namespace': NAMESPACE})
+                         json={'i18n': data, 'namespace': NAMESPACE, 'default_lang': DEFAULT_LANG})
     print(resp)
     return resp
 
