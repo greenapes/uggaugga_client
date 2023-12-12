@@ -7,7 +7,7 @@
     "i18n_path": ".",
     "default_lang": "en",
     "export_format": "xml_android",
-    "disable_upload": true,
+    "disable_upload": false,
     "server": {
         "url": "https://uggaugga.greenapes.com",
         "public_key": "uggaugga",
