@@ -1,27 +1,25 @@
 {
     "namespace": "android",
-    "langs": ["it", "en"],
+    "langs": [
+        "it",
+        "en"
+    ],
     "i18n_path": ".",
-    "export_format": "xml_android",
     "default_lang": "en",
+    "export_format": "xml_android",
     "disable_upload": true,
-    "debug": false,
     "server": {
         "url": "https://uggaugga.greenapes.com",
         "public_key": "uggaugga",
         "secret_key": "d4ffa04d5a4f742e90525959301e43aa6bc2cd1e565a7400f0367bbb2b14a893"
     },
-    "extractors": [
-        {
-            "type": "TExtractor",
-            "root":".",
-            "extention_list": ["xml"],
-            "custom_regex": "string\\s*name=\"(.*?)\"\\s*>(.*?)<"
-        },
-        {
-            "type": "TExtractor",
-            "root":".",
-            "extention_list": ["js"]
-        }
-    ]
+    "extractors": [{
+        "type": "TExtractor",
+        "root": "./strings.xml",
+        "extention_list": [
+            "xml"
+        ],
+        "custom_regex": "string\\s*name=\"(.*?)\".*?>(.*?)<"
+    }],
+    "debug": false
 }

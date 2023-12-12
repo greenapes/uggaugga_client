@@ -391,18 +391,33 @@ def _save_json(i18n_data):
 
 def _save_android(i18n_data):
     for lang in i18n_data.keys():
-        path = f'values{"" if lang == (DEFAULT_LANG or ORIGINAL_LANGUAGE) else f"-{lang}"}.xml'
-       
+        if lang == DEFAULT_LANG:
+            folder = "values"
+        else:
+            folder = f"value-{lang}"
+        os.makedirs(os.path.join(I18N_LOCAL_PATH, folder), exist_ok=True)
+
+        path = 'strings.xml'
         old_file = ""
-        with open(os.path.join(I18N_LOCAL_PATH, path), 'r') as fp:
+        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'r+') as fp:
             pattern = r"\<string\s(.*?)</string>\n"
             old_file = re.sub(pattern, '', fp.read())
        
-        with open(os.path.join(I18N_LOCAL_PATH, path), 'w+') as fp:
+        xml_header = """
+<?xml version="1.0" encoding="utf-8"?>
+    <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, TypographyEllipsis, Typos">
+"""
+        xml_footer = """
+<resources/>
+"""
+       
+        with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'w+') as fp:
+            fp.write(xml_header)
             data = _flatten_data(i18n_data[lang], sep="_")
             for k in data.keys():
                 fp.write(f'<string name="{k}">{data[k]}</string>' + '\n')
             fp.write(old_file)
+            fp.write(xml_footer)
 
 
 def _save_ios(i18n_data):
