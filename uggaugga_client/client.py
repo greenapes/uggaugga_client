@@ -401,11 +401,11 @@ def _save_android(i18n_data):
         old_file = ""
         with open(os.path.join(I18N_LOCAL_PATH, folder, path), 'r+') as fp:
             import pdb;pdb.set_trace()
-            pattern = r"<string\s(?s:.)</string>\n"
-            pattern_header1 = r"<\?xml\s(.*?)\?>"
-            pattern_header2 = r"<resources\s(.*?)\">"
+            pattern = r"<string\s.*?</string>\n"
+            pattern_header1 = r"<\?xml\s.*?\?>"
+            pattern_header2 = r"<resources\s.*?\">"
             pattern_footer = r"<resources/>"
-            pattern_comment = r"<\!--(.*?)-->"
+            pattern_comment = r"<\!--\s.*?\s-->"
             old_file = re.sub(pattern, '', fp.read())
             old_file = re.sub(pattern_header1, '', old_file)
             old_file = re.sub(pattern_header2, '', old_file)
