@@ -101,6 +101,9 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
     return I18N
 
 
+def clear_text(text):
+    return text.replace("\\'", "'").replace("\'", "'").replace('\\n', '\n')
+
 class _Extractor():
     
     def extract():
@@ -141,7 +144,7 @@ class TExtractor(_Extractor):
             with open(path, 'r') as f:
                 text = f.read()
 
-        return re.findall(match, text)
+        return [clear_text(x) for x in re.findall(match, text)]
 
     def extract(self):
         print("Using TExtractor...")
@@ -193,7 +196,7 @@ class TExtractorFlat(_Extractor):
         else:
             with open(path) as f:
                 text = f.read()
-        return re.findall(match, text)
+        return [clear_text(x) for x in re.findall(match, text)]
 
     def extract(self):
         print("Using TExtractorFlat...")

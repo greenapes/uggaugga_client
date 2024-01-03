@@ -1,5 +1,5 @@
 {
-    "namespace": "android",
+    "namespace": "test_android",
     "langs": [
         "it",
         "en"
@@ -19,7 +19,7 @@
         "extention_list": [
             "xml"
         ],
-        "custom_regex": "<string\\s*name=\"(.*?)\".*?>(.*?)<"
+        "custom_regex": "<string\\s*name=\"(.*?)\".*?>(.*?)<\/"
     }],
     "debug": false
 }

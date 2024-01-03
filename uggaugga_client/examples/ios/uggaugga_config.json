@@ -1,5 +1,5 @@
 {
-    "namespace": "ios",
+    "namespace": "test_ios",
     "langs": ["it", "en"],
     "i18n_path": ".",
     "export_format": "strings_ios",

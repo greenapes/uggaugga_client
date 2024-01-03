@@ -1,0 +1,32 @@
+{
+    "namespace": "test_web",
+    "langs": ["it", "en"],
+    "i18n_path": "./i18n.json",
+    "default_lang": "en",
+    "disable_upload": true,
+    "server": {
+        "url": "https://uggaugga.greenapes.com",
+        "public_key": "uggaugga",
+        "secret_key": "d4ffa04d5a4f742e90525959301e43aa6bc2cd1e565a7400f0367bbb2b14a893"
+    },
+    "extractors": [
+        {
+            "type": "TExtractorFlat",
+            "root": ".",
+            "extention_list": ["js", "jsx"]
+        },
+        {
+            "type": "TExtractorFlat",
+            "root":".",
+            "extention_list": ["html"],
+            "custom_regex": "{{\\s?['\"](.*?)['\"]\\s?|\\s?t-translate\\s?}}"
+        },
+        {
+            "type": "TExtractorFlat",
+            "root":".",
+            "extention_list": ["html"],
+            "custom_regex": "t-translate.*?>(.*?)<"
+        }
+    ],
+    "debug": false
+}
