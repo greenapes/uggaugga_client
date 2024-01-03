@@ -389,7 +389,7 @@ def _extract_from_po(po_path):
 
 def _save_json(i18n_data):
     with open(I18N_LOCAL_PATH, 'w+') as fp:
-        ujson.dump(i18n_data, fp, indent=2)
+        ujson.dump(i18n_data, fp, indent=2, escape_forward_slashes=False)
 
 
 def _save_android(i18n_data):
