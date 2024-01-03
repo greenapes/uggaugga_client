@@ -2,14 +2,14 @@ from setuptools import setup
 
 setup(
     name='uggaugga_client',
-    version='0.4.0',    
+    version='0.4.2',    
     description='Client for uggaugga service',
     url='https://github.com/greenapes/uggaugga_client',
     author='Marco Pretelli',
     author_email='lordscapoladestra@gmail.com',
     license='MIT',
     packages=['uggaugga_client'],
-    install_requires=['requests', 'colorama'],
+    install_requires=['requests', 'colorama', 'ujson'],
     scripts=['bin/uggaugga'],
 
     classifiers=[

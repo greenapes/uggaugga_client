@@ -1,7 +1,7 @@
 import requests
 import base64
 import os
-import json
+import ujson
 from pprint import pprint
 import re
 import hashlib
@@ -102,7 +102,7 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
 
 
 def clear_text(text):
-    return text.replace("\'", "'").replace('\\n', '\n')
+    return text #.replace("\'", "'").replace('\\n', '\n')
 
 class _Extractor():
     
@@ -389,7 +389,7 @@ def _extract_from_po(po_path):
 
 def _save_json(i18n_data):
     with open(I18N_LOCAL_PATH, 'w+') as fp:
-        json.dump(i18n_data, fp, indent=2)
+        ujson.dump(i18n_data, fp, indent=2)
 
 
 def _save_android(i18n_data):

@@ -60,7 +60,6 @@ if 'sync' in sys.argv:
         DRY_RUN = True
     
     conf = init()
-    import pdb;pdb.set_trace()
     I18N = client.sync(extract_from_code=True,
                        dry_run=DRY_RUN or conf.get('debug', False))
 
