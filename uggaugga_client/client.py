@@ -102,7 +102,7 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
 
 
 def clear_text(text):
-    return text.replace("\\'", "'").replace("\'", "'").replace('\\n', '\n')
+    return text.replace("\'", "'").replace('\\n', '\n')
 
 class _Extractor():
     
