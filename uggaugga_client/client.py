@@ -104,6 +104,9 @@ def sync(extract_from_code=False, dry_run=False, import_data=None):
 def clear_text(text):
     return text #.replace("\'", "'").replace('\\n', '\n')
 
+def custom_escape(line):
+    return line[1:-2].replace('\\"', '\"').replace("\\n","\n")
+
 class _Extractor():
     
     def extract():
@@ -250,7 +253,7 @@ class XgettexExtractor(_Extractor):
                             matches.append(t)
                         buffer = []
                     else:
-                        t = line[1:-2].encode().decode('unicode_escape')
+                        t = custom_escape(line)
                         buffer.append(t)
         os.remove(po_path)
         return matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
@@ -373,7 +376,7 @@ def _extract_from_po(po_path):
                         buffer_msg.append(line.split("msgstr \"", 1)[1][:-2])
                     buffer = []
                 else:
-                    t = line[1:-2].encode().decode('unicode_escape')
+                    t = custom_escape(line)
                     buffer.append(t)
             elif current_key:
                 if line.strip() == "":
@@ -383,7 +386,7 @@ def _extract_from_po(po_path):
                     buffer_msg = []
                     current_key = None
                 else:
-                    t = line[1:-2].encode().decode('unicode_escape')
+                    t = custom_escape(line)
                     buffer_msg.append(t)
     return matches
 
