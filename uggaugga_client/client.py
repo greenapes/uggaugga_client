@@ -250,7 +250,7 @@ class XgettexExtractor(_Extractor):
                             matches.append(t)
                         buffer = []
                     else:
-                        t = line[1:-2]
+                        t = line[1:-2].encode().decode('unicode_escape')
                         buffer.append(t)
         os.remove(po_path)
         return matches_to_flat_i18n(matches, self.I18n_parent_key, self.text_key)
@@ -366,24 +366,24 @@ def _extract_from_po(po_path):
             elif buffer:
                 if line.startswith('msgstr "'):
                     buffer = [x for x in buffer if x]
-                    t = "\n".join(buffer)
+                    t = " ".join(buffer)
                     if t:
                         k = hashlib.md5(t.encode()).hexdigest()
                         current_key = k
                         buffer_msg.append(line.split("msgstr \"", 1)[1][:-2])
                     buffer = []
                 else:
-                    t = line[1:-2]
+                    t = line[1:-2].encode().decode('unicode_escape')
                     buffer.append(t)
             elif current_key:
                 if line.strip() == "":
                     buffer_msg = [x for x in buffer_msg if x]
-                    v = "\n".join(buffer_msg)
+                    v = "".join(buffer_msg)
                     matches[current_key] = v
                     buffer_msg = []
                     current_key = None
                 else:
-                    t = line[1:-2]
+                    t = line[1:-2].encode().decode('unicode_escape')
                     buffer_msg.append(t)
     return matches
 
