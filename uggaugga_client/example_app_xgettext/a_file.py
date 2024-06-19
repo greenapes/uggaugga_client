@@ -15,3 +15,5 @@ need help in the Jungle, feel free to drop me a line here :).
 
 See you in the Jungle, ook ook!"""),
             ]
+    
+    t = _("asdasd \"{pippo}\" e pluto!")
