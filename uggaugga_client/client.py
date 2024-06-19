@@ -245,7 +245,7 @@ class XgettexExtractor(_Extractor):
                 elif buffer:
                     if line.startswith('msgstr "'):
                         buffer = [x for x in buffer if x]
-                        t = "\n".join(buffer)
+                        t = " ".join(buffer)
                         if t:
                             matches.append(t)
                         buffer = []
